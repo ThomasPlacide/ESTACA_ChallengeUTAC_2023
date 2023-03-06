@@ -27,7 +27,7 @@
   <ClocksManagement>
     <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
   </ClocksManagement>
-  <Component InstanceName="BlocCheckPieton" Model="PythonBridge" Version="3.2.0" x="1048" y="360" z="0">
+  <Component InstanceName="BlocCheckPieton" Model="PythonBridge" Version="3.2.0" x="1080" y="376" z="0">
     <Input LongName="BlocCheckPieton.Objets" Name="Objets">
       <Property LongName="BlocCheckPieton.Objets.readerType" Type="1">0</Property>
       <Property LongName="BlocCheckPieton.Objets.subsampling" Type="1">1</Property>
@@ -47,14 +47,14 @@
     <Property LongName="BlocCheckPieton.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">11876</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">8448</ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocCheckPieton.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
-    <Property LongName="BlocCheckPieton.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="BlocCheckPieton.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocCheckPieton.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocCheckPieton.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/PythonBridges/BlocCheckPieton.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocCheckPieton.py]]></Relative></Property>
+    <Property LongName="BlocCheckPieton.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocCheckPieton.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocCheckPieton.py]]></Relative></Property>
     <Property LongName="BlocCheckPieton.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="BlocCheckPieton.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -110,14 +110,14 @@
     <Property LongName="BlocTracking.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTracking.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocTracking.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">6388</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">6896</ReadOnlyProperty>
     <Property LongName="BlocTracking.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTracking.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTracking.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocTracking.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
-    <Property LongName="BlocTracking.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="BlocTracking.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocTracking.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocTracking.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/PythonBridges/BlocTracking (1).py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTracking (1).py]]></Relative></Property>
+    <Property LongName="BlocTracking.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocTracking (1).py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTracking (1).py]]></Relative></Property>
     <Property LongName="BlocTracking.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <Property LongName="BlocTracking.synchroTolerance" Type="1" SubType="1">0</Property>
     <ReadOnlyProperty LongName="BlocTracking.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -157,14 +157,14 @@
     <Property LongName="BlocTrackingImage2Objets.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">8516</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">12624</ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
-    <Property LongName="BlocTrackingImage2Objets.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="BlocTrackingImage2Objets.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocTrackingImage2Objets.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/PythonBridges/BlocTrackingImage2Objets.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTrackingImage2Objets.py]]></Relative></Property>
+    <Property LongName="BlocTrackingImage2Objets.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocTrackingImage2Objets.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTrackingImage2Objets.py]]></Relative></Property>
     <Property LongName="BlocTrackingImage2Objets.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <Property LongName="BlocTrackingImage2Objets.synchroTolerance" Type="1" SubType="1">0</Property>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -177,7 +177,7 @@
     <Property LongName="BlocTrackingImage2Objets.priority" Type="1">128</Property>
     <Property LongName="BlocTrackingImage2Objets.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="1176" y="432" z="0">
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="1192" y="504" z="0">
     <Input LongName="DataViewer_1.input_0" Name="input_0">
       <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
       <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
@@ -198,8 +198,8 @@
     <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
     <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
     <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="DataViewer_1.x" Type="1">620</Property>
-    <Property LongName="DataViewer_1.y" Type="1">215</Property>
+    <Property LongName="DataViewer_1.x" Type="1">602</Property>
+    <Property LongName="DataViewer_1.y" Type="1">92</Property>
     <Property LongName="DataViewer_1.width" Type="1">530</Property>
     <Property LongName="DataViewer_1.height" Type="1">420</Property>
     <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
@@ -222,7 +222,7 @@
     <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
     <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
-    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|PythonBridge_1_1.PietonInROI;0|Info:PythonBridge_1_1.PietonInROI;1|Data:PythonBridge_1_1.PietonInROI;0|;0|]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|;0|]]></Property>
     <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
     <Property LongName="DataViewer_1.priority" Type="1">128</Property>
@@ -318,8 +318,8 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.left" Type="1">685</Property>
-    <Property LongName="GL2_3D_Viewer_1.top" Type="1">491</Property>
+    <Property LongName="GL2_3D_Viewer_1.left" Type="1">523</Property>
+    <Property LongName="GL2_3D_Viewer_1.top" Type="1">409</Property>
     <Property LongName="GL2_3D_Viewer_1.width" Type="1">640</Property>
     <Property LongName="GL2_3D_Viewer_1.height" Type="1">480</Property>
     <Property LongName="GL2_3D_Viewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
@@ -340,7 +340,7 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.threaded" Type="0">true</Property>
     <Property LongName="GL2_3D_Viewer_1.priority" Type="1">128</Property>
-    <Property LongName="GL2_3D_Viewer_1.autoStart" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_1.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="880" y="288" z="0">
     <Input LongName="ImageViewer_1.input" Name="input">
@@ -439,7 +439,7 @@
     <Property LongName="OpenCV_Resize_1_1.priority" Type="1">128</Property>
     <Property LongName="OpenCV_Resize_1_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="OpenCV_Resize_1_1_1" Model="OpenCV_Resize" Version="1.0.2" x="368" y="192" z="0">
+  <Component InstanceName="OpenCV_Resize_1_1_1" Model="OpenCV_Resize" Version="1.0.2" x="312" y="192" z="0">
     <Input LongName="OpenCV_Resize_1_1_1.imageIn" Name="imageIn">
       <Property LongName="OpenCV_Resize_1_1_1.imageIn.readerType" Type="1">0</Property>
       <Property LongName="OpenCV_Resize_1_1_1.imageIn.subsampling" Type="1">1</Property>
@@ -456,21 +456,29 @@
     <Property LongName="OpenCV_Resize_1_1_1.priority" Type="1">128</Property>
     <Property LongName="OpenCV_Resize_1_1_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="112" y="328" z="0">
+  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="112" y="360" z="0">
     <Output LongName="Player_1.Reverse_1.output" Name="Reverse_1.output">
       <Property LongName="Player_1.Reverse_1.output.subsampling" Type="1">1</Property>
       <Property LongName="Player_1.Reverse_1.output.fifosize" Type="1">16</Property>
       <Property LongName="Player_1.Reverse_1.output.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.Reverse_1.output.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.Reverse_1.output.threaded" Type="0">true</Property>
+      <Property LongName="Player_1.Reverse_1.output.priority" Type="1">128</Property>
+      <Property LongName="Player_1.Reverse_1.output.replayThreadPriority" Type="1">128</Property>
+      <Property LongName="Player_1.Reverse_1.output.video_stream_copy_output_buffer" Type="1">0</Property>
     </Output>
-    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_113050_RecFile_1/RecFile_1_20230228_113050.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_113050_RecFile_1/RecFile_1_20230228_113050.rec]]></Relative></Property>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:\Users\user\OneDrive - ESTACA\Desktop\ESTAPARK2023\RTMapsYOLOv7\VSACPIETON\20230228_113050_RecFile_1\RecFile_1_20230228_113050.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_113050_RecFile_1/RecFile_1_20230228_113050.rec]]></Relative></Property>
     <Property LongName="Player_1.offset" Type="1">0</Property>
     <Property LongName="Player_1.beginning" Type="1">0</Property>
     <Property LongName="Player_1.end" Type="1">0</Property>
     <Property LongName="Player_1.timelag" Type="1">100000</Property>
     <Property LongName="Player_1.update" Type="0">true</Property>
-    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_113050_RecFile_1/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:\Users\user\OneDrive - ESTACA\Desktop\ESTAPARK2023\RTMapsYOLOv7\VSACPIETON\20230228_113050_RecFile_1/]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">62992</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.first" Type="1">692072</ReadOnlyProperty>
@@ -489,7 +497,7 @@
     </Output>
     <Property LongName="Webcam_1.freezeConfiguration" Type="0">false</Property>
     <Property LongName="Webcam_1.device" Type="4"><![CDATA[1|0|HD Pro Webcam C920_0]]></Property>
-    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|23|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
+    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|0|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
     <Property LongName="Webcam_1.framerate" Type="1">-1</Property>
     <Property LongName="Webcam_1.force_output_IPL_BGR24" Type="0">true</Property>
     <Property LongName="Webcam_1.acquisition_mode" Type="4"><![CDATA[2|0|Continuous|Capture]]></Property>
@@ -545,14 +553,14 @@
     <Property LongName="Yolo_RTMaps.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">9220</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">5696</ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yolo_RTMaps.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
-    <Property LongName="Yolo_RTMaps.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="Yolo_RTMaps.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Yolo_RTMaps.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRVE_23/Main/PythonBridges/Yolo_RTMaps.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/Yolo_RTMaps.py]]></Relative></Property>
+    <Property LongName="Yolo_RTMaps.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/Yolo_RTMaps.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/Yolo_RTMaps.py]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
@@ -578,6 +586,9 @@
   <Connection Output="Webcam_1.outputIplImage" Input="OpenCV_Resize_1_1_1.imageIn"/>
   <Connection Output="OpenCV_Resize_1_1_1.imageOut" Input="Yolo_RTMaps.image_in"/>
   <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="BlocCheckPieton_1" reversed="false">
+      <Description/>
+    </ComponentBox>
     <ComponentBox InstanceName="BlocTrackingImage2Objets_1" reversed="false">
       <Description/>
     </ComponentBox>

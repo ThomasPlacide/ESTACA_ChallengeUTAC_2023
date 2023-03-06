@@ -28,6 +28,8 @@ class rtmaps_python(BaseComponent):
 
         #Recuperation des infos objets
         objects = self.inputs["Objets"].ioelt.data
+        print("objets", objects)
+        
 
         #Recuperation du timestamp
         ts = self.inputs["Objets"].ioelt.ts
