@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <RTMapsDiagram version="4.8.0" EngineVersion="4.9" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
   <RequiredPackages>
-    <File Version="1.25.18"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_image_processing_opencv.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_image_processing_opencv.pck]]></Relative></File>
     <File Version="3.2.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
     <File Version="2.7.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_webcam.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_webcam.pck]]></Relative></File>
   </RequiredPackages>
@@ -27,7 +26,7 @@
   <ClocksManagement>
     <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
   </ClocksManagement>
-  <Component InstanceName="BlocCheckPieton" Model="PythonBridge" Version="3.2.0" x="1080" y="376" z="0">
+  <Component InstanceName="BlocCheckPieton" Model="PythonBridge" Version="3.2.0" x="1080" y="192" z="0">
     <Input LongName="BlocCheckPieton.Objets" Name="Objets">
       <Property LongName="BlocCheckPieton.Objets.readerType" Type="1">0</Property>
       <Property LongName="BlocCheckPieton.Objets.subsampling" Type="1">1</Property>
@@ -46,8 +45,8 @@
     <Property LongName="BlocCheckPieton.logDebug" Type="0">false</Property>
     <Property LongName="BlocCheckPieton.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="BlocCheckPieton.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">8448</ReadOnlyProperty>
+    <Property LongName="BlocCheckPieton.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">9928</ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocCheckPieton.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -55,7 +54,8 @@
     <Property LongName="BlocCheckPieton.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocCheckPieton.className" Type="3"><![CDATA[rtmaps_python]]></Property>
     <Property LongName="BlocCheckPieton.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocCheckPieton.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocCheckPieton.py]]></Relative></Property>
-    <Property LongName="BlocCheckPieton.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <Property LongName="BlocCheckPieton.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <Property LongName="BlocCheckPieton.synchroTolerance" Type="1" SubType="1">0</Property>
     <ReadOnlyProperty LongName="BlocCheckPieton.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -63,7 +63,7 @@
     <Property LongName="BlocCheckPieton.priority" Type="1">128</Property>
     <Property LongName="BlocCheckPieton.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="BlocTracking" Model="PythonBridge" Version="3.2.0" x="720" y="368" z="0">
+  <Component InstanceName="BlocTracking" Model="PythonBridge" Version="3.2.0" x="592" y="32" z="0">
     <Input LongName="BlocTracking.Boxes" Name="Boxes">
       <Property LongName="BlocTracking.Boxes.readerType" Type="1">0</Property>
       <Property LongName="BlocTracking.Boxes.subsampling" Type="1">1</Property>
@@ -109,15 +109,15 @@
     <Property LongName="BlocTracking.logDebug" Type="0">false</Property>
     <Property LongName="BlocTracking.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTracking.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="BlocTracking.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">6896</ReadOnlyProperty>
+    <Property LongName="BlocTracking.memorySize" Type="1">20644480</Property>
+    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">13432</ReadOnlyProperty>
     <Property LongName="BlocTracking.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTracking.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTracking.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocTracking.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
     <Property LongName="BlocTracking.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocTracking.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocTracking.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocTracking (1).py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTracking (1).py]]></Relative></Property>
+    <Property LongName="BlocTracking.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/BlocTracking.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTracking.py]]></Relative></Property>
     <Property LongName="BlocTracking.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
     <Property LongName="BlocTracking.synchroTolerance" Type="1" SubType="1">0</Property>
     <ReadOnlyProperty LongName="BlocTracking.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
@@ -129,7 +129,7 @@
     <Property LongName="BlocTracking.priority" Type="1">128</Property>
     <Property LongName="BlocTracking.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="BlocTrackingImage2Objets" Model="PythonBridge" Version="3.2.0" x="888" y="384" z="0">
+  <Component InstanceName="BlocTrackingImage2Objets" Model="PythonBridge" Version="3.2.0" x="952" y="48" z="0">
     <Input LongName="BlocTrackingImage2Objets.tIds" Name="tIds">
       <Property LongName="BlocTrackingImage2Objets.tIds.readerType" Type="1">0</Property>
       <Property LongName="BlocTrackingImage2Objets.tIds.subsampling" Type="1">1</Property>
@@ -156,8 +156,8 @@
     <Property LongName="BlocTrackingImage2Objets.logDebug" Type="0">false</Property>
     <Property LongName="BlocTrackingImage2Objets.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="BlocTrackingImage2Objets.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">12624</ReadOnlyProperty>
+    <Property LongName="BlocTrackingImage2Objets.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">8872</ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -177,7 +177,7 @@
     <Property LongName="BlocTrackingImage2Objets.priority" Type="1">128</Property>
     <Property LongName="BlocTrackingImage2Objets.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="1192" y="504" z="0">
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="864" y="184" z="0">
     <Input LongName="DataViewer_1.input_0" Name="input_0">
       <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
       <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
@@ -198,10 +198,10 @@
     <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
     <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
     <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="DataViewer_1.x" Type="1">602</Property>
-    <Property LongName="DataViewer_1.y" Type="1">92</Property>
-    <Property LongName="DataViewer_1.width" Type="1">530</Property>
-    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.x" Type="1">776</Property>
+    <Property LongName="DataViewer_1.y" Type="1">-1095</Property>
+    <Property LongName="DataViewer_1.width" Type="1">623</Property>
+    <Property LongName="DataViewer_1.height" Type="1">775</Property>
     <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
     <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
@@ -221,14 +221,65 @@
     <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
     <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
-    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
-    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|;0|]]></Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;358]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|BlocTracking.tIds;0|Info:BlocTracking.tIds;1|Data:BlocTracking.tIds;1|BlocTracking.tBoxes;0|Info:BlocTracking.tBoxes;1|Data:BlocTracking.tBoxes;1|BlocTracking.tClassIds;0|Info:BlocTracking.tClassIds;1|Data:BlocTracking.tClassIds]]></Property>
     <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
     <Property LongName="DataViewer_1.priority" Type="1">128</Property>
     <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="GL2_3D_Viewer_1" Model="GL2_3D_Viewer" Version="1.56.1" x="1000" y="16" z="0">
+  <Component InstanceName="DataViewer_1_1" Model="DataViewer" Version="2.0.10" x="1280" y="192" z="0">
+    <Input LongName="DataViewer_1_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1_1.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1_1.input_2" Name="input_2">
+      <Property LongName="DataViewer_1_1.input_2.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1_1.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1_1.x" Type="1">1043</Property>
+    <Property LongName="DataViewer_1_1.y" Type="1">-816</Property>
+    <Property LongName="DataViewer_1_1.width" Type="1">623</Property>
+    <Property LongName="DataViewer_1_1.height" Type="1">775</Property>
+    <Property LongName="DataViewer_1_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.nbInputs" Type="1">3</Property>
+    <Property LongName="DataViewer_1_1.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1_1.internalState" Type="3" SubType="128"><![CDATA[238;375]]></Property>
+    <Property LongName="DataViewer_1_1.expandedState" Type="3" SubType="128"><![CDATA[1|BlocCheckPieton.PietonInROI;0|Info:BlocCheckPieton.PietonInROI;1|Data:BlocCheckPieton.PietonInROI;0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="GL2_3D_Viewer_1" Model="GL2_3D_Viewer" Version="1.56.1" x="1168" y="344" z="0">
     <Input LongName="GL2_3D_Viewer_1.real_objects_2" Name="real_objects_2">
       <Property LongName="GL2_3D_Viewer_1.real_objects_2.readerType" Type="1">2</Property>
       <Property LongName="GL2_3D_Viewer_1.real_objects_2.subsampling" Type="1">1</Property>
@@ -251,10 +302,10 @@
     <Property LongName="GL2_3D_Viewer_1.object_0_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_type" Type="4"><![CDATA[25|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.object_0_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
-0.0 1.0 0.0 0.0
-0.0 0.0 1.0 0.0
-0.0 0.0 0.0 1.0
+    <Property LongName="GL2_3D_Viewer_1.object_0_matrix" Type="3"><![CDATA[100.0 0.0 0.0 0.0
+0.0 100.0 0.0 0.0
+0.0 0.0 100.0 0.0
+0.0 0.0 0.0 100.0
 ]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_width" Type="2">100</Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_height" Type="2">100</Property>
@@ -281,7 +332,7 @@
 0.0 0.0 1.0 0.0
 0.0 0.0 0.0 1.0
 ]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.object_2_shape" Type="4"><![CDATA[4|0|Cube|Pyramid|Sphere|Wireframe Cube]]></Property>
+    <Property LongName="GL2_3D_Viewer_1.object_2_shape" Type="4"><![CDATA[4|2|Cube|Pyramid|Sphere|Wireframe Cube]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_2_cfg_file" Type="3" SubType="80"><![CDATA[]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_2_persistence" Type="1" SubType="1">-1</Property>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
@@ -306,22 +357,22 @@
     <Property LongName="GL2_3D_Viewer_1.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.zFocus" Type="2">1</Property>
     <Property LongName="GL2_3D_Viewer_1.eyeDistance" Type="2">0.009999999776</Property>
-    <Property LongName="GL2_3D_Viewer_1.camera_mode" Type="4"><![CDATA[5|3|Fixed|Key Switcher|Orbiter|Trackball|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_1.camera_mode" Type="4"><![CDATA[5|0|Fixed|Key Switcher|Orbiter|Trackball|Input Matrix]]></Property>
     <Property LongName="GL2_3D_Viewer_1.camera_position" Type="3"><![CDATA[-10.0 0.0 10.0]]></Property>
     <Property LongName="GL2_3D_Viewer_1.camera_look_at" Type="3"><![CDATA[10.0 0.0 0.0]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.camera_up" Type="3"><![CDATA[0.0 0.0 1.0]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.camera_target" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1.camera_up" Type="3"><![CDATA[10.0 0.0 1.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_1.camera_target" Type="1">10</Property>
     <Property LongName="GL2_3D_Viewer_1.projection" Type="4"><![CDATA[3|0|Perspective|Orthogonal|Input Matrix]]></Property>
     <Property LongName="GL2_3D_Viewer_1.zNear" Type="2">1</Property>
-    <Property LongName="GL2_3D_Viewer_1.zFar" Type="2">10000</Property>
+    <Property LongName="GL2_3D_Viewer_1.zFar" Type="2">1000000</Property>
     <Property LongName="GL2_3D_Viewer_1.fovy" Type="2">45</Property>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.title" Type="3"><![CDATA[]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.left" Type="1">523</Property>
-    <Property LongName="GL2_3D_Viewer_1.top" Type="1">409</Property>
-    <Property LongName="GL2_3D_Viewer_1.width" Type="1">640</Property>
-    <Property LongName="GL2_3D_Viewer_1.height" Type="1">480</Property>
+    <Property LongName="GL2_3D_Viewer_1.left" Type="1">200</Property>
+    <Property LongName="GL2_3D_Viewer_1.top" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_1.width" Type="1">1080</Property>
+    <Property LongName="GL2_3D_Viewer_1.height" Type="1">720</Property>
     <Property LongName="GL2_3D_Viewer_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
     <Property LongName="GL2_3D_Viewer_1.sequentialRender" Type="0">false</Property>
     <Property LongName="GL2_3D_Viewer_1.keepWindowAspectRatio" Type="0">true</Property>
@@ -340,9 +391,157 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.threaded" Type="0">true</Property>
     <Property LongName="GL2_3D_Viewer_1.priority" Type="1">128</Property>
-    <Property LongName="GL2_3D_Viewer_1.autoStart" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="880" y="288" z="0">
+  <Component InstanceName="GL2_3D_Viewer_3" Model="GL2_3D_Viewer" Version="1.56.1" x="1376" y="48" z="0">
+    <Input LongName="GL2_3D_Viewer_3.real_objects_2" Name="real_objects_2">
+      <Property LongName="GL2_3D_Viewer_3.real_objects_2.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_3.real_objects_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_3.object_3_data" Name="object_3_data">
+      <Property LongName="GL2_3D_Viewer_3.object_3_data.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_3.object_3_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_3.object_4_data" Name="object_4_data">
+      <Property LongName="GL2_3D_Viewer_3.object_4_data.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_3.object_4_data.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_3.camera" Name="camera">
+      <Property LongName="GL2_3D_Viewer_3.camera.readerType" Type="1">4</Property>
+      <Property LongName="GL2_3D_Viewer_3.camera.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_3.projectionMatrix" Name="projectionMatrix">
+      <Property LongName="GL2_3D_Viewer_3.projectionMatrix.readerType" Type="1">2</Property>
+      <Property LongName="GL2_3D_Viewer_3.projectionMatrix.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="GL2_3D_Viewer_3.triggerRefresh" Name="triggerRefresh">
+      <Property LongName="GL2_3D_Viewer_3.triggerRefresh.readerType" Type="1">0</Property>
+      <Property LongName="GL2_3D_Viewer_3.triggerRefresh.subsampling" Type="1">1</Property>
+    </Input>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.objects_subsection_begin" Type="3" SubType="256"><![CDATA[Objects]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.nbObjects" Type="1">5</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_0_subsection_begin" Type="3" SubType="256"><![CDATA[Object 0]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.object_0_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_type" Type="4"><![CDATA[25|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_width" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_height" Type="2">100</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_padding" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_0_color" Type="1" SubType="4">16777215</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_0_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_1_subsection_begin" Type="3" SubType="256"><![CDATA[Object 1]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.object_1_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_1_type" Type="4"><![CDATA[25|11|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_1_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_1_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_1_axis_length" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_1_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_2_subsection_begin" Type="3" SubType="256"><![CDATA[Object 2]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.object_2_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_type" Type="4"><![CDATA[25|14|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_shape" Type="4"><![CDATA[4|0|Cube|Pyramid|Sphere|Wireframe Cube]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_cfg_file" Type="3" SubType="80"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_2_persistence" Type="1" SubType="1">-1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_3_subsection_begin" Type="3" SubType="256"><![CDATA[Object 3]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.object_3_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_type" Type="4"><![CDATA[25|0|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_nb_samples" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_3_size" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_3_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_4_subsection_begin" Type="3" SubType="256"><![CDATA[Object 4]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.object_4_class" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_type" Type="4"><![CDATA[25|0|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_matrix" Type="3"><![CDATA[1.0 0.0 0.0 0.0
+0.0 1.0 0.0 0.0
+0.0 0.0 1.0 0.0
+0.0 0.0 0.0 1.0
+]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_nb_samples" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="GL2_3D_Viewer_3.object_4_size" Type="2">1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.object_4_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.classes_subsection_begin" Type="3" SubType="256"><![CDATA[Classes]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.classEnabledSource" Type="4"><![CDATA[2|0|Properties|Input]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.nbClasses" Type="1">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.class_0_enabled" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.classes_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.lighting_subsection_begin" Type="3" SubType="256"><![CDATA[Lighting]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.lighting_model" Type="4"><![CDATA[5|0|Ambient|Diffuse|Phong|BlinnPhong|Gaussian]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.lighting_attenuation" Type="2">9.999999747e-005</Property>
+    <Property LongName="GL2_3D_Viewer_3.lighting_sqr_attenuation" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.lighting_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.scene_subsection_begin" Type="3" SubType="256"><![CDATA[Scene]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.background_color" Type="1" SubType="4">8388608</Property>
+    <Property LongName="GL2_3D_Viewer_3.wireframe_rendering" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_3.display_axis" Type="0">true</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.scene_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.viewport_subsection_begin" Type="3" SubType="256"><![CDATA[Viewport]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.viewportPlugin" Type="3" SubType="80"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.zFocus" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.eyeDistance" Type="2">0.009999999776</Property>
+    <Property LongName="GL2_3D_Viewer_3.camera_mode" Type="4"><![CDATA[5|3|Fixed|Key Switcher|Orbiter|Trackball|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.camera_position" Type="3"><![CDATA[-10.0 0.0 10.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.camera_look_at" Type="3"><![CDATA[10.0 0.0 0.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.camera_up" Type="3"><![CDATA[0.0 0.0 1.0]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.camera_target" Type="1">0</Property>
+    <Property LongName="GL2_3D_Viewer_3.projection" Type="4"><![CDATA[3|0|Perspective|Orthogonal|Input Matrix]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.zNear" Type="2">1</Property>
+    <Property LongName="GL2_3D_Viewer_3.zFar" Type="2">10000</Property>
+    <Property LongName="GL2_3D_Viewer_3.fovy" Type="2">45</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.left" Type="1">218</Property>
+    <Property LongName="GL2_3D_Viewer_3.top" Type="1">-793</Property>
+    <Property LongName="GL2_3D_Viewer_3.width" Type="1">640</Property>
+    <Property LongName="GL2_3D_Viewer_3.height" Type="1">480</Property>
+    <Property LongName="GL2_3D_Viewer_3.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.sequentialRender" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_3.keepWindowAspectRatio" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.updateWinGeomOnDeath" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.fullscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_3.monitorForFullscreen" Type="4"><![CDATA[1|0|0 (0, 0, 1680, 1050)]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.onscreen" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.offscreen" Type="0">false</Property>
+    <Property LongName="GL2_3D_Viewer_3.antialiasing" Type="4"><![CDATA[5|0|None|FSAA 2x|FSAA 4x|FSAA 8x|FSAA 16x]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.displayTitleBar" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.displayBorders" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.refresh_mode" Type="4"><![CDATA[3|0|Fixed|On Demand|Input based]]></Property>
+    <Property LongName="GL2_3D_Viewer_3.refresh_period" Type="1">50000</Property>
+    <Property LongName="GL2_3D_Viewer_3.verbose" Type="0">false</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_3.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_3.threaded" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.priority" Type="1">128</Property>
+    <Property LongName="GL2_3D_Viewer_3.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="840" y="-88" z="0">
     <Input LongName="ImageViewer_1.input" Name="input">
       <Property LongName="ImageViewer_1.input.readerType" Type="1">2</Property>
       <Property LongName="ImageViewer_1.input.subsampling" Type="1">1</Property>
@@ -362,8 +561,8 @@
       <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
       <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="ImageViewer_1.left" Type="1">38</Property>
-    <Property LongName="ImageViewer_1.top" Type="1">168</Property>
+    <Property LongName="ImageViewer_1.left" Type="1">99</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">747</Property>
     <Property LongName="ImageViewer_1.width" Type="1">0</Property>
     <Property LongName="ImageViewer_1.height" Type="1">0</Property>
     <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
@@ -382,114 +581,63 @@
     <Property LongName="ImageViewer_1.priority" Type="1">128</Property>
     <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="ImageViewer_1_1" Model="ImageViewer" Version="1.23.2" x="1072" y="192" z="0">
-    <Input LongName="ImageViewer_1_1.input" Name="input">
-      <Property LongName="ImageViewer_1_1.input.readerType" Type="1">2</Property>
-      <Property LongName="ImageViewer_1_1.input.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="ImageViewer_1_1.oMouseClick" Name="oMouseClick">
-      <Property LongName="ImageViewer_1_1.oMouseClick.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_1_1.oMouseClick.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_1_1.oMouseClick.periodic" Type="0">false</Property>
+  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="232" y="320" z="0">
+    <Output LongName="Player_1.Screenshot_1.output" Name="Screenshot_1.output">
+      <Property LongName="Player_1.Screenshot_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Screenshot_1.output.fifosize" Type="1">4</Property>
+      <Property LongName="Player_1.Screenshot_1.output.periodic" Type="0">false</Property>
     </Output>
-    <Output LongName="ImageViewer_1_1.oROI" Name="oROI">
-      <Property LongName="ImageViewer_1_1.oROI.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_1_1.oROI.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_1_1.oROI.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="ImageViewer_1_1.oWindowEvent" Name="oWindowEvent">
-      <Property LongName="ImageViewer_1_1.oWindowEvent.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_1_1.oWindowEvent.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_1_1.oWindowEvent.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="ImageViewer_1_1.left" Type="1">82</Property>
-    <Property LongName="ImageViewer_1_1.top" Type="1">511</Property>
-    <Property LongName="ImageViewer_1_1.width" Type="1">1080</Property>
-    <Property LongName="ImageViewer_1_1.height" Type="1">720</Property>
-    <Property LongName="ImageViewer_1_1.autoResize" Type="0">true</Property>
-    <Property LongName="ImageViewer_1_1.alwaysOnTop" Type="0">true</Property>
-    <Property LongName="ImageViewer_1_1.fullscreen" Type="0">false</Property>
-    <Property LongName="ImageViewer_1_1.monitorForFullscreen" Type="1">1</Property>
-    <Property LongName="ImageViewer_1_1.displayTitleBar" Type="0">true</Property>
-    <Property LongName="ImageViewer_1_1.displayBorder" Type="0">true</Property>
-    <Property LongName="ImageViewer_1_1.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
-    <Property LongName="ImageViewer_1_1.keepAspectRatio" Type="0">false</Property>
-    <Property LongName="ImageViewer_1_1.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
-    <Property LongName="ImageViewer_1_1.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
-    <Property LongName="ImageViewer_1_1.sequentialRender" Type="0">false</Property>
-    <Property LongName="ImageViewer_1_1.verbose" Type="0">false</Property>
-    <Property LongName="ImageViewer_1_1.threaded" Type="0">true</Property>
-    <Property LongName="ImageViewer_1_1.priority" Type="1">128</Property>
-    <Property LongName="ImageViewer_1_1.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="OpenCV_Resize_1_1" Model="OpenCV_Resize" Version="1.0.2" x="872" y="192" z="0">
-    <Input LongName="OpenCV_Resize_1_1.imageIn" Name="imageIn">
-      <Property LongName="OpenCV_Resize_1_1.imageIn.readerType" Type="1">0</Property>
-      <Property LongName="OpenCV_Resize_1_1.imageIn.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="OpenCV_Resize_1_1.imageOut" Name="imageOut">
-      <Property LongName="OpenCV_Resize_1_1.imageOut.subsampling" Type="1">1</Property>
-      <Property LongName="OpenCV_Resize_1_1.imageOut.fifosize" Type="1">16</Property>
-      <Property LongName="OpenCV_Resize_1_1.imageOut.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="OpenCV_Resize_1_1.new_size_x" Type="1">640</Property>
-    <Property LongName="OpenCV_Resize_1_1.new_size_y" Type="1">480</Property>
-    <Property LongName="OpenCV_Resize_1_1.interpolation" Type="4"><![CDATA[4|1|Nearest Neighbor|Bilinear|Area|Bicubic]]></Property>
-    <Property LongName="OpenCV_Resize_1_1.threaded" Type="0">true</Property>
-    <Property LongName="OpenCV_Resize_1_1.priority" Type="1">128</Property>
-    <Property LongName="OpenCV_Resize_1_1.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="OpenCV_Resize_1_1_1" Model="OpenCV_Resize" Version="1.0.2" x="312" y="192" z="0">
-    <Input LongName="OpenCV_Resize_1_1_1.imageIn" Name="imageIn">
-      <Property LongName="OpenCV_Resize_1_1_1.imageIn.readerType" Type="1">0</Property>
-      <Property LongName="OpenCV_Resize_1_1_1.imageIn.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="OpenCV_Resize_1_1_1.imageOut" Name="imageOut">
-      <Property LongName="OpenCV_Resize_1_1_1.imageOut.subsampling" Type="1">1</Property>
-      <Property LongName="OpenCV_Resize_1_1_1.imageOut.fifosize" Type="1">16</Property>
-      <Property LongName="OpenCV_Resize_1_1_1.imageOut.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="OpenCV_Resize_1_1_1.new_size_x" Type="1">320</Property>
-    <Property LongName="OpenCV_Resize_1_1_1.new_size_y" Type="1">240</Property>
-    <Property LongName="OpenCV_Resize_1_1_1.interpolation" Type="4"><![CDATA[4|1|Nearest Neighbor|Bilinear|Area|Bicubic]]></Property>
-    <Property LongName="OpenCV_Resize_1_1_1.threaded" Type="0">true</Property>
-    <Property LongName="OpenCV_Resize_1_1_1.priority" Type="1">128</Property>
-    <Property LongName="OpenCV_Resize_1_1_1.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="112" y="360" z="0">
-    <Output LongName="Player_1.Reverse_1.output" Name="Reverse_1.output">
-      <Property LongName="Player_1.Reverse_1.output.subsampling" Type="1">1</Property>
-      <Property LongName="Player_1.Reverse_1.output.fifosize" Type="1">16</Property>
-      <Property LongName="Player_1.Reverse_1.output.periodic" Type="0">false</Property>
-      <Property LongName="Player_1.Reverse_1.output.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
-      <Property LongName="Player_1.Reverse_1.output.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
-      <Property LongName="Player_1.Reverse_1.output.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
-      <Property LongName="Player_1.Reverse_1.output.autopause" Type="0">false</Property>
-      <Property LongName="Player_1.Reverse_1.output.threaded" Type="0">true</Property>
-      <Property LongName="Player_1.Reverse_1.output.priority" Type="1">128</Property>
-      <Property LongName="Player_1.Reverse_1.output.replayThreadPriority" Type="1">128</Property>
-      <Property LongName="Player_1.Reverse_1.output.video_stream_copy_output_buffer" Type="1">0</Property>
-    </Output>
-    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:\Users\user\OneDrive - ESTACA\Desktop\ESTAPARK2023\RTMapsYOLOv7\VSACPIETON\20230228_113050_RecFile_1\RecFile_1_20230228_113050.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_113050_RecFile_1/RecFile_1_20230228_113050.rec]]></Relative></Property>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/RecFile_1_20230228_120518.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/RecFile_1_20230228_120518.rec]]></Relative></Property>
     <Property LongName="Player_1.offset" Type="1">0</Property>
     <Property LongName="Player_1.beginning" Type="1">0</Property>
     <Property LongName="Player_1.end" Type="1">0</Property>
     <Property LongName="Player_1.timelag" Type="1">100000</Property>
     <Property LongName="Player_1.update" Type="0">true</Property>
-    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:\Users\user\OneDrive - ESTACA\Desktop\ESTAPARK2023\RTMapsYOLOv7\VSACPIETON\20230228_113050_RecFile_1/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">62992</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.first" Type="1">692072</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.last" Type="1">11126447</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.first" Type="1">576889</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.last" Type="1">20556574</ReadOnlyProperty>
     <Property LongName="Player_1.serverThreadPriority" Type="1">200</Property>
     <Property LongName="Player_1.mainClientThreadPriority" Type="1">200</Property>
     <Property LongName="Player_1.threaded" Type="0">true</Property>
     <Property LongName="Player_1.priority" Type="1">200</Property>
     <Property LongName="Player_1.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="Webcam_1" Model="Webcam" Version="2.7.0" x="80" y="80" z="0">
+  <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.5" x="584" y="248" z="0">
+    <Input LongName="TextViewer_1.input" Name="input">
+      <Property LongName="TextViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="TextViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="TextViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="TextViewer_1.run" Type="0">true</Property>
+    <Property LongName="TextViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="TextViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="TextViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="TextViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="TextViewer_1.x" Type="1">1304</Property>
+    <Property LongName="TextViewer_1.y" Type="1">14</Property>
+    <Property LongName="TextViewer_1.width" Type="1">400</Property>
+    <Property LongName="TextViewer_1.height" Type="1">300</Property>
+    <Property LongName="TextViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="TextViewer_1.background_color" Type="1" SubType="4">0</Property>
+    <Property LongName="TextViewer_1.font_color" Type="1" SubType="4">16777215</Property>
+    <Property LongName="TextViewer_1.maximumBlockCount" Type="1">0</Property>
+    <Property LongName="TextViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="TextViewer_1.appendLineFeedForNewData" Type="0">false</Property>
+    <Property LongName="TextViewer_1.fontSize" Type="1">10</Property>
+    <ReadOnlyProperty LongName="TextViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="TextViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="TextViewer_1.priority" Type="1">128</Property>
+    <Property LongName="TextViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Webcam_1" Model="Webcam" Version="2.7.0" x="168" y="88" z="0">
     <Output LongName="Webcam_1.outputIplImage" Name="outputIplImage">
       <Property LongName="Webcam_1.outputIplImage.subsampling" Type="1">1</Property>
       <Property LongName="Webcam_1.outputIplImage.fifosize" Type="1">16</Property>
@@ -497,18 +645,18 @@
     </Output>
     <Property LongName="Webcam_1.freezeConfiguration" Type="0">false</Property>
     <Property LongName="Webcam_1.device" Type="4"><![CDATA[1|0|HD Pro Webcam C920_0]]></Property>
-    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|0|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
+    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|32|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
     <Property LongName="Webcam_1.framerate" Type="1">-1</Property>
     <Property LongName="Webcam_1.force_output_IPL_BGR24" Type="0">true</Property>
     <Property LongName="Webcam_1.acquisition_mode" Type="4"><![CDATA[2|0|Continuous|Capture]]></Property>
     <Property LongName="Webcam_1.out_pin" Type="4"><![CDATA[2|0|Default|Capture]]></Property>
     <Property LongName="Webcam_1.list_devices_by" Type="4"><![CDATA[4|0|Friendly name + index suffix|Friendly name only|CLSID|DevicePath]]></Property>
-    <Property LongName="Webcam_1.reserved" Type="3" SubType="128"><![CDATA[device:1|0|HD Pro Webcam C920_0$videoFormat:35|23|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps$force_output_IPL_BGR24:true$out_pin:2|0|Default|Capture$list_devices_by:0$output:IPLImage]]></Property>
+    <Property LongName="Webcam_1.reserved" Type="3" SubType="128"><![CDATA[device:2|0|Integrated Camera_0|OBS Virtual Camera_1$videoFormat:27|0|MJPG 1280x720 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 424x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 640x480 - 30 fps|MJPG 848x480 - 30 fps|MJPG 960x540 - 30 fps|YUY2 1280x720 - 10 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 424x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 640x480 - 30 fps|YUY2 848x480 - 20 fps|YUY2 960x540 - 14 fps|RGB24 1280x720 - 10 fps|RGB24 320x180 - 30 fps|RGB24 320x240 - 30 fps|RGB24 352x288 - 30 fps|RGB24 424x240 - 30 fps|RGB24 640x360 - 30 fps|RGB24 640x480 - 30 fps|RGB24 848x480 - 20 fps|RGB24 960x540 - 14 fps$force_output_IPL_BGR24:true$out_pin:2|0|Default|Capturer$list_devices_by:0$output:IPLImage]]></Property>
     <Property LongName="Webcam_1.threaded" Type="0">true</Property>
     <Property LongName="Webcam_1.priority" Type="1">128</Property>
     <Property LongName="Webcam_1.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="Yolo_RTMaps" Model="PythonBridge" Version="3.2.0" x="528" y="192" z="0">
+  <Component InstanceName="Yolo_RTMaps" Model="PythonBridge" Version="3.2.0" x="328" y="88" z="0">
     <Input LongName="Yolo_RTMaps.image_in" Name="image_in">
       <Property LongName="Yolo_RTMaps.image_in.readerType" Type="1">0</Property>
       <Property LongName="Yolo_RTMaps.image_in.subsampling" Type="1">1</Property>
@@ -538,14 +686,9 @@
       <Property LongName="Yolo_RTMaps.label.fifosize" Type="1">16</Property>
       <Property LongName="Yolo_RTMaps.label.periodic" Type="0">false</Property>
     </Output>
-    <Output LongName="Yolo_RTMaps.Ids" Name="Ids">
-      <Property LongName="Yolo_RTMaps.Ids.subsampling" Type="1">1</Property>
-      <Property LongName="Yolo_RTMaps.Ids.fifosize" Type="1">16</Property>
-      <Property LongName="Yolo_RTMaps.Ids.periodic" Type="0">false</Property>
-    </Output>
     <Property LongName="Yolo_RTMaps.guard_begin" Type="0" SubType="128">true</Property>
     <Property LongName="Yolo_RTMaps.internalInputs" Type="3" SubType="128"><![CDATA[image_in;18==]]></Property>
-    <Property LongName="Yolo_RTMaps.internalOutputs" Type="3" SubType="128"><![CDATA[image_out;18==;0#boxes;9==;100#scores;11==;100#class_ids;9==;100#label;1==;100#Ids;1==;100]]></Property>
+    <Property LongName="Yolo_RTMaps.internalOutputs" Type="3" SubType="128"><![CDATA[image_out;18==;0#boxes;9==;100#scores;11==;100#class_ids;9==;100#label;1==;100]]></Property>
     <Property LongName="Yolo_RTMaps.internalProperties" Type="3" SubType="128"><![CDATA[Yolo_version||13||3|2|yolov7_384x640.onnx|yolov7_480x640.onnx|yolov7-tiny_384x640.onnx||24]]></Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
@@ -553,15 +696,16 @@
     <Property LongName="Yolo_RTMaps.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">5696</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">4800</ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yolo_RTMaps.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Yolo_RTMaps.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/Yolo_RTMaps.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/Yolo_RTMaps.py]]></Relative></Property>
-    <Property LongName="Yolo_RTMaps.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <Property LongName="Yolo_RTMaps.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/Yolo_RTMaps2.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/Yolo_RTMaps2.py]]></Relative></Property>
+    <Property LongName="Yolo_RTMaps.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <Property LongName="Yolo_RTMaps.synchroTolerance" Type="1" SubType="1">0</Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.Yolo_version" Type="4"><![CDATA[3|2|yolov7_384x640.onnx|yolov7_480x640.onnx|yolov7-tiny_384x640.onnx]]></Property>
@@ -578,33 +722,20 @@
   <Connection Output="BlocTracking.tIds" Input="BlocTrackingImage2Objets.tIds"/>
   <Connection Output="BlocTracking.tBoxes" Input="BlocTrackingImage2Objets.tBoxes"/>
   <Connection Output="BlocTracking.tClassIds" Input="BlocTrackingImage2Objets.tClassIds"/>
-  <Connection Output="BlocCheckPieton.PietonInROI" Input="DataViewer_1.input_0"/>
+  <Connection Output="BlocTracking.tIds" Input="DataViewer_1.input_0"/>
+  <Connection Output="BlocTracking.tBoxes" Input="DataViewer_1.input_1"/>
+  <Connection Output="BlocTracking.tClassIds" Input="DataViewer_1.input_2"/>
+  <Connection Output="BlocCheckPieton.PietonInROI" Input="DataViewer_1_1.input_0"/>
   <Connection Output="BlocTrackingImage2Objets.Objects" Input="GL2_3D_Viewer_1.real_objects_2"/>
+  <Connection Output="BlocTrackingImage2Objets.Objects" Input="GL2_3D_Viewer_3.real_objects_2"/>
   <Connection Output="BlocTracking.outImage" Input="ImageViewer_1.input"/>
-  <Connection Output="OpenCV_Resize_1_1.imageOut" Input="ImageViewer_1_1.input"/>
-  <Connection Output="Yolo_RTMaps.image_out" Input="OpenCV_Resize_1_1.imageIn"/>
-  <Connection Output="Webcam_1.outputIplImage" Input="OpenCV_Resize_1_1_1.imageIn"/>
-  <Connection Output="OpenCV_Resize_1_1_1.imageOut" Input="Yolo_RTMaps.image_in"/>
+  <Connection Output="Yolo_RTMaps.label" Input="TextViewer_1.input"/>
+  <Connection Output="Webcam_1.outputIplImage" Input="Yolo_RTMaps.image_in"/>
   <RTBoardView ID="JavaStudio1.0">
-    <ComponentBox InstanceName="BlocCheckPieton_1" reversed="false">
+    <ComponentBox InstanceName="DataViewer_1_1" reversed="false">
       <Description/>
     </ComponentBox>
-    <ComponentBox InstanceName="BlocTrackingImage2Objets_1" reversed="false">
-      <Description/>
-    </ComponentBox>
-    <ComponentBox InstanceName="ImageViewer_1_1" reversed="false">
-      <Description/>
-    </ComponentBox>
-    <ComponentBox InstanceName="OpenCV_Resize_1_1" reversed="false">
-      <Description/>
-    </ComponentBox>
-    <ComponentBox InstanceName="OpenCV_Resize_1_1_1" reversed="false">
-      <Description/>
-    </ComponentBox>
-    <ComponentBox InstanceName="PythonBridge_1_1" reversed="false">
-      <Description/>
-    </ComponentBox>
-    <ComponentBox InstanceName="PythonBridge_1_2" reversed="false">
+    <ComponentBox InstanceName="PythonBridge_3_1" reversed="false">
       <Description/>
     </ComponentBox>
     <ConnectionShape InstanceName="BlocCheckPieton.Objets" color="0"/>
@@ -616,13 +747,17 @@
     <ConnectionShape InstanceName="BlocTrackingImage2Objets.tClassIds" color="0"/>
     <ConnectionShape InstanceName="BlocTrackingImage2Objets.tIds" color="0"/>
     <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1_1.input_0" color="0"/>
     <ConnectionShape InstanceName="GL2_3D_Viewer_1.real_objects_2" color="0"/>
+    <ConnectionShape InstanceName="GL2_3D_Viewer_3.real_objects_2" color="0"/>
     <ConnectionShape InstanceName="ImageViewer_1.input" color="0"/>
-    <ConnectionShape InstanceName="ImageViewer_1_1.input" color="0"/>
-    <ConnectionShape InstanceName="OpenCV_Resize_1_1.imageIn" color="0"/>
-    <ConnectionShape InstanceName="OpenCV_Resize_1_1_1.imageIn" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_1.in" color="0"/>
-    <ConnectionShape InstanceName="RecFile_1.Screenshot_1.output.input" color="0"/>
+    <ConnectionShape InstanceName="PythonBridge_5.Ids" color="0"/>
+    <ConnectionShape InstanceName="Splitter_1.input" color="0"/>
+    <ConnectionShape InstanceName="Splitter_2.input" color="0"/>
+    <ConnectionShape InstanceName="TextViewer_1.input" color="0"/>
     <ConnectionShape InstanceName="Yolo_RTMaps.image_in" color="0"/>
   </RTBoardView>
 </RTMapsDiagram>

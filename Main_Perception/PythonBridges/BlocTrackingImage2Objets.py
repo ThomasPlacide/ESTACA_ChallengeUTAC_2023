@@ -159,7 +159,6 @@ class rtmaps_python(BaseComponent):
         
     def Core(self):
         # Lecture des entrees / Initialisation de la sortie / Allocation memoire tableau
-        
         iDs = self.inputs["tIds"].ioelt.data
         classIDs = self.inputs["tClassIds"].ioelt.data
         iBoxes = self.inputs["tBoxes"].ioelt.data
@@ -177,7 +176,6 @@ class rtmaps_python(BaseComponent):
         
         # Traitement des boites
         Boxes = [iBoxes[i*4:i*4+4] for i,id in enumerate(iDs)]
-        
 
         # Boucler pour chaque track la distance et créer un RealObjet, ajouter ce realObjext au tableau
         if(nObjets > 0):
@@ -186,7 +184,7 @@ class rtmaps_python(BaseComponent):
                 newObjet = rtmaps.types.RealObject() #On créé un nouvel objet
                 newObjet.kind = 0  
                 newObjet.id = tID #Attribution ID
-                newObjet.color = (0 << 16) + (0 << 8) + 255 #Couleur de l'objet
+                newObjet.color = 0xFCFF00 #Couleur de l'objet
 
                 pixel = (Box[0]+Box[2]/2.0,Box[1]+Box[3]) #On prend le pixel du segment bas au mileu de la boite
                 
@@ -206,24 +204,10 @@ class rtmaps_python(BaseComponent):
                 
                 #Classification de l'objet dans misc1
                 newObjet.misc1 = classID
-                
-             
-
-                newObjet.data.theta = 0.0
-                newObjet.data.speed = 0.0
-      
-                newObjet.data.model = 0
-                newObjet.data.braking = False
-                newObjet.data.confidence = 0.0
-                newObjet.data.dx = 0.0
-                newObjet.data.dy = 0.0
-                newObjet.data.dz = 0.0
 
                 #Ajout dans le tableau de sortie
                 objectsOut.data.append(newObjet)
-                
             self.outputs["Objects"].write(objectsOut)
-            print("HiObject",objectsOut)
 
         # Si pas d'objet on renvoi un objet qui n'existe pas vraiment, de coordonnées (-100,0). 
         # Car les données du temps precedent sont envoyés à l'infini quand on

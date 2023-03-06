@@ -12,6 +12,9 @@ from numpy.core.fromnumeric import transpose
 from numpy.lib.twodim_base import eye
 from numpy.linalg import inv
 import copy as cp
+from PIL import Image as im
+import copy as cp
+from yolov7 import YOLOv7
 
 ###################
 # FONCTIONS PERSO #
@@ -158,8 +161,8 @@ def drawImage(Frame,cIds,tIds,Boxes):
 		x1,y1,x2,y2 = yoloBox_to_corner(Box)
 		y3 = int(abs(y1 -2))
 		text = str(tId) + ", " + classes[cId]
-		Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
-		Frame = cv2.putText(Frame,text,(x1,int(y3)),cv2.FONT_HERSHEY_DUPLEX,0.5,(255,255,255))
+		#Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+		#Frame = cv2.putText(Frame,text,(x1,int(y3)),cv2.FONT_HERSHEY_DUPLEX,0.5,(255,255,255))
 
 	return Frame
 
@@ -246,6 +249,7 @@ class rtmaps_python(BaseComponent):
 		self.add_input("Boxes", rtmaps.types.UINTEGER64) 
 		self.add_input("Ids", rtmaps.types.UINTEGER64)
 		self.add_input("Image",rtmaps.types.IPL_IMAGE)
+		self.add_input("Scores",rtmaps.types.ANY)
 
 		#SORTIES
 		self.add_output("outImage",rtmaps.types.IPL_IMAGE)
@@ -403,8 +407,9 @@ class rtmaps_python(BaseComponent):
 		#On affiche sur l'image, les boites, l'ID de track, et la classe de l'objet
 		ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
 		
+
 		#On ecrit les données sur la sortie
-		self.outputs["outImage"].write(ImageOut,t2)
+		self.outputs["outImage"].write(ImageOut)
 		self.outputs["tIds"].write(np.array(self.trackingIds,dtype=np.uint64),t2) 
 		self.outputs["tBoxes"].write(np.array(self.trackingBoxes,dtype=np.uint64).flatten().squeeze(),t2)
 		self.outputs["tClassIds"].write(np.array(self.classIds,dtype=np.uint64),t2)
