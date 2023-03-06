@@ -3,7 +3,7 @@ import rtmaps.types
 import numpy as np
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
-from rtmaps.base_component import BaseComponent # base class 
+from rtmaps.base_component import BaseComponent # base class
 import cv2
 from PIL import Image as im
 import copy as cp
@@ -18,6 +18,31 @@ class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'tra
                'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
                'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
                'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+
+# Filtrer les ids 0:2
+
+class CameraObject:
+    def __init__(self):
+        
+        self.scores = scores
+        self.boxes = boxes
+        self.class_ids = class_ids
+    pass
+    
+
+
+def filteredIds(input):
+    """
+    Récupère flux d'information, ne ressort que les IDs intéréssants.
+    input = <CameraObjects>
+    """
+    
+    for i in range(len(input)):
+        if (input.class_ids is in [0, 1, 2]):
+            class_ids = input
+        else:
+            pass
+    return class_ids
 
 def prepareBoxes(array,indexes):
     #Fonction permettant de preparer les bonnes boites 
@@ -105,9 +130,12 @@ class rtmaps_python(BaseComponent):
         #--------------------------------------------------
         frame = self.inputs["image_in"].ioelt.data
         timestamp = self.inputs["image_in"].ioelt.ts
-        boxes, scores, class_ids = self.yolov7_detector(frame.image_data)
-        #print(scores)
+        ### boxes, scores, class_ids = self.yolov7_detector(frame.image_data)
+        CameraObject_ = self.yolov7_detector(frame.image_data)
+        filteredIds
 
+
+        #print(scores)
         EmptyIoelt1.ts = timestamp
         EmptyIoelt2.ts = timestamp
 
