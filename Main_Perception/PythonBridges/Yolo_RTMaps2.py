@@ -24,9 +24,10 @@ class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'tra
 class CameraObject:
     def __init__(self):
         
-        self.scores = scores
-        self.boxes = boxes
-        self.class_ids = class_ids
+        self.scores = []
+        self.boxes = []
+        self.class_ids = []
+        
     pass
     
 
@@ -34,15 +35,16 @@ class CameraObject:
 def filteredIds(input):
     """
     Récupère flux d'information, ne ressort que les IDs intéréssants.
-    input = <CameraObjects>
+    input = <CameraObject>
     """
     
-    for i in range(len(input)):
-        if (input.class_ids is in [0, 1, 2]):
-            class_ids = input
-        else:
+    for i in range(len(input.class_ids)):
+        if (input.class_ids == any([0,1,2])):
             pass
-    return class_ids
+        else:
+            input.scores[i], input.boxes[i], input.class_ids[i] = []
+    pass
+pass
 
 def prepareBoxes(array,indexes):
     #Fonction permettant de preparer les bonnes boites 
@@ -107,8 +109,9 @@ class rtmaps_python(BaseComponent):
         ind=self.properties["Yolo_version"].data
         model_path = "models/"+Choix_yolo[ind]
         self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5) 
+        self.CmrObject = CameraObject()
               
-        #
+        
         # Initialize YOLOv7 object detector
         #boxes, scores, class_ids = yolov7_detector(image)
 
@@ -130,9 +133,8 @@ class rtmaps_python(BaseComponent):
         #--------------------------------------------------
         frame = self.inputs["image_in"].ioelt.data
         timestamp = self.inputs["image_in"].ioelt.ts
-        ### boxes, scores, class_ids = self.yolov7_detector(frame.image_data)
-        CameraObject_ = self.yolov7_detector(frame.image_data)
-        filteredIds
+        self.CmrObject.boxes, self.CmrObject.scores, self.CmrObject.class_ids = self.yolov7_detector(frame.image_data)
+        # filteredIds
 
 
         #print(scores)
@@ -143,8 +145,8 @@ class rtmaps_python(BaseComponent):
         EmptyIoelt2.data = np.array([],dtype=np.float64)
 
         Ids=[]
-        if boxes!=[]:
-            for i in range(0,len(boxes)):
+        if self.CmrObject.boxes!=[]:
+            for i in range(0,len(self.CmrObject.boxes)):
                 Ids.append(i)
 
         #print(Ids)                
@@ -154,26 +156,26 @@ class rtmaps_python(BaseComponent):
         combined_img.ts=timestamp
         self.outputs["image_out"].write(combined_img) 
 
-        boxesOut.data = prepareBoxes(boxes,Ids)
-        classIdsOut.data = prepareIds(class_ids,Ids)
+        boxesOut.data = prepareBoxes(self.CmrObject.boxes,Ids)
+        classIdsOut.data = prepareIds(self.CmrObject.class_ids,Ids)
         boxesOut.ts = timestamp
         classIdsOut.ts = timestamp
 
-        scoresOut.data = prepareConfs(scores,Ids)
+        scoresOut.data = prepareConfs(self.CmrObject.scores,Ids)
         scoresOut.ts = timestamp
         #boxes = np.array(boxes,dtype=np.float64)
         #boxes = boxes.flatten()
-        #scores = np.array(scores,dtype=np.float64)
-        #scores = scores.flatten()
-        #class_ids = np.array(class_ids,dtype=np.int64)
-        #class_ids = class_ids.flatten()
+        #self.CmrObject.scores = np.array(self.CmrObject.scores,dtype=np.float64)
+        #self.CmrObject.scores = self.CmrObject.scores.flatten()
+        #self.CmrObject.class_ids = np.array(self.CmrObject.class_ids,dtype=np.int64)
+        #self.CmrObject.class_ids = self.CmrObject.class_ids.flatten()
         
 
         if len(classIdsOut.data >0):
             self.outputs["boxes"].write(boxesOut) 
             self.outputs["scores"].write(scoresOut) 
             self.outputs["class_ids"].write(classIdsOut) 
-            for i in class_ids:
+            for i in self.CmrObject.class_ids:
                 self.outputs["label"].write(class_names[i]+"\n") # and write it to the output
         else:
            self.outputs["boxes"].write(EmptyIoelt1)
