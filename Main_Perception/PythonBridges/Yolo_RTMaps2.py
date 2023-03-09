@@ -38,13 +38,12 @@ def filteredIds(input: CameraObject) -> CameraObject:
     input = <CameraObject>
     """
     
-    for i in range(len(input.class_ids)):
-        if (input.class_ids[i] > 2): 
-            input.scores[i] = []
-            input.boxes[i] = []
-            input.class_ids[i] = []
-        else:
-            pass
+    ind=np.where(input.class_ids > 3)[0]
+
+    input.scores=np.delete(input.scores,ind)
+    input.boxes=np.delete(input.boxes,ind)
+    input.class_ids=np.delete(input.class_ids,ind)
+   
         
     return input
 
@@ -146,12 +145,13 @@ class rtmaps_python(BaseComponent):
         EmptyIoelt1.data = np.array([],dtype=np.uint64)
         EmptyIoelt2.data = np.array([],dtype=np.float64)
 
+        
+
         Ids=[]
-        if self.CmrObject.boxes!=[]:
-            for i in range(0,len(self.CmrObject.boxes)):
+        if self.CmrObject.class_ids!=[]:
+            for i in range(0,len(self.CmrObject.class_ids)):
                 Ids.append(i)
 
-        #print(Ids)                
         
         combined_img=cp.copy(frame)
         combined_img.image_data = self.yolov7_detector.draw_detections(frame.image_data)
