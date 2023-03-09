@@ -46,7 +46,7 @@
     <Property LongName="BlocCheckPieton.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">9928</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">10908</ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocCheckPieton.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocCheckPieton.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -110,7 +110,7 @@
     <Property LongName="BlocTracking.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTracking.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocTracking.memorySize" Type="1">20644480</Property>
-    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">13432</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTracking.pythonPID" Type="1">9008</ReadOnlyProperty>
     <Property LongName="BlocTracking.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTracking.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTracking.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -157,7 +157,7 @@
     <Property LongName="BlocTrackingImage2Objets.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">8872</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">11340</ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="BlocTrackingImage2Objets.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -539,7 +539,7 @@
     <ReadOnlyProperty LongName="GL2_3D_Viewer_3.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_3.threaded" Type="0">true</Property>
     <Property LongName="GL2_3D_Viewer_3.priority" Type="1">128</Property>
-    <Property LongName="GL2_3D_Viewer_3.autoStart" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_3.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="840" y="-88" z="0">
     <Input LongName="ImageViewer_1.input" Name="input">
@@ -561,8 +561,8 @@
       <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
       <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="ImageViewer_1.left" Type="1">99</Property>
-    <Property LongName="ImageViewer_1.top" Type="1">747</Property>
+    <Property LongName="ImageViewer_1.left" Type="1">353</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">23</Property>
     <Property LongName="ImageViewer_1.width" Type="1">0</Property>
     <Property LongName="ImageViewer_1.height" Type="1">0</Property>
     <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
@@ -582,29 +582,182 @@
     <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="232" y="320" z="0">
-    <Output LongName="Player_1.Screenshot_1.output" Name="Screenshot_1.output">
-      <Property LongName="Player_1.Screenshot_1.output.subsampling" Type="1">1</Property>
-      <Property LongName="Player_1.Screenshot_1.output.fifosize" Type="1">4</Property>
-      <Property LongName="Player_1.Screenshot_1.output.periodic" Type="0">false</Property>
+    <Output LongName="Player_1.can_CTRL.out" Name="can_CTRL.out">
+      <Property LongName="Player_1.can_CTRL.out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can_CTRL.out.fifosize" Type="1">256</Property>
+      <Property LongName="Player_1.can_CTRL.out.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/RecFile_1_20230228_120518.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/RecFile_1_20230228_120518.rec]]></Relative></Property>
+    <Output LongName="Player_1.twizy_CTRL_1.oCAN_CTRL" Name="twizy_CTRL_1.oCAN_CTRL">
+      <Property LongName="Player_1.twizy_CTRL_1.oCAN_CTRL.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.twizy_CTRL_1.oCAN_CTRL.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.twizy_CTRL_1.oCAN_CTRL.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.can_kvaser_0_front.out" Name="can_kvaser_0_front.out">
+      <Property LongName="Player_1.can_kvaser_0_front.out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can_kvaser_0_front.out.fifosize" Type="1">256</Property>
+      <Property LongName="Player_1.can_kvaser_0_front.out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.can_kvaser_1_left.out" Name="can_kvaser_1_left.out">
+      <Property LongName="Player_1.can_kvaser_1_left.out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can_kvaser_1_left.out.fifosize" Type="1">256</Property>
+      <Property LongName="Player_1.can_kvaser_1_left.out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.can_kvaser_2_right.out" Name="can_kvaser_2_right.out">
+      <Property LongName="Player_1.can_kvaser_2_right.out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can_kvaser_2_right.out.fifosize" Type="1">256</Property>
+      <Property LongName="Player_1.can_kvaser_2_right.out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.can_kvaser_3_rear.out" Name="can_kvaser_3_rear.out">
+      <Property LongName="Player_1.can_kvaser_3_rear.out.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.can_kvaser_3_rear.out.fifosize" Type="1">256</Property>
+      <Property LongName="Player_1.can_kvaser_3_rear.out.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Reverse_1.output" Name="Reverse_1.output">
+      <Property LongName="Player_1.Reverse_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Reverse_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Reverse_1.output.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.Reverse_1.output.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.Reverse_1.output.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.Reverse_1.output.threaded" Type="0">true</Property>
+      <Property LongName="Player_1.Reverse_1.output.priority" Type="1">128</Property>
+      <Property LongName="Player_1.Reverse_1.output.replayThreadPriority" Type="1">128</Property>
+      <Property LongName="Player_1.Reverse_1.output.video_stream_copy_output_buffer" Type="1">0</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed" Name="CANDecoder_1.FAAR_CANV_1_VehicleSpeed">
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle" Name="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle">
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Braking_Torque_Provided" Name="CANDecoder_1.FAAR_CANV_1_Braking_Torque_Provided">
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Braking_Torque_Provided.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Braking_Torque_Provided.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Braking_Torque_Provided.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Motor_Torque_Provided" Name="CANDecoder_1.FAAR_CANV_1_Motor_Torque_Provided">
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Motor_Torque_Provided.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Motor_Torque_Provided.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_Motor_Torque_Provided.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.GPS_NMEA0183_1.oPosition" Name="GPS_NMEA0183_1.oPosition">
+      <Property LongName="Player_1.GPS_NMEA0183_1.oPosition.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.GPS_NMEA0183_1.oPosition.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.GPS_NMEA0183_1.oPosition.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.WGS84toLAMBERT_1.Lambert_m" Name="WGS84toLAMBERT_1.Lambert_m">
+      <Property LongName="Player_1.WGS84toLAMBERT_1.Lambert_m.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.WGS84toLAMBERT_1.Lambert_m.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.WGS84toLAMBERT_1.Lambert_m.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_CompuuteHeading_1.heading_rad" Name="ESTAPARK_CompuuteHeading_1.heading_rad">
+      <Property LongName="Player_1.ESTAPARK_CompuuteHeading_1.heading_rad.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_CompuuteHeading_1.heading_rad.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_CompuuteHeading_1.heading_rad.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Dijkstra_1.WayPoints_IDs" Name="Dijkstra_1.WayPoints_IDs">
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_IDs.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_IDs.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_IDs.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Dijkstra_1.WayPoints_X" Name="Dijkstra_1.WayPoints_X">
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_X.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_X.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_X.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Dijkstra_1.WayPoints_Y" Name="Dijkstra_1.WayPoints_Y">
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_Y.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_Y.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_Y.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.Dijkstra_1.WayPoints_PSI" Name="Dijkstra_1.WayPoints_PSI">
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_PSI.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_PSI.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.Dijkstra_1.WayPoints_PSI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_X" Name="ESTAPARK_Trajectory_1.trajectory_X">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_X.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_X.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_X.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_Y" Name="ESTAPARK_Trajectory_1.trajectory_Y">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_Y.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_Y.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_Y.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_YAW" Name="ESTAPARK_Trajectory_1.trajectory_YAW">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_YAW.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_YAW.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_YAW.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_SPEED" Name="ESTAPARK_Trajectory_1.trajectory_SPEED">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_SPEED.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_SPEED.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_SPEED.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_TIME" Name="ESTAPARK_Trajectory_1.trajectory_TIME">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_TIME.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_TIME.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_TIME.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_PRND" Name="ESTAPARK_Trajectory_1.trajectory_PRND">
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_PRND.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_PRND.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_Trajectory_1.trajectory_PRND.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_CTRL_1.requested_PRND_gear_position" Name="ESTAPARK_CTRL_1.requested_PRND_gear_position">
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.requested_PRND_gear_position.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.requested_PRND_gear_position.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.requested_PRND_gear_position.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_CTRL_1.target_steering_angle_rad" Name="ESTAPARK_CTRL_1.target_steering_angle_rad">
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_steering_angle_rad.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_steering_angle_rad.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_steering_angle_rad.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.ESTAPARK_CTRL_1.target_speed_km_h" Name="ESTAPARK_CTRL_1.target_speed_km_h">
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_speed_km_h.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_speed_km_h.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.ESTAPARK_CTRL_1.target_speed_km_h.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.UDPSocket_1.output" Name="UDPSocket_1.output">
+      <Property LongName="Player_1.UDPSocket_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.UDPSocket_1.output.fifosize" Type="1">128</Property>
+      <Property LongName="Player_1.UDPSocket_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.hdl_64e_s2_convert_to_XYZ_1.XYZ_points" Name="hdl_64e_s2_convert_to_XYZ_1.XYZ_points">
+      <Property LongName="Player_1.hdl_64e_s2_convert_to_XYZ_1.XYZ_points.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.hdl_64e_s2_convert_to_XYZ_1.XYZ_points.fifosize" Type="1">8</Property>
+      <Property LongName="Player_1.hdl_64e_s2_convert_to_XYZ_1.XYZ_points.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Player_1.TCPClient_1.output" Name="TCPClient_1.output">
+      <Property LongName="Player_1.TCPClient_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Player_1.TCPClient_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Player_1.TCPClient_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:\Users\user\OneDrive - ESTACA\Documents\RecFile\20220407_140018_RecFile_1_ok_piste_urbaine\RecFile_1_20220407_140018.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../RecFile/20220407_140018_RecFile_1_ok_piste_urbaine/RecFile_1_20220407_140018.rec]]></Relative></Property>
     <Property LongName="Player_1.offset" Type="1">0</Property>
     <Property LongName="Player_1.beginning" Type="1">0</Property>
     <Property LongName="Player_1.end" Type="1">0</Property>
     <Property LongName="Player_1.timelag" Type="1">100000</Property>
     <Property LongName="Player_1.update" Type="0">true</Property>
-    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7/VSACPIETON/20230228_120518_RecFile_1/]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:\Users\user\OneDrive - ESTACA\Documents\RecFile\20220407_140018_RecFile_1_ok_piste_urbaine/]]></ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">118400</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.first" Type="1">576889</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.last" Type="1">20556574</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.first" Type="1">440834</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.last" Type="1">352714878</ReadOnlyProperty>
     <Property LongName="Player_1.serverThreadPriority" Type="1">200</Property>
     <Property LongName="Player_1.mainClientThreadPriority" Type="1">200</Property>
     <Property LongName="Player_1.threaded" Type="0">true</Property>
     <Property LongName="Player_1.priority" Type="1">200</Property>
-    <Property LongName="Player_1.autoStart" Type="0">false</Property>
+    <Property LongName="Player_1.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="TextViewer_1" Model="TextViewer" Version="2.0.5" x="584" y="248" z="0">
     <Input LongName="TextViewer_1.input" Name="input">
@@ -644,7 +797,7 @@
       <Property LongName="Webcam_1.outputIplImage.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="Webcam_1.freezeConfiguration" Type="0">false</Property>
-    <Property LongName="Webcam_1.device" Type="4"><![CDATA[1|0|HD Pro Webcam C920_0]]></Property>
+    <Property LongName="Webcam_1.device" Type="4"><![CDATA[2|0|HD Pro Webcam C920_0|OBS Virtual Camera_1]]></Property>
     <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|32|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
     <Property LongName="Webcam_1.framerate" Type="1">-1</Property>
     <Property LongName="Webcam_1.force_output_IPL_BGR24" Type="0">true</Property>
@@ -654,7 +807,7 @@
     <Property LongName="Webcam_1.reserved" Type="3" SubType="128"><![CDATA[device:2|0|Integrated Camera_0|OBS Virtual Camera_1$videoFormat:27|0|MJPG 1280x720 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 424x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 640x480 - 30 fps|MJPG 848x480 - 30 fps|MJPG 960x540 - 30 fps|YUY2 1280x720 - 10 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 424x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 640x480 - 30 fps|YUY2 848x480 - 20 fps|YUY2 960x540 - 14 fps|RGB24 1280x720 - 10 fps|RGB24 320x180 - 30 fps|RGB24 320x240 - 30 fps|RGB24 352x288 - 30 fps|RGB24 424x240 - 30 fps|RGB24 640x360 - 30 fps|RGB24 640x480 - 30 fps|RGB24 848x480 - 20 fps|RGB24 960x540 - 14 fps$force_output_IPL_BGR24:true$out_pin:2|0|Default|Capturer$list_devices_by:0$output:IPLImage]]></Property>
     <Property LongName="Webcam_1.threaded" Type="0">true</Property>
     <Property LongName="Webcam_1.priority" Type="1">128</Property>
-    <Property LongName="Webcam_1.autoStart" Type="0">true</Property>
+    <Property LongName="Webcam_1.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="Yolo_RTMaps" Model="PythonBridge" Version="3.2.0" x="328" y="88" z="0">
     <Input LongName="Yolo_RTMaps.image_in" Name="image_in">
@@ -696,7 +849,7 @@
     <Property LongName="Yolo_RTMaps.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">4800</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">10560</ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
     <ReadOnlyProperty LongName="Yolo_RTMaps.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Yolo_RTMaps.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
@@ -730,7 +883,9 @@
   <Connection Output="BlocTrackingImage2Objets.Objects" Input="GL2_3D_Viewer_3.real_objects_2"/>
   <Connection Output="BlocTracking.outImage" Input="ImageViewer_1.input"/>
   <Connection Output="Yolo_RTMaps.label" Input="TextViewer_1.input"/>
-  <Connection Output="Webcam_1.outputIplImage" Input="Yolo_RTMaps.image_in"/>
+  <Connection Output="Player_1.Reverse_1.output" Input="Yolo_RTMaps.image_in">
+    <Replay Method="video_file"/>
+  </Connection>
   <RTBoardView ID="JavaStudio1.0">
     <ComponentBox InstanceName="DataViewer_1_1" reversed="false">
       <Description/>
