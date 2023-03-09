@@ -39,11 +39,13 @@ def filteredIds(input: CameraObject) -> CameraObject:
     """
     
     for i in range(len(input.class_ids)):
-        if (input.class_ids == any([0,1,2])):
-            pass
+        if (input.class_ids[i] > 2): 
+            input.scores[i] = []
+            input.boxes[i] = []
+            input.class_ids[i] = []
         else:
-            input.scores[i], input.boxes[i], input.class_ids[i] = []
-    pass
+            pass
+        
     return input
 
 def prepareBoxes(array,indexes):
