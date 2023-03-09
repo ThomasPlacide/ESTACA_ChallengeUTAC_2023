@@ -32,7 +32,7 @@ class CameraObject:
     
 
 
-def filteredIds(input):
+def filteredIds(input: CameraObject) -> CameraObject:
     """
     Récupère flux d'information, ne ressort que les IDs intéréssants.
     input = <CameraObject>
@@ -44,7 +44,7 @@ def filteredIds(input):
         else:
             input.scores[i], input.boxes[i], input.class_ids[i] = []
     pass
-pass
+    return input
 
 def prepareBoxes(array,indexes):
     #Fonction permettant de preparer les bonnes boites 
@@ -134,7 +134,7 @@ class rtmaps_python(BaseComponent):
         frame = self.inputs["image_in"].ioelt.data
         timestamp = self.inputs["image_in"].ioelt.ts
         self.CmrObject.boxes, self.CmrObject.scores, self.CmrObject.class_ids = self.yolov7_detector(frame.image_data)
-        # filteredIds
+        self.CmrObject = filteredIds(self.CmrObject)
 
 
         #print(scores)
