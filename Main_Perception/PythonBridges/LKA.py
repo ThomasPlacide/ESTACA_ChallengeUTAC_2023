@@ -1,6 +1,10 @@
 
 import LKA_lib as L
-import numpy as np 
+import rtmaps.types
+import numpy as np
+import rtmaps.core as rt 
+import rtmaps.reading_policy 
+from rtmaps.base_component import BaseComponent 
 
 def Weightener(Image): 
     '''
@@ -31,3 +35,29 @@ def Weightener(Image):
     WeightedImage = L.weighted_img(HoughLines, Image, α=0.8, β=1., γ=0.)
     
     return WeightedImage
+
+class rtmaps_python(BaseComponent):
+    def __init__(self):
+        BaseComponent.__init__(self) 
+
+    def Dynamic(self):
+        #Entree
+        self.add_input("Image", rtmaps.types.REAL_OBJECT)
+
+        #Sortie
+        self.add_output("ImageTraitee", rtmaps.types.AUTO)
+        self.add_output("CoordonneesLignes", rtmaps.types.AUTO) 
+
+    # Birth() will be called once at diagram execution startup
+    def Birth(self):
+        pass
+
+    # Core() is called every time you have a new input
+    def Core(self):
+        pass
+
+       
+    # Death() will be called once at diagram execution shutdown
+    def Death(self):
+        pass
+
