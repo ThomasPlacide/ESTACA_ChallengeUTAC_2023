@@ -38,8 +38,8 @@ def filteredIds(input: CameraObject) -> CameraObject:
     input = <CameraObject>
     """
     
-    ind=np.where(input.class_ids > 3)[0]
-
+#    ind=np.where(input.class_ids > 3)[0]
+    ind = [indexes > 3 for indexes in input.class_ids ]
     input.scores=np.delete(input.scores,ind)
     input.boxes=np.delete(input.boxes,ind)
     input.class_ids=np.delete(input.class_ids,ind)
