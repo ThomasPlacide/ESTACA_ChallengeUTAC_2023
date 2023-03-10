@@ -37,12 +37,12 @@ def filteredIds(input: CameraObject) -> CameraObject:
     Récupère flux d'information, ne ressort que les IDs intéréssants.
     input = <CameraObject>
     """
-    
-#    ind=np.where(input.class_ids > 3)[0]
-    ind = [indexes > 3 for indexes in input.class_ids ]
-    input.scores=np.delete(input.scores,ind)
-    input.boxes=np.delete(input.boxes,ind)
-    input.class_ids=np.delete(input.class_ids,ind)
+    if (input.scores!=[]):
+    #    ind=np.where(input.class_ids > 3)[0]
+        ind = [indexes > 3 for indexes in input.class_ids ]
+        input.scores=np.delete(input.scores,ind)
+        input.boxes=np.delete(input.boxes,ind, axis=0)
+        input.class_ids=np.delete(input.class_ids,ind)
    
         
     return input
@@ -129,13 +129,14 @@ class rtmaps_python(BaseComponent):
         EmptyIoelt1 = rtmaps.types.Ioelt()
         EmptyIoelt2 = rtmaps.types.Ioelt()
 
-        
 
         #--------------------------------------------------
         frame = self.inputs["image_in"].ioelt.data
         timestamp = self.inputs["image_in"].ioelt.ts
         self.CmrObject.boxes, self.CmrObject.scores, self.CmrObject.class_ids = self.yolov7_detector(frame.image_data)
+        
         self.CmrObject = filteredIds(self.CmrObject)
+        
 
 
         #print(scores)
@@ -145,10 +146,9 @@ class rtmaps_python(BaseComponent):
         EmptyIoelt1.data = np.array([],dtype=np.uint64)
         EmptyIoelt2.data = np.array([],dtype=np.float64)
 
-        
-
+       
         Ids=[]
-        if self.CmrObject.class_ids!=[]:
+        if len(self.CmrObject.class_ids)>0:
             for i in range(0,len(self.CmrObject.class_ids)):
                 Ids.append(i)
 
@@ -162,9 +162,11 @@ class rtmaps_python(BaseComponent):
         classIdsOut.data = prepareIds(self.CmrObject.class_ids,Ids)
         boxesOut.ts = timestamp
         classIdsOut.ts = timestamp
+        
 
         scoresOut.data = prepareConfs(self.CmrObject.scores,Ids)
         scoresOut.ts = timestamp
+       
         #boxes = np.array(boxes,dtype=np.float64)
         #boxes = boxes.flatten()
         #self.CmrObject.scores = np.array(self.CmrObject.scores,dtype=np.float64)
@@ -172,8 +174,8 @@ class rtmaps_python(BaseComponent):
         #self.CmrObject.class_ids = np.array(self.CmrObject.class_ids,dtype=np.int64)
         #self.CmrObject.class_ids = self.CmrObject.class_ids.flatten()
         
-
-        if len(classIdsOut.data >0):
+        if len(classIdsOut.data)>0:
+            print("hi")
             self.outputs["boxes"].write(boxesOut) 
             self.outputs["scores"].write(scoresOut) 
             self.outputs["class_ids"].write(classIdsOut) 
