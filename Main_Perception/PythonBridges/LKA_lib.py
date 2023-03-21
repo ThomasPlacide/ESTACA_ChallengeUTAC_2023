@@ -3,6 +3,7 @@ import matplotlib.image as mpimg
 import numpy as np
 import cv2
 import math
+from scipy.stats import linregress
 
 
 class Pipeline:
@@ -33,12 +34,12 @@ class Pipeline:
         Cropped = self.region_of_interest(Gray_Image, trapeze)
         # plt.imshow(Cropped, cmap='gray')
 
-        HoughLines = self.hough_lines(Cropped, rho=2, theta=np.pi/6, threshold=1, min_line_len=4, max_line_gap=25)
+        HoughLines, linesCoord = self.hough_lines(Cropped, rho=2, theta=np.pi/6, threshold=1, min_line_len=4, max_line_gap=25)
         # plt.imshow(HoughLines)
 
         WeightedImage = self.weighted_img(HoughLines, img, α=0.8, β=1., γ=0.)
         
-        return WeightedImage
+        return WeightedImage, linesCoord
 
     def grayscale(self, img):
         """Applies the Grayscale transform
@@ -100,20 +101,27 @@ class Pipeline:
         Lines are drawn on the image inplace (mutates the image).
         If you want to make the lines semi-transparent, think about combining
         this function with the weighted_img() function below
+
+        NOTE: Is linregress is suitable to find right and left averages slopes ? (https://docs.scipy.org/doc/scipy/reference/generated/scipy.stats.linregress.html)
         """
-    #     print(lines[0:2])
+        right_lines = []
+        left_lines = []
+
         for line in lines:
             for x1,y1,x2,y2 in line:
-    #             if x1 == x2: 
-    #                 pass
-    #             slope = (y2-y1)/(x2-x1)
-    #             if slope>.4: 
-    #                 right_lines.append([x1, y1])
-    #                 right_lines.append([x2, y2])
-    #             if slope<-.4: 
-    #                 left_lines.append([x1, y1])
-    #                 left_lines.append([x2, y2])
-                cv2.line(img, (x1, y1), (x2, y2), color, thickness)
+                if x1 == x2: 
+                    pass
+                slope = (y2-y1)/(x2-x1)
+                if slope>.4: 
+                    right_lines.append([x1, y1])
+                    right_lines.append([x2, y2])
+                if slope<-.4: 
+                    left_lines.append([x1, y1])
+                    left_lines.append([x2, y2])
+
+        RightSlope,RightIntercept, Rightr, Rightp, Rightse = linregress(right_lines)
+        LeftSlope, LeftIntercept, Leftr, Leftp, Leftse = linregress(left_lines)
+        cv2.line(img, RightSlope, LeftSlope, color, thickness)
 
     def hough_lines(self, img, rho, theta, threshold, min_line_len, max_line_gap):
         """
@@ -123,8 +131,8 @@ class Pipeline:
         """
         lines = cv2.HoughLinesP(img, rho, theta, threshold, np.array([]), minLineLength=min_line_len, maxLineGap=max_line_gap)
         line_img = np.zeros((img.shape[0], img.shape[1], 3), dtype=np.uint8)
-        draw_lines(line_img, lines)
-        return line_img
+        self.draw_lines(line_img, lines)
+        return line_img, lines
 
     # Python 3 has support for cool math symbols.
 

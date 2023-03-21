@@ -29,7 +29,9 @@ class rtmaps_python(BaseComponent):
 
     # Core() is called every time you have a new input
     def Core(self):
-        img = self.inputs["Image"].ioelt.dat
+        VideoFlux = self.inputs["Image"].ioelt.dat
+        TreatedImage, LinesCoor = Pipeline.ApplyPipeline(img=VideoFlux)
+
         pass
 
        
