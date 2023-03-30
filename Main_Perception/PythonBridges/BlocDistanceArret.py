@@ -3,6 +3,7 @@ import numpy as np
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent 
+import sys
 
 #################
 #FONCTIONS PERSO#
@@ -17,9 +18,9 @@ class DistanceArret:
         Formule empirique utilisé lors de l'apprentissage du code de la route.
         Vitesse à renseigner en km/h ! 
         """
-
+        
         return np.power( self.ConversionMpS2KMpH(speed)/10, 2)
-    
+
     def ConversionMpS2KMpH(self, speed): 
         """
         Conversion d'une vitesse m/s en km/h.
@@ -32,7 +33,7 @@ class DistanceArret:
         Estime la valeur en mètres du float renvoyé par la composante X des coordonées de l'objet détecté par la caméra.
         Essais approximatifs avec une webcam Logitech HD PRo Webcam C920
         """
-        coef_conv = 10*1/12
+        coef_conv = 10/12
 
         if coord_obj.x == -100: 
             return 0 
@@ -71,7 +72,7 @@ class rtmaps_python(BaseComponent):
         self.add_input("Objects", rtmaps.types.REAL_OBJECT) 
 
         # Ouputs
-        self.add_output("CommandeActionneurFrein", rtmaps.types.ANY)
+        self.add_output("CommandeActionneurFrein", rtmaps.types.AUTO)
 
     def Birth(self): 
         pass
@@ -83,9 +84,10 @@ class rtmaps_python(BaseComponent):
         print('BlocDistanceArret', DistanceArret().ComparaisonDistances(Obj, Speed))
 
         if DistanceArret().ComparaisonDistances(Obj, Speed): 
-            self.outputs["CommandeActionneurFrein"].write("1")
+            print('Distance violée')
+            self.outputs["CommandeActionneurFrein"].write(True)
         else: 
-            self.outputs["CommandeActionneurFrein"].write("0")
+            self.outputs["CommandeActionneurFrein"].write(False)
 
     def Death(self): 
         pass
