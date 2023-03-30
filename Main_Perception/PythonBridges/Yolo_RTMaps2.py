@@ -175,7 +175,6 @@ class rtmaps_python(BaseComponent):
         #self.CmrObject.class_ids = self.CmrObject.class_ids.flatten()
         
         if len(classIdsOut.data)>0:
-            print("hi")
             self.outputs["boxes"].write(boxesOut) 
             self.outputs["scores"].write(scoresOut) 
             self.outputs["class_ids"].write(classIdsOut) 

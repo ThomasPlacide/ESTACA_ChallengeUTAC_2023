@@ -123,10 +123,7 @@ class rtmaps_python(BaseComponent):
         self.force_reading_policy(rtmaps.reading_policy.SYNCHRO) #Pour lire les 3 entrees en même temps.
 
     def Dynamic(self):
-        pass
-
-    def Birth(self):
-        #ENTREES
+         #ENTREES
         self.add_input("tIds", rtmaps.types.UINTEGER64)
         self.add_input("tBoxes", rtmaps.types.UINTEGER64)
         self.add_input("tClassIds", rtmaps.types.UINTEGER64) 
@@ -138,6 +135,8 @@ class rtmaps_python(BaseComponent):
         self.add_property("Hauteur_camera_m",1.71)
         self.add_property("Inclinaison_deg",0.0)
         self.add_property("Choix_camera","4|0|Camera-USB|Camera-integree|Camera-4K|Camera-Twizzy",rtmaps.types.ENUM)
+
+    def Birth(self):
         
         #Lecture des proprietes camera (Choix de la camera pour paramètre intrinseques ET EXTRINSEQUES)
         self.h_cam = self.properties["Hauteur_camera_m"].data

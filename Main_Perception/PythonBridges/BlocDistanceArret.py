@@ -66,24 +66,26 @@ class rtmaps_python(BaseComponent):
         
 
     def Dynamic(self): 
-        pass
-
-    def Birth(self): 
         # Inputs
-        self.add_input("VehicleSpeed", rtmaps.types.UINTEGER64)
+        self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
         self.add_input("Objects", rtmaps.types.REAL_OBJECT) 
 
         # Ouputs
-        self.add_output("CommandeActionneurFrein", rtmaps.types.BOOL)
+        self.add_output("CommandeActionneurFrein", rtmaps.types.ANY)
+
+    def Birth(self): 
+        pass
     
     def Core(self): 
         Speed = self.inputs["VehicleSpeed"].ioelt.data
         Obj = self.inputs["Objects"].ioelt.data
 
+        print('BlocDistanceArret', DistanceArret().ComparaisonDistances(Obj, Speed))
+
         if DistanceArret().ComparaisonDistances(Obj, Speed): 
-            self.outputs["CommandeActionneurFrein"].write(True)
+            self.outputs["CommandeActionneurFrein"].write("1")
         else: 
-            self.outputs["CommandeActionneurFrein"].write(False)
+            self.outputs["CommandeActionneurFrein"].write("0")
 
     def Death(self): 
         pass
