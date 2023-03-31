@@ -56,6 +56,12 @@ class DistanceArret:
             
             return False
 
+class CameraCalibration: 
+    '''
+    Utiliser calibration camera à l'aide de la bibliothèque CV2
+    '''
+    def __init__(self) -> None:
+        pass
 #############
 #BLOC RTMAPS#
 #############
