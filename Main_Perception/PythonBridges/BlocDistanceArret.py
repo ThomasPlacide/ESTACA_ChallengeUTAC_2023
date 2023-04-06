@@ -18,7 +18,6 @@ class DistanceArret:
         Formule empirique utilisé lors de l'apprentissage du code de la route.
         Vitesse à renseigner en km/h ! 
         """
-        
         return np.power( self.ConversionMpS2KMpH(speed)/10, 2)
 
     def ConversionMpS2KMpH(self, speed): 
@@ -28,19 +27,16 @@ class DistanceArret:
 
         return speed*1e3/3600
     
-    def EstimationEnM(self, coord_obj: float): 
+    def EstimationEnM(self, coord_obj: rtmaps.types.REAL_OBJECT): 
         """
         Estime la valeur en mètres du float renvoyé par la composante X des coordonées de l'objet détecté par la caméra.
         Essais approximatifs avec une webcam Logitech HD PRo Webcam C920
         """
-        coef_conv = 10/12
 
-        if coord_obj.x == -100: 
-            return 0 
-        elif coord_obj.x < 5: 
-            return 0 
+        if coord_obj[0].x < 0: 
+            return 0  
         else: 
-            return (10-coord_obj.x)*coef_conv
+            return coord_obj[0].x # Distance réelle déjà calculée
             
     
     def ComparaisonDistances(self, coord_obj: rtmaps.types.REAL_OBJECT, speed) -> bool: 
@@ -69,25 +65,29 @@ class CameraCalibration:
 class rtmaps_python(BaseComponent): 
     def __init__(self) -> None:
         BaseComponent.__init__(self) # call base class constructor
-        self.force_reading_policy(rtmaps.reading_policy.SYNCHRO) #Pour lire les 3 entrees en même temps.
+        #self.force_reading_policy(rtmaps.reading_policy.SYNCHRO) #Pour lire les 3 entrees en même temps.
         
 
     def Dynamic(self): 
         # Inputs
-        self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
+        
+        #self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
         self.add_input("Objects", rtmaps.types.REAL_OBJECT) 
 
         # Ouputs
         self.add_output("CommandeActionneurFrein", rtmaps.types.AUTO)
+        
 
     def Birth(self): 
         pass
-    
+        
     def Core(self): 
-        Speed = self.inputs["VehicleSpeed"].ioelt.data
         Obj = self.inputs["Objects"].ioelt.data
+        #Speed = self.inputs["VehicleSpeed"].ioelt.data
+        Speed=25
 
-        print('BlocDistanceArret', DistanceArret().ComparaisonDistances(Obj, Speed))
+        #print('BlocDistanceArret', DistanceArret().ComparaisonDistances(Obj, Speed))
+        #print(Obj[0].x)
 
         if DistanceArret().ComparaisonDistances(Obj, Speed): 
             print('Distance violée')
