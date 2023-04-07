@@ -2,5 +2,8 @@
 Challenge UTAC 2023 
 
 
-## Avant de commit
-S'assurer de NE PAS commit des fichiers trop volumineux
+### Perception véhicule
+
+Le schéma bloc Yolo.rtd est capable de le mannequin de l'utac comme un piéton:
+
+<img src=Main_Perception/Images/Mannequin_UTAC_detect.gif>
