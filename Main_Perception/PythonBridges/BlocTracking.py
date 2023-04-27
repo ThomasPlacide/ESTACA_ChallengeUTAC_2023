@@ -253,9 +253,9 @@ class rtmaps_python(BaseComponent):
 
 		#SORTIES
 		self.add_output("outImage",rtmaps.types.IPL_IMAGE)
-		self.add_output("tIds",rtmaps.types.UINTEGER64,50)
-		self.add_output("tBoxes",rtmaps.types.UINTEGER64,200)
-		self.add_output("tClassIds",rtmaps.types.UINTEGER64,50)
+		self.add_output("tIds",rtmaps.types.UINTEGER64,500)
+		self.add_output("tBoxes",rtmaps.types.UINTEGER64,2000)
+		self.add_output("tClassIds",rtmaps.types.UINTEGER64,500)
 
 		#PROPRIETES
 		self.add_property("Temps_max_non_detec_sec",1.5)

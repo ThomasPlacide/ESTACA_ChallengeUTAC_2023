@@ -29,9 +29,11 @@ def cameraUSB():
     return camMat, distVec
 
 def cameraTwizzy():
-    camMat = np.matrix('1.2333307880480911e+003 0. 6.5608259821013826e+002; 0. 1.2419473055412493e+003 5.5885526096352805e+002 ;0. 0. 1.',dtype=np.float32)
-    distVec = np.array((-1.1903351805055828e-001, 1.9497572973143704e-001,
-    5.5272294360454990e-003, 3.8408944506890742e-003,7.9069991990030047e-003),dtype=np.float32)
+    # camMat = np.matrix('1.2333307880480911e+003 0. 6.5608259821013826e+002; 0. 1.2419473055412493e+003 5.5885526096352805e+002 ;0. 0. 1.',dtype=np.float32)
+    camMat = np.matrix('498.608787910998	0	320.214224026595; 0	501.376570341078	239.80564405617;0	0	1.', dtype=np.float32)
+    # distVec = np.array((-1.1903351805055828e-001, 1.9497572973143704e-001,
+    # 5.5272294360454990e-003, 3.8408944506890742e-003,7.9069991990030047e-003),dtype=np.float32)
+    distVec = np.array((0.205507749348631, -0.538550196466212, -0.00189031688941969,  -0.000292445745341019, 0.40952455096272), dtype=np.float32)
     return camMat,distVec
 
 #FONCTIONS UTILES AU CALCUL Pixel->Position
@@ -76,16 +78,15 @@ def pixel2World(p,zp,hauteur_cam,inclinaison_cam,camMat,distortion):
     input_P[0,0,1] = p[1]
     
     #Paramètres extrinsèques 
-    h = hauteur_cam    # Hauteur camera
 
     Roll = -90 - inclinaison_cam     #Rot sur x           
     Pitch = 0     #Rot sur y
     Yaw = 0       #Rot sur z
     
-    camPose = np.array([0,0,h])
+    camPose = np.array([0,0,hauteur_cam])
 
     #Calcul point sans distortion
-    up = cv2.undistortPoints(input_P,camMat,distortion)
+    up = cv2.undistortPoints(input_P,cameraMatrix=camMat,distCoeffs=distortion)
     x = up[0,0,0]
     y = up[0,0,1]
     
@@ -113,6 +114,7 @@ def pixel2World(p,zp,hauteur_cam,inclinaison_cam,camMat,distortion):
     point = np.matmul(Rp,point)
     return point
 
+
 #############
 #BLOC RTMAPS#
 #############
@@ -123,13 +125,14 @@ class rtmaps_python(BaseComponent):
         self.force_reading_policy(rtmaps.reading_policy.SYNCHRO) #Pour lire les 3 entrees en même temps.
 
     def Dynamic(self):
-        #ENTREES
+         #ENTREES
         self.add_input("tIds", rtmaps.types.UINTEGER64)
         self.add_input("tBoxes", rtmaps.types.UINTEGER64)
         self.add_input("tClassIds", rtmaps.types.UINTEGER64) 
 
         #SORTIES
         self.add_output("Objects", rtmaps.types.REAL_OBJECT,50) 
+        self.add_output("ControlePoint", rtmaps.types.MATRIX)
 
         #PROPRIETES
         self.add_property("Hauteur_camera_m",1.71)
@@ -137,25 +140,20 @@ class rtmaps_python(BaseComponent):
         self.add_property("Choix_camera","4|0|Camera-USB|Camera-integree|Camera-4K|Camera-Twizzy",rtmaps.types.ENUM)
 
     def Birth(self):
-        print("Python Birth")
         
         #Lecture des proprietes camera (Choix de la camera pour paramètre intrinseques ET EXTRINSEQUES)
         self.h_cam = self.properties["Hauteur_camera_m"].data
         self.incli_cam = self.properties["Inclinaison_deg"].data
         #choix_cam = int(self.properties["Choix_camera"].data)
 
-        switcher = {
-        0:cameraUSB,
-        1:cameraIntegree,
-        2:camera4K,
-        3:cameraTwizzy
-        }
+        switcher = {    0:cameraUSB(),
+                        1:cameraIntegree(),
+                        2:camera4K(),
+                        3:cameraTwizzy()
+                    }
 
-        #Retourne les bons paramètres intrinseques en fonction de lu choix de la camera
-        #self.camMat, self.distortion = switcher.get(choix_cam)()
-        self.camMat, self.distortion = cameraTwizzy()
-        #self.camMat = np.matrix('1.2333307880480911e+003 0. 6.5608259821013826e+002; 0. 1.2419473055412493e+003 5.5885526096352805e+002 ;0. 0. 1.',dtype=np.float32)
-        #self.distortion = np.array((-1.1903351805055828e-001, 1.9497572973143704e-001, 5.5272294360454990e-003, 3.8408944506890742e-003,7.9069991990030047e-003),dtype=np.float32)
+        #Retourne les bons paramètres intrinseques en fonction du choix de la camera
+        self.camMat, self.distortion = switcher[3]
         
     def Core(self):
         # Lecture des entrees / Initialisation de la sortie / Allocation memoire tableau
@@ -173,6 +171,9 @@ class rtmaps_python(BaseComponent):
         objectsOut = rtmaps.types.Ioelt()
         objectsOut.data = []
         objectsOut.ts = ts
+
+        coord_out = rtmaps.types.Ioelt()
+        coord_out.data = rtmaps.types.Matrix()
         
         # Traitement des boites
         Boxes = [iBoxes[i*4:i*4+4] for i,id in enumerate(iDs)]
@@ -189,7 +190,6 @@ class rtmaps_python(BaseComponent):
                 pixel = (Box[0]+Box[2]/2.0,Box[1]+Box[3]) #On prend le pixel du segment bas au mileu de la boite
                 
                 coord = pixel2World(pixel,0,self.h_cam,self.incli_cam,self.camMat,self.distortion) #Transformation pixel2World
-                
                 #Ecriture des coordonées xyz
                 newObjet.x = coord[0,0]
                 newObjet.y = coord[0,1]
@@ -207,6 +207,9 @@ class rtmaps_python(BaseComponent):
 
                 #Ajout dans le tableau de sortie
                 objectsOut.data.append(newObjet)
+
+            coord_out.data.matrix_data = coord            
+            self.outputs["ControlePoint"].write(coord_out)
             self.outputs["Objects"].write(objectsOut)
 
         # Si pas d'objet on renvoi un objet qui n'existe pas vraiment, de coordonnées (-100,0). 
@@ -218,8 +221,10 @@ class rtmaps_python(BaseComponent):
             a = rtmaps.types.RealObject()
             a.x = -100
             a.y = 0
-    
+
+            coord_out.data.matrix_data = [[a.x, a.y]]
             self.outputs["Objects"].write([a],ts)
+            self.outputs["ControlePoint"].write(coord_out)
             
     def Death(self):
         pass
