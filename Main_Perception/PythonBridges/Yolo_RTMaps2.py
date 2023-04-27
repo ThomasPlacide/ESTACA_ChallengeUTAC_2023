@@ -37,15 +37,15 @@ def filteredIds(input: CameraObject) -> CameraObject:
     Récupère flux d'information, ne ressort que les IDs intéréssants.
     input = <CameraObject>
     """
-    if (input.scores!=[]):
-        ind=np.where(input.class_ids > 3)[0]
-        print(ind)
-        # ind = [indexes > 3 for indexes in input.class_ids ]
+    if input:
+        ind=[indexes > 3 for indexes in input.class_ids]
+
         input.scores=np.delete(input.scores,ind)
         input.boxes=np.delete(input.boxes,ind, axis=0)
         input.class_ids=np.delete(input.class_ids,ind)
         
     return input
+    
 
 def prepareBoxes(array,indexes):
     #Fonction permettant de preparer les bonnes boites 
