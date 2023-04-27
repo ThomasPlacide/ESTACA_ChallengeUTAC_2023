@@ -1,5 +1,4 @@
 import rtmaps.types
-
 import numpy as np
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
@@ -29,7 +28,7 @@ class rtmaps_python(BaseComponent):
     def Dynamic(self):
         pass
         # Entree
-        self.add_input("image_in", rtmaps.types.IPL_IMAGE)
+        self.add_input("image_in", rtmaps.types.MATRIX)
 
         # Sortie
         self.add_output("image_out", rtmaps.types.IPL_IMAGE)
@@ -47,8 +46,12 @@ class rtmaps_python(BaseComponent):
         timestamp = self.inputs["image_in"].ioelt.ts
         combined_img=cp.copy(frame)
         combined_img.ts = timestamp
-        print(type(frame))
-        img = process_image(frame)
+        #numpy_matrix = rtmaps_converter.to_numpy(frame)
+        print(type(combined_img))
+        arr = np.array(combined_img)
+        print(type(arr))
+        print(arr.shape)
+        img = process_image(arr)
         self.outputs["image_out"].write( img)
         #except:
             #print("here")
