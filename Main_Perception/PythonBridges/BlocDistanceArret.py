@@ -19,24 +19,6 @@ class DistanceArret:
         Vitesse à renseigner en km/h ! 
         """
         return np.power( self.ConversionMpS2KMpH(speed)/10, 2)
-
-    def ConversionMpS2KMpH(self, speed): 
-        """
-        Conversion d'une vitesse m/s en km/h.
-        """
-
-        return speed*1e3/3600
-    
-    def EstimationEnM(self, coord_obj: rtmaps.types.REAL_OBJECT): 
-        """
-        Estime la valeur en mètres du float renvoyé par la composante X des coordonées de l'objet détecté par la caméra.
-        Essais approximatifs avec une webcam Logitech HD PRo Webcam C920
-        """
-
-        if coord_obj[0].x < 0: 
-            return 0  
-        else: 
-            return coord_obj[0].x # Distance réelle déjà calculée
             
     
     def ComparaisonDistances(self, coord_obj: rtmaps.types.REAL_OBJECT, speed) -> bool: 
@@ -45,19 +27,17 @@ class DistanceArret:
         Renvoi TRUE si distance arrêt ≤ distance du piéton.
         """
 
-        if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj): 
+        threshold = 20
+
+        DistEGO_Obj = self.DistanceAParcourir - coord_obj
+
+        if DistEGO_Obj <= threshold:
 
             return True
         else: 
             
             return False
 
-class CameraCalibration: 
-    '''
-    Utiliser calibration camera à l'aide de la bibliothèque CV2
-    '''
-    def __init__(self) -> None:
-        pass
 #############
 #BLOC RTMAPS#
 #############
@@ -86,7 +66,6 @@ class rtmaps_python(BaseComponent):
         #Speed = self.inputs["VehicleSpeed"].ioelt.data
         Speed=25
 
-        #print('BlocDistanceArret', DistanceArret().ComparaisonDistances(Obj, Speed))
         #print(Obj[0].x)
 
         if DistanceArret().ComparaisonDistances(Obj, Speed): 

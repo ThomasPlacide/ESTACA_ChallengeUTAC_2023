@@ -249,7 +249,7 @@ class rtmaps_python(BaseComponent):
         self.add_input("ObjetsRadar", rtmaps.types.REAL_OBJECT) #1
 
         #OUTPUTS
-        self.add_output("Objets1", rtmaps.types.REAL_OBJECT,50) # define output
+        self.add_output("Objets", rtmaps.types.REAL_OBJECT, 1000) 
 
         #PROPERTIES
         self.add_property("tMaxNoDetec",1.0)
@@ -381,6 +381,7 @@ class rtmaps_python(BaseComponent):
 
         #ECRITURE DES DONNEES DANS L'ELEMENT DE SORTIE
         objectsOut = []
+        print(len(objectsOut))
         for filtre in self.kalmannFilters:
             
             #On ecrit sur la sortie seulement les filtres avec un age minimum
@@ -404,7 +405,7 @@ class rtmaps_python(BaseComponent):
                 newObjet.data.height = 1
                             
                 newObjet.misc1 = classID
-
+                print(len(objectsOut))
                 objectsOut.append(newObjet)
 
         #Si il y a au moins un objet alors on l'ecrit en sortie
