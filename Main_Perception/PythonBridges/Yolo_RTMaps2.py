@@ -7,19 +7,8 @@ from rtmaps.base_component import BaseComponent # base class
 import cv2
 from PIL import Image as im
 import copy as cp
-from yolov7 import YOLOv7
+from yolov7 import YOLOv7, utils
 
-class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-               'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-               'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-               'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
-               'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-               'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-               'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
-               'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
-               'scissors', 'teddy bear', 'hair drier', 'toothbrush']
-
-# Filtrer les ids 0:2
 
 class CameraObject:
     def __init__(self):
@@ -27,24 +16,21 @@ class CameraObject:
         self.scores = []
         self.boxes = []
         self.class_ids = []
-        
-    pass
-    
+        self.label = []
 
+    def filteredIds(self, input: CameraObject) -> CameraObject:
+        """
+        Récupère flux d'information, ne ressort que les IDs intéréssants.
+        input = <CameraObject>
+        """
+        if input:
+            ind=[indexes > 3 for indexes in input.class_ids]
 
-def filteredIds(input: CameraObject) -> CameraObject:
-    """
-    Récupère flux d'information, ne ressort que les IDs intéréssants.
-    input = <CameraObject>
-    """
-    if input:
-        ind=[indexes > 3 for indexes in input.class_ids]
-
-        input.scores=np.delete(input.scores,ind)
-        input.boxes=np.delete(input.boxes,ind, axis=0)
-        input.class_ids=np.delete(input.class_ids,ind)
-        
-    return input
+            input.scores=np.delete(input.scores,ind)
+            input.boxes=np.delete(input.boxes,ind, axis=0)
+            input.class_ids=np.delete(input.class_ids,ind)
+            
+        return input
     
 
 def prepareBoxes(array,indexes):
@@ -109,6 +95,7 @@ class rtmaps_python(BaseComponent):
         Choix_yolo=["yolov7_384x640.onnx","yolov7_480x640.onnx","yolov7-tiny_384x640.onnx"]
         ind=self.properties["Yolo_version"].data
         model_path = "models/"+Choix_yolo[ind]
+        # model_path = "C:/Users/ESTACA_TWIZY/Desktop/ONNX-YOLOv7-Object-Detection-main/models/"+Choix_yolo[ind]
         self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5) 
         self.CmrObject = CameraObject()
               
@@ -135,7 +122,7 @@ class rtmaps_python(BaseComponent):
         timestamp = self.inputs["image_in"].ioelt.ts
         self.CmrObject.boxes, self.CmrObject.scores, self.CmrObject.class_ids = self.yolov7_detector(frame.image_data)
         
-        FilteredObj = filteredIds(self.CmrObject)
+        FilteredObj = CameraObject().filteredIds(self.CmrObject)
         
 
         for obj in FilteredObj.class_ids:
@@ -171,20 +158,13 @@ class rtmaps_python(BaseComponent):
 
         scoresOut.data = prepareConfs(FilteredObj.scores,Ids)
         scoresOut.ts = timestamp
-       
-        #boxes = np.array(boxes,dtype=np.float64)
-        #boxes = boxes.flatten()
-        #FilteredObj.scores = np.array(FilteredObj.scores,dtype=np.float64)
-        #FilteredObj.scores = FilteredObj.scores.flatten()
-        #FilteredObj.class_ids = np.array(FilteredObj.class_ids,dtype=np.int64)
-        #FilteredObj.class_ids = FilteredObj.class_ids.flatten()
         
         if len(classIdsOut.data)>0:
             self.outputs["boxes"].write(boxesOut) 
             self.outputs["scores"].write(scoresOut) 
             self.outputs["class_ids"].write(classIdsOut) 
             for i in FilteredObj.class_ids:
-                self.outputs["label"].write(class_names[i]+"\n") # and write it to the output
+                self.outputs["label"].write(utils.YoloConstant().class_names[i]+"\n") # and write it to the output
         else:
            self.outputs["boxes"].write(EmptyIoelt1)
            self.outputs["scores"].write(EmptyIoelt2)
