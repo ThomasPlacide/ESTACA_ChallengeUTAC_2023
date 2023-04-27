@@ -35,11 +35,6 @@ class Filtrage():
         for obj in list_obj.data: 
             if obj.speed != 0:
                 NonNulObj.append(obj)
-
-
-        
-
-
     
 
 #############

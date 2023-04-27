@@ -16,9 +16,8 @@ class CameraObject:
         self.scores = []
         self.boxes = []
         self.class_ids = []
-        self.label = []
 
-    def filteredIds(self, input: CameraObject) -> CameraObject:
+    def filteredIds(self, input: 'CameraObject') -> 'CameraObject':
         """
         Récupère flux d'information, ne ressort que les IDs intéréssants.
         input = <CameraObject>
@@ -124,14 +123,10 @@ class rtmaps_python(BaseComponent):
         
         FilteredObj = CameraObject().filteredIds(self.CmrObject)
         
-
-        for obj in FilteredObj.class_ids:
-            if obj > 3: 
-                print('alert')
-        
-
-
-        #print(scores)
+        # for obj in FilteredObj.class_ids:
+        #     if obj > 3: 
+        #         print('ALERT: Objects are not filtered.')
+   
         EmptyIoelt1.ts = timestamp
         EmptyIoelt2.ts = timestamp
 
@@ -170,7 +165,5 @@ class rtmaps_python(BaseComponent):
            self.outputs["scores"].write(EmptyIoelt2)
            self.outputs["class_ids"].write(EmptyIoelt1)
 
-
-# Death() will be called once at diagram execution shutdown
     def Death(self):
         pass
