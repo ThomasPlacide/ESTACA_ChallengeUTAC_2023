@@ -172,8 +172,9 @@ class rtmaps_python(BaseComponent):
         objectsOut.data = []
         objectsOut.ts = ts
 
-        coord_out = rtmaps.types.Ioelt()
-        coord_out.data = rtmaps.types.Matrix()
+        
+        
+        
         
         # Traitement des boites
         Boxes = [iBoxes[i*4:i*4+4] for i,id in enumerate(iDs)]
