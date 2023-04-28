@@ -255,7 +255,6 @@ def process_image(image):
 
 
 
-
 class rtmaps_python(BaseComponent):
     def __init__(self):
         BaseComponent.__init__(self)
@@ -271,7 +270,6 @@ class rtmaps_python(BaseComponent):
         self.add_output("lane_view", rtmaps.types.IPL_IMAGE)
         self.add_output("angle", rtmaps.types.FLOAT64,1)
         self.add_output("ext_point", rtmaps.types.MATRIX)
-        #self.add_output("angle_car", rtmaps.types.FLOAT64, 100)
 
     # Birth() will be called once at diagram execution startup
     def Birth(self):
@@ -280,7 +278,6 @@ class rtmaps_python(BaseComponent):
     # Core() is called every time you have a new input
     def Core(self):
         
-        print("ok")
         frame1 = self.inputs["image"].ioelt.data
         timestamp1 = self.inputs["image"].ioelt.ts
         angle_car =  rtmaps.types.Ioelt()
@@ -307,6 +304,7 @@ class rtmaps_python(BaseComponent):
             angle_car.data = 0
         self.outputs["angle"].write(angle_car)
         self.outputs["ext_point"].write(point_mat)
+
         #except:
             #print("here")
             #img = combined_img
@@ -317,5 +315,5 @@ class rtmaps_python(BaseComponent):
     # Death() will be called once at diagram execution shutdown
     def Death(self):
         pass
-    
+
 
