@@ -1,19 +1,22 @@
 import numpy as np
 import cv2
 
-class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
-               'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
-               'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
-               'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
-               'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
-               'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
-               'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
-               'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
-               'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+class YoloConstant:
+        def __init__(self):
 
-# Create a list of colors for each class where each color is a tuple of 3 integer values
-rng = np.random.default_rng(3)
-colors = rng.uniform(0, 255, size=(len(class_names), 3))
+            self.class_names = ['person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train', 'truck', 'boat', 'traffic light',
+                        'fire hydrant', 'stop sign', 'parking meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep', 'cow',
+                        'elephant', 'bear', 'zebra', 'giraffe', 'backpack', 'umbrella', 'handbag', 'tie', 'suitcase', 'frisbee',
+                        'skis', 'snowboard', 'sports ball', 'kite', 'baseball bat', 'baseball glove', 'skateboard', 'surfboard',
+                        'tennis racket', 'bottle', 'wine glass', 'cup', 'fork', 'knife', 'spoon', 'bowl', 'banana', 'apple',
+                        'sandwich', 'orange', 'broccoli', 'carrot', 'hot dog', 'pizza', 'donut', 'cake', 'chair', 'couch',
+                        'potted plant', 'bed', 'dining table', 'toilet', 'tv', 'laptop', 'mouse', 'remote', 'keyboard',
+                        'cell phone', 'microwave', 'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
+                        'scissors', 'teddy bear', 'hair drier', 'toothbrush']
+
+            # Create a list of colors for each class where each color is a tuple of 3 integer values
+            self.rng = np.random.default_rng(3)
+            self.colors = self.rng.uniform(0, 255, size=(len(self.class_names), 3))
 
 
 def nms(boxes, scores, iou_threshold):
@@ -79,7 +82,7 @@ def draw_detections(image, boxes, scores, class_ids, mask_alpha=0.3):
 
     # Draw bounding boxes and labels of detections
     for box, score, class_id in zip(boxes, scores, class_ids):
-        color = colors[class_id]
+        color = YoloConstant().colors[class_id]
 
         x1, y1, x2, y2 = box.astype(int)
 
@@ -89,7 +92,7 @@ def draw_detections(image, boxes, scores, class_ids, mask_alpha=0.3):
         # Draw fill rectangle in mask image
         cv2.rectangle(mask_img, (x1, y1), (x2, y2), color, -1)
 
-        label = class_names[class_id]
+        label = YoloConstant().class_names[class_id]
         caption = f'{label} {int(score * 100)}%'
         (tw, th), _ = cv2.getTextSize(text=caption, fontFace=cv2.FONT_HERSHEY_SIMPLEX,
                                       fontScale=size, thickness=text_thickness)
