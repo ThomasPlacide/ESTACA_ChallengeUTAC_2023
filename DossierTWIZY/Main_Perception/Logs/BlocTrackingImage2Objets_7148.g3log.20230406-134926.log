@@ -1,0 +1,39 @@
+		g3log created log at: Thu Apr 06 13:49:26 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 13:49:26 993934	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 13:49:27 012472	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 13:49:27 012480	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 13:49:27 153416	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 13:50:28 080262	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:51:17 548343	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:51:43 357814	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:53:18 507136	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:55:26 718833	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['TypeError: function takes exactly 2 arguments (4 given)
+', '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 207, in Core
+    self.outputs["ControlePoint"].write(coord[0,0], coord[0,1])
+', '  File "C:\\Program Files\\Intempora\\RTMaps 4\\packages\\rtmaps_python_bridge\\python_process\\python38\\rtmaps\\types.py", line 63, in write
+    rt.write(self.name, data, ts, toi)
+', '  File "C:\\Program Files\\Intempora\\RTMaps 4\\packages\\rtmaps_python_bridge\\python_process\\python38\\rtmaps\\core.py", line 52, in write
+    rtmaps_core.write(output_number, data, ts, toi)
+', 'SystemError: <built-in function write> returned a result with an error set
+']
+2023/04/06 13:55:26 727854	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:59:21 118137	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:00:36 327421	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 207, in Core
+    self.outputs["ControlePoint"].SendOutputArray(coord)
+', "AttributeError: 'Output' object has no attribute 'SendOutputArray'
+"]
+2023/04/06 14:00:36 345541	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:02:59 238126	WARNING [python_manager.cpp->PythonManager::CheckForErrors:754]	Error : AttributeError("'_ImportLockContext' object has no attribute 'Dynamic'")
+2023/04/06 14:03:59 440401	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:05:35 954213	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:09:09 841053	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:10:37 167936	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 14:11:11 805207	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

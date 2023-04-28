@@ -1,0 +1,89 @@
+		g3log created log at: Fri Mar 10 13:47:50 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/10 13:47:50 405507	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/10 13:47:50 423614	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/10 13:47:50 423622	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/10 13:47:50 532922	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/10 13:48:21 841368	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.boxes=np.delete(input.boxes,ind)
+', '  File "<__array_function__ internals>", line 200, in delete
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\lib\\function_base.py", line 5227, in delete
+    raise ValueError(\'boolean array argument obj to delete \'
+', 'ValueError: boolean array argument obj to delete must be one dimensional and match the axis length of 16
+']
+2023/03/10 13:48:21 857418	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 13:52:55 130363	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.boxes=np.delete(input.boxes,ind)
+', '  File "<__array_function__ internals>", line 200, in delete
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\lib\\function_base.py", line 5227, in delete
+    raise ValueError(\'boolean array argument obj to delete \'
+', 'ValueError: boolean array argument obj to delete must be one dimensional and match the axis length of 16
+']
+2023/03/10 13:52:55 130874	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 13:54:05 662794	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.boxes=np.delete(input.boxes,ind)
+', '  File "<__array_function__ internals>", line 200, in delete
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\lib\\function_base.py", line 5227, in delete
+    raise ValueError(\'boolean array argument obj to delete \'
+', 'ValueError: boolean array argument obj to delete must be one dimensional and match the axis length of 16
+']
+2023/03/10 13:54:05 663295	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 13:55:59 528241	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.boxes=np.delete(input.boxes,ind)
+', '  File "<__array_function__ internals>", line 200, in delete
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\lib\\function_base.py", line 5227, in delete
+    raise ValueError(\'boolean array argument obj to delete \'
+', 'ValueError: boolean array argument obj to delete must be one dimensional and match the axis length of 16
+']
+2023/03/10 13:55:59 528714	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 13:56:40 135881	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.boxes=np.delete(input.boxes,ind)
+', '  File "<__array_function__ internals>", line 200, in delete
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\lib\\function_base.py", line 5227, in delete
+    raise ValueError(\'boolean array argument obj to delete \'
+', 'ValueError: boolean array argument obj to delete must be one dimensional and match the axis length of 16
+']
+2023/03/10 13:56:40 136326	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:05:51 466209	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 40, in filteredIds
+    print(\'boxes \', input.boxes[0], input.boxes[0,1])
+', 'IndexError: list index out of range
+']
+2023/03/10 14:05:51 483253	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:08:18 977824	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 40, in filteredIds
+    if (input.score!=[]):
+', "AttributeError: 'CameraObject' object has no attribute 'score'
+"]
+2023/03/10 14:08:18 978341	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:09:33 097967	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:13:26 582157	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:13:49 309179	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:14:29 410323	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 14:14:35 905316	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

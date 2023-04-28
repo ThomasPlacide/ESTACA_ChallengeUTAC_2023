@@ -1,0 +1,80 @@
+		g3log created log at: Thu Mar 09 13:13:51 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/09 13:13:51 744372	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/09 13:13:51 765118	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/09 13:13:51 765127	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/09 13:13:51 875520	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/09 13:13:59 615081	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps.py", line 85, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/03/09 13:13:59 630989	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:15:20 939978	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps.py", line 85, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/03/09 13:15:20 940212	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:15:28 292015	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps.py", line 85, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/03/09 13:15:28 307249	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:15:40 357961	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps.py", line 85, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/03/09 13:15:40 358412	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:16:19 594643	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps.py", line 85, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/03/09 13:16:19 595730	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:17:45 149192	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.
+g3log g3FileSink shutdown at: 13:17:46 455791

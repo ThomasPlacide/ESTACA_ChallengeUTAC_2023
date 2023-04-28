@@ -1,0 +1,929 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.9" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+  <RequiredPackages>
+    <File Version="1.2.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_can_kvaser.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_can_kvaser.pck]]></Relative></File>
+    <File Version="3.112.6"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_can_processing.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_can_processing.pck]]></Relative></File>
+    <File Version="1.0"><![CDATA[C:/Users/ESTACA_TWIZY/Documents/Twizy/RTMaps/CodesSources/ESTACA_TWIZY.u/packages/debug/ESTACA_TWIZY.pck]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../Documents/Twizy/RTMaps/CodesSources/ESTACA_TWIZY.u/packages/debug/ESTACA_TWIZY.pck]]></Relative></File>
+  </RequiredPackages>
+  <EngineProperties>
+    <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
+    <Property LongName="Engine.startTime" Type="1">0</Property>
+    <Property LongName="Engine.session" Type="3"><![CDATA[unspecified]]></Property>
+    <Property LongName="Engine.recordingAtStart" Type="0">true</Property>
+    <Property LongName="Engine.recording" Type="0">true</Property>
+    <Property LongName="Engine.sequentialStart" Type="0">false</Property>
+    <Property LongName="Engine.shutdownTimeout" Type="1">10000000</Property>
+    <Property LongName="Engine.autoDetectStartTime" Type="0">true</Property>
+    <Property LongName="Engine.coreFunctionsToSaveInDiag" Type="4"><![CDATA[0|-1]]></Property>
+    <Property LongName="Engine.useUTCTimeReference" Type="0">false</Property>
+    <Property LongName="Engine.fastForwardThreshold" Type="1">2000</Property>
+    <Property LongName="Engine.fastRewindThreshold" Type="1">-2000</Property>
+    <Property LongName="Engine.priorityClass" Type="4"><![CDATA[3|0|Shared Time|Preemptive|Auto]]></Property>
+    <Property LongName="Engine.posixTimerThread" Type="4"><![CDATA[3|0|Auto|Timer Interval|Real Time Clock]]></Property>
+    <Property LongName="Engine.posixRealTimeClockIrqFrequency" Type="4"><![CDATA[4|0|1024|2048|4096|8192]]></Property>
+    <Property LongName="Engine.posixPreemptiveSchedulingPolicy" Type="4"><![CDATA[2|0|FIFO|Round Robin]]></Property>
+    <Property LongName="Engine.windowsUsePerformanceCounter" Type="0">true</Property>
+  </EngineProperties>
+  <ClocksManagement>
+    <Property LongName="ClocksManagement.activeClock" Type="4"><![CDATA[1|0|RTMaps_standard_clock]]></Property>
+  </ClocksManagement>
+  <Component InstanceName="can_kvaser_1" Model="can_kvaser" Version="1.2.0" x="552" y="312" z="0">
+    <Input LongName="can_kvaser_1.in" Name="in">
+      <Property LongName="can_kvaser_1.in.readerType" Type="1">0</Property>
+      <Property LongName="can_kvaser_1.in.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="can_kvaser_1.out" Name="out">
+      <Property LongName="can_kvaser_1.out.subsampling" Type="1">1</Property>
+      <Property LongName="can_kvaser_1.out.fifosize" Type="1">256</Property>
+      <Property LongName="can_kvaser_1.out.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="can_kvaser_1.channel" Type="1">4</Property>
+    <Property LongName="can_kvaser_1.baudrate" Type="4"><![CDATA[9|1| 1 MBds|500 kBds|250 kBds|125 kBds|100 kBds|62 kBds|50 kBds|83 kBds|10 kBds]]></Property>
+    <Property LongName="can_kvaser_1.frames_type" Type="4"><![CDATA[2|0|Standard|Extended]]></Property>
+    <Property LongName="can_kvaser_1.filter_code" Type="1" SubType="8">0x0</Property>
+    <Property LongName="can_kvaser_1.filter_mask" Type="1" SubType="8">0x0</Property>
+    <Property LongName="can_kvaser_1.vectorize_can_frames" Type="0">true</Property>
+    <Property LongName="can_kvaser_1.sampling_mode" Type="4"><![CDATA[2|0|Event based|Polling]]></Property>
+    <Property LongName="can_kvaser_1.threaded" Type="0">true</Property>
+    <Property LongName="can_kvaser_1.priority" Type="1">128</Property>
+    <Property LongName="can_kvaser_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="CANDecoder_1" Model="CANDecoder" Version="2.41.5" x="520" y="504" z="0">
+    <Input LongName="CANDecoder_1.input" Name="input">
+      <Property LongName="CANDecoder_1.input.readerType" Type="1">0</Property>
+      <Property LongName="CANDecoder_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req" Name="FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req">
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle" Name="FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle">
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle" Name="FAAR_CANV_1_SteeringWheelAngle">
+      <Property LongName="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_1.FAAR_FeedBack_SteeringControlState" Name="FAAR_FeedBack_SteeringControlState">
+      <Property LongName="CANDecoder_1.FAAR_FeedBack_SteeringControlState.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.FAAR_FeedBack_SteeringControlState.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.FAAR_FeedBack_SteeringControlState.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_1.AD_Request_AD_SteeringControl_Req" Name="AD_Request_AD_SteeringControl_Req">
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringControl_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringControl_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringControl_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_1.AD_Request_AD_SteeringAngle_Req" Name="AD_Request_AD_SteeringAngle_Req">
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringAngle_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringAngle_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_1.AD_Request_AD_SteeringAngle_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="CANDecoder_1.selection" Type="3"><![CDATA[steering]]></Property>
+    <Property LongName="CANDecoder_1.maxNbOfOutputs" Type="1">30</Property>
+    <Property LongName="CANDecoder_1.database" Type="3" SubType="80"><![CDATA[C:/Users/ESTACA_TWIZY/Documents/Twizy/Doc/2- Twizy/1_DBC_CAN_CTRL/DBC-EXT_CAN_AD-FR-A_Estaca.dbc]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../Documents/Twizy/Doc/2- Twizy/1_DBC_CAN_CTRL/DBC-EXT_CAN_AD-FR-A_Estaca.dbc]]></Relative></Property>
+    <ReadOnlyProperty LongName="CANDecoder_1.available" Type="3"><![CDATA[AD_Request5_AD_ConsigneVitesse
+AD_Request5_AD_LongitudinalRequest
+AD_Request5_AD_Watchdog_Clock5
+AD_Request5_AD_CheckSum5
+FAAR_AutoButton_Long_Push_Button
+AD_Request3_SFT_AD_Watchdog_Clock3
+AD_Request3_SFT_AD_CheckSum3
+AD_Request3_SFT_Arret_en_securite
+AD_Request3_SFT_Freinage_durgence
+FAAR_FeedBack_ThrottleControlState
+FAAR_FeedBack_SteeringControlState
+FAAR_FeedBack_BrakingControlState
+FAAR_FeedBack_FAAR_State
+FAAR_FeedBack_FPA_State
+FAAR_FeedBack_PRND_State
+AD_Request_AD_CheckSum
+AD_Request_AD_Watchdog_Clock
+AD_Request_AD_AccelControl_Req
+AD_Request_AD_AccelTorque_Req
+AD_Request_AD_SteeringControl_Req
+AD_Request_AD_SteeringAngle_Req
+AD_Request_AD_BrakingControl_Req
+AD_Request_AD_BrakingTorque_Req
+AD_Request_AD_State
+AD_Request2_AD_FPA_Req
+AD_Request2_AD_PRND_Req
+AD_Request2_AD_CheckSum2
+AD_Request2_AD_Watchdog_Clock2
+AD_Request2_AD_FPATightening_Req
+AD_Request2_AD_PRNDState_Req
+AD_Request4_AD_Left_Indicator
+AD_Request4_AD_Right_Indicator
+AD_Request4_AD_Warning
+AD_Request4_Zone_Auto_Dispo
+FAAR_ARUStatus_Arret_hard_durgence
+FAAR_ARUStatus_Arret_durgence
+FAAR_Diag_THROTTLE_RequestConsistent
+FAAR_Diag_SWA_RequestConsistent
+FAAR_Diag_BRAKE_RequestConsistent
+FAAR_Diag_Diag_CAN_AD
+FAAR_Diag_Diag_FPA
+FAAR_Diag_Diag_ABS
+FAAR_Diag_Diag_AD_Clock2
+FAAR_Diag_Diag_ADChecksum2
+FAAR_Diag_Diag_ADClock
+FAAR_Diag_Diag_ADCheckSum
+FAAR_Diag_Diag_CAN_ROBOT_EPS
+FAAR_Diag_Diag_EPS
+FAAR_Diag_Diag_CAN_ROBOT_BRAKE_ACCEL
+FAAR_Diag_Diag_AD_Clock3
+FAAR_Diag_Diag_ADCheckSum3
+FAAR_Diag_Diag_ACCEL
+FAAR_Diag_Diag_AD_Clock5
+FAAR_Diag_Diag_ADCheckSum5
+FAAR_CANV_1_Braking_Torque_Provided
+FAAR_CANV_1_Motor_Torque_Provided
+FAAR_CANV_1_VehicleSpeed
+FAAR_CANV_1_SteeringWheelAngle
+FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req
+FAAR_CMD_AD_ACK_ACK_AD_BrakingControl_Req
+FAAR_CMD_AD_ACK_ACK_AD_AccelControl_Req
+FAAR_CMD_AD_ACK_AD_State
+FAAR_CMD_AD_ACK_ACK_AD_Req_Nm_BrakingTorque
+FAAR_CMD_AD_ACK_ACK_AD_Req_Nm_AccelTorque
+FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle
+FAAR_CMD_AD_ACK_FAAR_CheckSum_1
+FAAR_CMD_AD_ACK_FAAR_Clock_1
+FAAR_CANV_2_Reverse
+FAAR_CANV_2_Drive
+FAAR_CANV_2_Neutral
+FAAR_CANV_2_SOC_58V
+FAAR_CANV_2_V_Batterie_14V]]></ReadOnlyProperty>
+    <Property LongName="CANDecoder_1.create_val_outputs" Type="0">false</Property>
+    <Property LongName="CANDecoder_1.output_scalars_only" Type="0">true</Property>
+    <Property LongName="CANDecoder_1.discard_wrong_length_frames" Type="0">true</Property>
+    <Property LongName="CANDecoder_1.verbose" Type="0">false</Property>
+    <Property LongName="CANDecoder_1.output_names_format" Type="4"><![CDATA[2|0|FrameName_SignalName|o_FrameID_SignalName]]></Property>
+    <Property LongName="CANDecoder_1.threaded" Type="0">false</Property>
+    <Property LongName="CANDecoder_1.priority" Type="1">128</Property>
+    <Property LongName="CANDecoder_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="CANDecoder_2" Model="CANDecoder" Version="2.41.5" x="616" y="680" z="0">
+    <Input LongName="CANDecoder_2.input" Name="input">
+      <Property LongName="CANDecoder_2.input.readerType" Type="1">0</Property>
+      <Property LongName="CANDecoder_2.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="CANDecoder_2.AD_Request3_SFT_AD_Watchdog_Clock3" Name="AD_Request3_SFT_AD_Watchdog_Clock3">
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_Watchdog_Clock3.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_Watchdog_Clock3.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_Watchdog_Clock3.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request3_SFT_AD_CheckSum3" Name="AD_Request3_SFT_AD_CheckSum3">
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_CheckSum3.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_CheckSum3.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_AD_CheckSum3.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request3_SFT_Arret_en_securite" Name="AD_Request3_SFT_Arret_en_securite">
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Arret_en_securite.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Arret_en_securite.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Arret_en_securite.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request3_SFT_Freinage_durgence" Name="AD_Request3_SFT_Freinage_durgence">
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Freinage_durgence.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Freinage_durgence.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request3_SFT_Freinage_durgence.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request4_AD_Left_Indicator" Name="AD_Request4_AD_Left_Indicator">
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Left_Indicator.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Left_Indicator.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Left_Indicator.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request4_AD_Right_Indicator" Name="AD_Request4_AD_Right_Indicator">
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Right_Indicator.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Right_Indicator.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Right_Indicator.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request4_AD_Warning" Name="AD_Request4_AD_Warning">
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Warning.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Warning.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_AD_Warning.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request4_Zone_Auto_Dispo" Name="AD_Request4_Zone_Auto_Dispo">
+      <Property LongName="CANDecoder_2.AD_Request4_Zone_Auto_Dispo.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_Zone_Auto_Dispo.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request4_Zone_Auto_Dispo.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_CheckSum" Name="AD_Request_AD_CheckSum">
+      <Property LongName="CANDecoder_2.AD_Request_AD_CheckSum.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_CheckSum.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_CheckSum.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_Watchdog_Clock" Name="AD_Request_AD_Watchdog_Clock">
+      <Property LongName="CANDecoder_2.AD_Request_AD_Watchdog_Clock.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_Watchdog_Clock.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_Watchdog_Clock.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_AccelControl_Req" Name="AD_Request_AD_AccelControl_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelControl_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelControl_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelControl_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_AccelTorque_Req" Name="AD_Request_AD_AccelTorque_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelTorque_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelTorque_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_AccelTorque_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_SteeringControl_Req" Name="AD_Request_AD_SteeringControl_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringControl_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringControl_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringControl_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_SteeringAngle_Req" Name="AD_Request_AD_SteeringAngle_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringAngle_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringAngle_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_SteeringAngle_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_BrakingControl_Req" Name="AD_Request_AD_BrakingControl_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingControl_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingControl_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingControl_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_BrakingTorque_Req" Name="AD_Request_AD_BrakingTorque_Req">
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingTorque_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingTorque_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_BrakingTorque_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request_AD_State" Name="AD_Request_AD_State">
+      <Property LongName="CANDecoder_2.AD_Request_AD_State.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_State.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request_AD_State.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_FPA_Req" Name="AD_Request2_AD_FPA_Req">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPA_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPA_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPA_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_PRND_Req" Name="AD_Request2_AD_PRND_Req">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRND_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRND_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRND_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_CheckSum2" Name="AD_Request2_AD_CheckSum2">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_CheckSum2.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_CheckSum2.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_CheckSum2.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_Watchdog_Clock2" Name="AD_Request2_AD_Watchdog_Clock2">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_Watchdog_Clock2.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_Watchdog_Clock2.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_Watchdog_Clock2.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_FPATightening_Req" Name="AD_Request2_AD_FPATightening_Req">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPATightening_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPATightening_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_FPATightening_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request2_AD_PRNDState_Req" Name="AD_Request2_AD_PRNDState_Req">
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRNDState_Req.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRNDState_Req.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request2_AD_PRNDState_Req.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request5_AD_ConsigneVitesse" Name="AD_Request5_AD_ConsigneVitesse">
+      <Property LongName="CANDecoder_2.AD_Request5_AD_ConsigneVitesse.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_ConsigneVitesse.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_ConsigneVitesse.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request5_AD_LongitudinalRequest" Name="AD_Request5_AD_LongitudinalRequest">
+      <Property LongName="CANDecoder_2.AD_Request5_AD_LongitudinalRequest.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_LongitudinalRequest.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_LongitudinalRequest.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request5_AD_Watchdog_Clock5" Name="AD_Request5_AD_Watchdog_Clock5">
+      <Property LongName="CANDecoder_2.AD_Request5_AD_Watchdog_Clock5.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_Watchdog_Clock5.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_Watchdog_Clock5.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="CANDecoder_2.AD_Request5_AD_CheckSum5" Name="AD_Request5_AD_CheckSum5">
+      <Property LongName="CANDecoder_2.AD_Request5_AD_CheckSum5.subsampling" Type="1">1</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_CheckSum5.fifosize" Type="1">16</Property>
+      <Property LongName="CANDecoder_2.AD_Request5_AD_CheckSum5.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="CANDecoder_2.selection" Type="3"><![CDATA[AD_request]]></Property>
+    <Property LongName="CANDecoder_2.maxNbOfOutputs" Type="1">30</Property>
+    <Property LongName="CANDecoder_2.database" Type="3" SubType="80"><![CDATA[C:/Users/ESTACA_TWIZY/Documents/Twizy/Doc/2- Twizy/1_DBC_CAN_CTRL/DBC-EXT_CAN_AD-FR-A_Estaca.dbc]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../Documents/Twizy/Doc/2- Twizy/1_DBC_CAN_CTRL/DBC-EXT_CAN_AD-FR-A_Estaca.dbc]]></Relative></Property>
+    <ReadOnlyProperty LongName="CANDecoder_2.available" Type="3"><![CDATA[AD_Request5_AD_ConsigneVitesse
+AD_Request5_AD_LongitudinalRequest
+AD_Request5_AD_Watchdog_Clock5
+AD_Request5_AD_CheckSum5
+FAAR_AutoButton_Long_Push_Button
+AD_Request3_SFT_AD_Watchdog_Clock3
+AD_Request3_SFT_AD_CheckSum3
+AD_Request3_SFT_Arret_en_securite
+AD_Request3_SFT_Freinage_durgence
+FAAR_FeedBack_ThrottleControlState
+FAAR_FeedBack_SteeringControlState
+FAAR_FeedBack_BrakingControlState
+FAAR_FeedBack_FAAR_State
+FAAR_FeedBack_FPA_State
+FAAR_FeedBack_PRND_State
+AD_Request_AD_CheckSum
+AD_Request_AD_Watchdog_Clock
+AD_Request_AD_AccelControl_Req
+AD_Request_AD_AccelTorque_Req
+AD_Request_AD_SteeringControl_Req
+AD_Request_AD_SteeringAngle_Req
+AD_Request_AD_BrakingControl_Req
+AD_Request_AD_BrakingTorque_Req
+AD_Request_AD_State
+AD_Request2_AD_FPA_Req
+AD_Request2_AD_PRND_Req
+AD_Request2_AD_CheckSum2
+AD_Request2_AD_Watchdog_Clock2
+AD_Request2_AD_FPATightening_Req
+AD_Request2_AD_PRNDState_Req
+AD_Request4_AD_Left_Indicator
+AD_Request4_AD_Right_Indicator
+AD_Request4_AD_Warning
+AD_Request4_Zone_Auto_Dispo
+FAAR_ARUStatus_Arret_hard_durgence
+FAAR_ARUStatus_Arret_durgence
+FAAR_Diag_THROTTLE_RequestConsistent
+FAAR_Diag_SWA_RequestConsistent
+FAAR_Diag_BRAKE_RequestConsistent
+FAAR_Diag_Diag_CAN_AD
+FAAR_Diag_Diag_FPA
+FAAR_Diag_Diag_ABS
+FAAR_Diag_Diag_AD_Clock2
+FAAR_Diag_Diag_ADChecksum2
+FAAR_Diag_Diag_ADClock
+FAAR_Diag_Diag_ADCheckSum
+FAAR_Diag_Diag_CAN_ROBOT_EPS
+FAAR_Diag_Diag_EPS
+FAAR_Diag_Diag_CAN_ROBOT_BRAKE_ACCEL
+FAAR_Diag_Diag_AD_Clock3
+FAAR_Diag_Diag_ADCheckSum3
+FAAR_Diag_Diag_ACCEL
+FAAR_Diag_Diag_AD_Clock5
+FAAR_Diag_Diag_ADCheckSum5
+FAAR_CANV_1_Braking_Torque_Provided
+FAAR_CANV_1_Motor_Torque_Provided
+FAAR_CANV_1_VehicleSpeed
+FAAR_CANV_1_SteeringWheelAngle
+FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req
+FAAR_CMD_AD_ACK_ACK_AD_BrakingControl_Req
+FAAR_CMD_AD_ACK_ACK_AD_AccelControl_Req
+FAAR_CMD_AD_ACK_AD_State
+FAAR_CMD_AD_ACK_ACK_AD_Req_Nm_BrakingTorque
+FAAR_CMD_AD_ACK_ACK_AD_Req_Nm_AccelTorque
+FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle
+FAAR_CMD_AD_ACK_FAAR_CheckSum_1
+FAAR_CMD_AD_ACK_FAAR_Clock_1
+FAAR_CANV_2_Reverse
+FAAR_CANV_2_Drive
+FAAR_CANV_2_Neutral
+FAAR_CANV_2_SOC_58V
+FAAR_CANV_2_V_Batterie_14V]]></ReadOnlyProperty>
+    <Property LongName="CANDecoder_2.create_val_outputs" Type="0">false</Property>
+    <Property LongName="CANDecoder_2.output_scalars_only" Type="0">true</Property>
+    <Property LongName="CANDecoder_2.discard_wrong_length_frames" Type="0">true</Property>
+    <Property LongName="CANDecoder_2.verbose" Type="0">false</Property>
+    <Property LongName="CANDecoder_2.output_names_format" Type="4"><![CDATA[2|0|FrameName_SignalName|o_FrameID_SignalName]]></Property>
+    <Property LongName="CANDecoder_2.threaded" Type="0">false</Property>
+    <Property LongName="CANDecoder_2.priority" Type="1">128</Property>
+    <Property LongName="CANDecoder_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="CANFrameViewer_1" Model="CANFrameViewer" Version="6.5" x="856" y="88" z="0">
+    <Input LongName="CANFrameViewer_1.input" Name="input">
+      <Property LongName="CANFrameViewer_1.input.readerType" Type="1">0</Property>
+      <Property LongName="CANFrameViewer_1.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="CANFrameViewer_1.nbMaxFrames" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_1.resize" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_1.interFrameY" Type="1">15</Property>
+    <Property LongName="CANFrameViewer_1.marginX" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_1.marginY" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_1.left" Type="1">3</Property>
+    <Property LongName="CANFrameViewer_1.top" Type="1">108</Property>
+    <Property LongName="CANFrameViewer_1.width" Type="1">565</Property>
+    <Property LongName="CANFrameViewer_1.height" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_1.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_1.priority" Type="1">64</Property>
+    <Property LongName="CANFrameViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="CANFrameViewer_2" Model="CANFrameViewer" Version="6.5" x="848" y="368" z="0">
+    <Input LongName="CANFrameViewer_2.input" Name="input">
+      <Property LongName="CANFrameViewer_2.input.readerType" Type="1">0</Property>
+      <Property LongName="CANFrameViewer_2.input.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="CANFrameViewer_2.nbMaxFrames" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_2.resize" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_2.interFrameY" Type="1">15</Property>
+    <Property LongName="CANFrameViewer_2.marginX" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_2.marginY" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_2.left" Type="1">1052</Property>
+    <Property LongName="CANFrameViewer_2.top" Type="1">316</Property>
+    <Property LongName="CANFrameViewer_2.width" Type="1">565</Property>
+    <Property LongName="CANFrameViewer_2.height" Type="1">0</Property>
+    <Property LongName="CANFrameViewer_2.alwaysOnTop" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="CANFrameViewer_2.priority" Type="1">64</Property>
+    <Property LongName="CANFrameViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Condition_1" Model="Condition" Version="9.0.0" x="792" y="216" z="0">
+    <Input LongName="Condition_1.cible" Name="cible">
+      <Property LongName="Condition_1.cible.readerType" Type="1">0</Property>
+      <Property LongName="Condition_1.cible.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="Condition_1.output" Name="output">
+      <Property LongName="Condition_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger" Name="outputInteger">
+      <Property LongName="Condition_1.outputInteger.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputInteger64" Name="outputInteger64">
+      <Property LongName="Condition_1.outputInteger64.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputInteger64.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputInteger64.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Condition_1.outputFloat32" Name="outputFloat32">
+      <Property LongName="Condition_1.outputFloat32.subsampling" Type="1">1</Property>
+      <Property LongName="Condition_1.outputFloat32.fifosize" Type="1">16</Property>
+      <Property LongName="Condition_1.outputFloat32.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Condition_1.condition" Type="3"><![CDATA[cible ==1]]></Property>
+    <Property LongName="Condition_1.when" Type="4"><![CDATA[4|0|condition is evaluated|condition is true|condition becomes true|condition state changes]]></Property>
+    <Property LongName="Condition_1.expression" Type="3"><![CDATA[0]]></Property>
+    <Property LongName="Condition_1.expression_false" Type="3"><![CDATA[5]]></Property>
+    <Property LongName="Condition_1.autoConnect" Type="0">false</Property>
+    <Property LongName="Condition_1.then" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.else" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.preFormat" Type="0">false</Property>
+    <Property LongName="Condition_1.name" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.unit" Type="3"><![CDATA[]]></Property>
+    <Property LongName="Condition_1.period" Type="1">100000</Property>
+    <Property LongName="Condition_1.async_commands" Type="0">true</Property>
+    <Property LongName="Condition_1.synchroTolerance" Type="1">-1</Property>
+    <Property LongName="Condition_1.threaded" Type="0">true</Property>
+    <Property LongName="Condition_1.priority" Type="1">128</Property>
+    <Property LongName="Condition_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="560" y="32" z="0">
+    <Input LongName="DataViewer_1.input_0" Name="input_0">
+      <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_1" Name="input_1">
+      <Property LongName="DataViewer_1.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_1.input_2" Name="input_2">
+      <Property LongName="DataViewer_1.input_2.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_1.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_1.run" Type="0">true</Property>
+    <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_1.x" Type="1">0</Property>
+    <Property LongName="DataViewer_1.y" Type="1">205</Property>
+    <Property LongName="DataViewer_1.width" Type="1">530</Property>
+    <Property LongName="DataViewer_1.height" Type="1">420</Property>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.nbInputs" Type="1">3</Property>
+    <Property LongName="DataViewer_1.compactMode" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showInfo" Type="0">false</Property>
+    <Property LongName="DataViewer_1.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_1.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_1.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_1.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_1.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_1.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[1|Dummy_Trajectory_generator_1.requested_PRND_gear_position;1|Dummy_Trajectory_generator_1.target_steering_angle_rad;1|Dummy_Trajectory_generator_1.target_speed_km_h]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_1.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2" Model="DataViewer" Version="2.0.10" x="784" y="456" z="0">
+    <Input LongName="DataViewer_2.input_0" Name="input_0">
+      <Property LongName="DataViewer_2.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_1" Name="input_1">
+      <Property LongName="DataViewer_2.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_2" Name="input_2">
+      <Property LongName="DataViewer_2.input_2.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_3" Name="input_3">
+      <Property LongName="DataViewer_2.input_3.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_3.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_4" Name="input_4">
+      <Property LongName="DataViewer_2.input_4.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_4.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_5" Name="input_5">
+      <Property LongName="DataViewer_2.input_5.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_5.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2.x" Type="1">72</Property>
+    <Property LongName="DataViewer_2.y" Type="1">440</Property>
+    <Property LongName="DataViewer_2.width" Type="1">530</Property>
+    <Property LongName="DataViewer_2.height" Type="1">420</Property>
+    <Property LongName="DataViewer_2.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.nbInputs" Type="1">6</Property>
+    <Property LongName="DataViewer_2.compactMode" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showInfo" Type="0">false</Property>
+    <Property LongName="DataViewer_2.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_2.expandedState" Type="3" SubType="128"><![CDATA[1|CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req;1|CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle;1|CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle;1|CANDecoder_1.FAAR_FeedBack_SteeringControlState;0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_3" Model="DataViewer" Version="2.0.10" x="1040" y="840" z="0">
+    <Input LongName="DataViewer_3.input_0" Name="input_0">
+      <Property LongName="DataViewer_3.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_3.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_3.input_1" Name="input_1">
+      <Property LongName="DataViewer_3.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_3.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_3.input_2" Name="input_2">
+      <Property LongName="DataViewer_3.input_2.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_3.input_2.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_3.input_3" Name="input_3">
+      <Property LongName="DataViewer_3.input_3.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_3.input_3.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_3.input_4" Name="input_4">
+      <Property LongName="DataViewer_3.input_4.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_3.input_4.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_3.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_3.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_3.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_3.run" Type="0">true</Property>
+    <Property LongName="DataViewer_3.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_3.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_3.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_3.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_3.x" Type="1">-50</Property>
+    <Property LongName="DataViewer_3.y" Type="1">416</Property>
+    <Property LongName="DataViewer_3.width" Type="1">530</Property>
+    <Property LongName="DataViewer_3.height" Type="1">420</Property>
+    <Property LongName="DataViewer_3.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_3.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_3.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_3.nbInputs" Type="1">5</Property>
+    <Property LongName="DataViewer_3.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_3.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_3.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_3.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_3.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_3.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_3.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_3.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_3.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_3.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_3.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_3.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_3.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_3.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_3.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_3.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_3.expandedState" Type="3" SubType="128"><![CDATA[1|CANDecoder_2.AD_Request_AD_SteeringControl_Req;0|Info:CANDecoder_2.AD_Request_AD_SteeringControl_Req;1|Data:CANDecoder_2.AD_Request_AD_SteeringControl_Req;1|CANDecoder_2.AD_Request_AD_SteeringAngle_Req;0|Info:CANDecoder_2.AD_Request_AD_SteeringAngle_Req;1|Data:CANDecoder_2.AD_Request_AD_SteeringAngle_Req;0|;1|CANDecoder_2.AD_Request5_AD_ConsigneVitesse;0|Info:CANDecoder_2.AD_Request5_AD_ConsigneVitesse;1|Data:CANDecoder_2.AD_Request5_AD_ConsigneVitesse;1|CANDecoder_2.AD_Request2_AD_PRND_Req;0|Info:CANDecoder_2.AD_Request2_AD_PRND_Req;1|Data:CANDecoder_2.AD_Request2_AD_PRND_Req]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_3.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_3.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_3.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_3.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Dummy_Trajectory_generator_1" Model="Dummy_Trajectory_generator" Version="1.0" x="64" y="96" z="0">
+    <Output LongName="Dummy_Trajectory_generator_1.requested_PRND_gear_position" Name="requested_PRND_gear_position">
+      <Property LongName="Dummy_Trajectory_generator_1.requested_PRND_gear_position.subsampling" Type="1">1</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.requested_PRND_gear_position.fifosize" Type="1">16</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.requested_PRND_gear_position.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Dummy_Trajectory_generator_1.target_steering_angle_rad" Name="target_steering_angle_rad">
+      <Property LongName="Dummy_Trajectory_generator_1.target_steering_angle_rad.subsampling" Type="1">1</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.target_steering_angle_rad.fifosize" Type="1">16</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.target_steering_angle_rad.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="Dummy_Trajectory_generator_1.target_speed_km_h" Name="target_speed_km_h">
+      <Property LongName="Dummy_Trajectory_generator_1.target_speed_km_h.subsampling" Type="1">1</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.target_speed_km_h.fifosize" Type="1">16</Property>
+      <Property LongName="Dummy_Trajectory_generator_1.target_speed_km_h.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Dummy_Trajectory_generator_1.check_to_launch_manoeuvre" Type="0">false</Property>
+    <Property LongName="Dummy_Trajectory_generator_1.trajectory_shape" Type="4"><![CDATA[7|5|PRND_test|Straight_Forward|Straight_Backward|Straight_Forw_Backw|Turn_Left|Turn_Right|Turn_Left_Right]]></Property>
+    <Property LongName="Dummy_Trajectory_generator_1.Vmax_kph" Type="2">3</Property>
+    <Property LongName="Dummy_Trajectory_generator_1.Acc_m_s2" Type="2">1</Property>
+    <Property LongName="Dummy_Trajectory_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Dummy_Trajectory_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Dummy_Trajectory_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="Integer_constants_generator_1" Model="Integer_constants_generator" Version="2.5.1" x="168" y="288" z="0">
+    <Output LongName="Integer_constants_generator_1.output" Name="output">
+      <Property LongName="Integer_constants_generator_1.output.subsampling" Type="1">1</Property>
+      <Property LongName="Integer_constants_generator_1.output.fifosize" Type="1">16</Property>
+      <Property LongName="Integer_constants_generator_1.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Integer_constants_generator_1.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Integer_constants_generator_1.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.vectorSize" Type="1">1</Property>
+    <Property LongName="Integer_constants_generator_1.outputPeriod" Type="1">100000</Property>
+    <Property LongName="Integer_constants_generator_1.value_1" Type="1">0</Property>
+    <Property LongName="Integer_constants_generator_1.threaded" Type="0">true</Property>
+    <Property LongName="Integer_constants_generator_1.priority" Type="1">128</Property>
+    <Property LongName="Integer_constants_generator_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="RecFile_1" Model="RecFile" Version="2.16.0" x="1144" y="8" z="0">
+    <Input LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.input" Name="input">
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.fileType" Type="4"><![CDATA[3|0|.asc|.can|none]]></Property>
+    </Input>
+    <Input LongName="RecFile_1.can_kvaser_1.out.input" Name="input">
+      <Property LongName="RecFile_1.can_kvaser_1.out.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.can_kvaser_1.out.fileType" Type="4"><![CDATA[3|0|.asc|.can|none]]></Property>
+    </Input>
+    <Input LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.input" Name="input">
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.timestamp" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.timeOfIssue" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.timeFormat" Type="4"><![CDATA[4|3|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.separatorChar" Type="4"><![CDATA[4|0|;|,|Tab|.]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.doubles_precision" Type="1">12</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.depacketize" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.headerType" Type="4"><![CDATA[3|0|None|Manual|Auto (based on upstream graph)]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.manualHeader" Type="3"><![CDATA[Channel A; Channel B; Channel C;]]></Property>
+    </Input>
+    <Input LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.input" Name="input">
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.input.readerType" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.input.subsampling" Type="1">1</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.trigger" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.triggerAtStart" Type="4"><![CDATA[3|0|Do not change|True|False]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.triggerBufferTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.triggerBufferSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.triggerReleaseTime" Type="1" SubType="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.triggerReleaseSize" Type="1">0</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.recordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.alias" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.record_to_subfolder" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.subfolder_relative_path" Type="3"><![CDATA[]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.useTimestamp" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.threaded" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.priority" Type="1">128</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.timestamp" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.timeOfIssue" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.timeFormat" Type="4"><![CDATA[4|3|YYYY/MM/DD hh:mm:ss.etc UTC|YYYY/MM/DD hh:mm:ss.etc Local Time|hh:mm:ss.etc|no format]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.append_utc_local_suffix" Type="0">true</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.separatorChar" Type="4"><![CDATA[4|0|;|,|Tab|.]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.timestampingPrecision" Type="4"><![CDATA[2|1|Milliseconds|Microseconds]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.doubles_precision" Type="1">12</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.depacketize" Type="0">false</Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.headerType" Type="4"><![CDATA[3|0|None|Manual|Auto (based on upstream graph)]]></Property>
+      <Property LongName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.manualHeader" Type="3"><![CDATA[Channel A; Channel B; Channel C;]]></Property>
+    </Input>
+    <Property LongName="RecFile_1.path" Type="3" SubType="32"><![CDATA[C:/Users/ESTACA_TWIZY/Documents/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../Documents]]></Relative></Property>
+    <ReadOnlyProperty LongName="RecFile_1.recordPath" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.fastRecordPath" Type="3" SubType="32"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.comments" Type="3"><![CDATA[]]></Property>
+    <Property LongName="RecFile_1.blackbox" Type="1" SubType="128">0</Property>
+    <Property LongName="RecFile_1.record_buffer_delay" Type="1">1000000</Property>
+    <Property LongName="RecFile_1.delay" Type="1" SubType="128">0</Property>
+    <Property LongName="RecFile_1.createFolder" Type="0">true</Property>
+    <Property LongName="RecFile_1.record_to_subfolders" Type="0">false</Property>
+    <Property LongName="RecFile_1.add_record_start_time_to_folder_and_file_names" Type="0">false</Property>
+    <Property LongName="RecFile_1.allow_record_overwrite" Type="0">false</Property>
+    <ReadOnlyProperty LongName="RecFile_1.record_start_time" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="RecFile_1.triggered_record_methods" Type="3"><![CDATA[twizy_CTRL_1.oCAN_CTRL can_kvaser_1.out Dummy_Trajectory_generator_1.target_steering_angle_rad Dummy_Trajectory_generator_1.target_speed_km_h]]></ReadOnlyProperty>
+    <Property LongName="RecFile_1.threaded" Type="0">false</Property>
+    <Property LongName="RecFile_1.priority" Type="1">128</Property>
+    <Property LongName="RecFile_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="SpeedCommand" Model="Float_constants_generator" Version="2.2" x="240" y="544" z="0">
+    <Output LongName="SpeedCommand.output" Name="output">
+      <Property LongName="SpeedCommand.output.subsampling" Type="1">1</Property>
+      <Property LongName="SpeedCommand.output.fifosize" Type="1">16</Property>
+      <Property LongName="SpeedCommand.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="SpeedCommand.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="SpeedCommand.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="SpeedCommand.vectorSize" Type="1">1</Property>
+    <Property LongName="SpeedCommand.outputPeriod" Type="1">100000</Property>
+    <Property LongName="SpeedCommand.value_1" Type="2">0</Property>
+    <Property LongName="SpeedCommand.threaded" Type="0">true</Property>
+    <Property LongName="SpeedCommand.priority" Type="1">128</Property>
+    <Property LongName="SpeedCommand.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="Steering_command" Model="Float_constants_generator" Version="2.2" x="184" y="424" z="0">
+    <Output LongName="Steering_command.output" Name="output">
+      <Property LongName="Steering_command.output.subsampling" Type="1">1</Property>
+      <Property LongName="Steering_command.output.fifosize" Type="1">16</Property>
+      <Property LongName="Steering_command.output.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="Steering_command.outputMode" Type="4"><![CDATA[3|1|Once at start|Periodic|Use trigger input]]></Property>
+    <Property LongName="Steering_command.outputWhenValueChanges" Type="0">true</Property>
+    <Property LongName="Steering_command.vectorSize" Type="1">1</Property>
+    <Property LongName="Steering_command.outputPeriod" Type="1">100000</Property>
+    <Property LongName="Steering_command.value_1" Type="2">0</Property>
+    <Property LongName="Steering_command.threaded" Type="0">true</Property>
+    <Property LongName="Steering_command.priority" Type="1">128</Property>
+    <Property LongName="Steering_command.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="twizy_CTRL_1" Model="twizy_CTRL" Version="1.0" x="544" y="152" z="0">
+    <Input LongName="twizy_CTRL_1.iCAN_CTRL" Name="iCAN_CTRL">
+      <Property LongName="twizy_CTRL_1.iCAN_CTRL.readerType" Type="1">0</Property>
+      <Property LongName="twizy_CTRL_1.iCAN_CTRL.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="twizy_CTRL_1.requested_PRND_gear_position" Name="requested_PRND_gear_position">
+      <Property LongName="twizy_CTRL_1.requested_PRND_gear_position.readerType" Type="1">4</Property>
+      <Property LongName="twizy_CTRL_1.requested_PRND_gear_position.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="twizy_CTRL_1.target_steering_angle_rad" Name="target_steering_angle_rad">
+      <Property LongName="twizy_CTRL_1.target_steering_angle_rad.readerType" Type="1">4</Property>
+      <Property LongName="twizy_CTRL_1.target_steering_angle_rad.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="twizy_CTRL_1.target_speed_km_h" Name="target_speed_km_h">
+      <Property LongName="twizy_CTRL_1.target_speed_km_h.readerType" Type="1">4</Property>
+      <Property LongName="twizy_CTRL_1.target_speed_km_h.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="twizy_CTRL_1.requested_Indicator_State" Name="requested_Indicator_State">
+      <Property LongName="twizy_CTRL_1.requested_Indicator_State.readerType" Type="1">4</Property>
+      <Property LongName="twizy_CTRL_1.requested_Indicator_State.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="twizy_CTRL_1.oCAN_CTRL" Name="oCAN_CTRL">
+      <Property LongName="twizy_CTRL_1.oCAN_CTRL.subsampling" Type="1">1</Property>
+      <Property LongName="twizy_CTRL_1.oCAN_CTRL.fifosize" Type="1">16</Property>
+      <Property LongName="twizy_CTRL_1.oCAN_CTRL.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="twizy_CTRL_1.longi_CTRL_type" Type="4"><![CDATA[2|1|torque_Nm|speed_km_h]]></Property>
+    <Property LongName="twizy_CTRL_1.show_debug_output" Type="0">false</Property>
+    <Property LongName="twizy_CTRL_1.verbose" Type="0">false</Property>
+    <Property LongName="twizy_CTRL_1.threaded" Type="0">true</Property>
+    <Property LongName="twizy_CTRL_1.priority" Type="1">128</Property>
+    <Property LongName="twizy_CTRL_1.autoStart" Type="0">true</Property>
+  </Component>
+  <Connection Output="twizy_CTRL_1.oCAN_CTRL" Input="can_kvaser_1.in"/>
+  <Connection Output="can_kvaser_1.out" Input="CANDecoder_1.input"/>
+  <Connection Output="twizy_CTRL_1.oCAN_CTRL" Input="CANDecoder_2.input"/>
+  <Connection Output="twizy_CTRL_1.oCAN_CTRL" Input="CANFrameViewer_1.input"/>
+  <Connection Output="can_kvaser_1.out" Input="CANFrameViewer_2.input"/>
+  <Connection Output="Dummy_Trajectory_generator_1.requested_PRND_gear_position" Input="DataViewer_1.input_0"/>
+  <Connection Output="Dummy_Trajectory_generator_1.target_steering_angle_rad" Input="DataViewer_1.input_1"/>
+  <Connection Output="Dummy_Trajectory_generator_1.target_speed_km_h" Input="DataViewer_1.input_2"/>
+  <Connection Output="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_AD_SteeringControl_Req" Input="DataViewer_2.input_0"/>
+  <Connection Output="CANDecoder_1.FAAR_CMD_AD_ACK_ACK_Req__SteeringAngle" Input="DataViewer_2.input_1"/>
+  <Connection Output="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle" Input="DataViewer_2.input_2"/>
+  <Connection Output="CANDecoder_1.FAAR_FeedBack_SteeringControlState" Input="DataViewer_2.input_3"/>
+  <Connection Output="CANDecoder_1.AD_Request_AD_SteeringControl_Req" Input="DataViewer_2.input_4"/>
+  <Connection Output="CANDecoder_1.AD_Request_AD_SteeringAngle_Req" Input="DataViewer_2.input_5"/>
+  <Connection Output="CANDecoder_2.AD_Request_AD_SteeringControl_Req" Input="DataViewer_3.input_0"/>
+  <Connection Output="CANDecoder_2.AD_Request_AD_SteeringAngle_Req" Input="DataViewer_3.input_1"/>
+  <Connection Output="CANDecoder_2.AD_Request5_AD_ConsigneVitesse" Input="DataViewer_3.input_3"/>
+  <Connection Output="CANDecoder_2.AD_Request2_AD_PRND_Req" Input="DataViewer_3.input_4"/>
+  <Connection Output="can_kvaser_1.out" Input="twizy_CTRL_1.iCAN_CTRL"/>
+  <Connection Output="Dummy_Trajectory_generator_1.requested_PRND_gear_position" Input="twizy_CTRL_1.requested_PRND_gear_position"/>
+  <Connection Output="Dummy_Trajectory_generator_1.target_steering_angle_rad" Input="twizy_CTRL_1.target_steering_angle_rad"/>
+  <Connection Output="Dummy_Trajectory_generator_1.target_speed_km_h" Input="twizy_CTRL_1.target_speed_km_h"/>
+  <Connection Output="Integer_constants_generator_1.output" Input="twizy_CTRL_1.requested_Indicator_State"/>
+  <Connection Input="RecFile_1.twizy_CTRL_1.oCAN_CTRL.input" Output="twizy_CTRL_1.oCAN_CTRL">
+    <Record Method="CANFile" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <Connection Input="RecFile_1.can_kvaser_1.out.input" Output="can_kvaser_1.out">
+    <Record Method="CANFile" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <Connection Input="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.input" Output="Dummy_Trajectory_generator_1.target_steering_angle_rad">
+    <Record Method="tabbed_text" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <Connection Input="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.input" Output="Dummy_Trajectory_generator_1.target_speed_km_h">
+    <Record Method="tabbed_text" neverskipping="false" useTimestamp="false"/>
+  </Connection>
+  <RTBoardView ID="JavaStudio1.0">
+    <ComponentBox InstanceName="can_kvaser_1" reversed="true">
+      <Description/>
+    </ComponentBox>
+    <ConnectionShape InstanceName="can_kvaser_1.in" color="0"/>
+    <ConnectionShape InstanceName="CANDecoder_1.input" color="0"/>
+    <ConnectionShape InstanceName="CANDecoder_2.input" color="0"/>
+    <ConnectionShape InstanceName="CANFrameViewer_1.input" color="0"/>
+    <ConnectionShape InstanceName="CANFrameViewer_2.input" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_1.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_2" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_4" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_5" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_1" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_3" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_3.input_4" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.can_kvaser_1.out.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.Dummy_Trajectory_generator_1.target_speed_km_h.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.Dummy_Trajectory_generator_1.target_steering_angle_rad.input" color="0"/>
+    <ConnectionShape InstanceName="RecFile_1.twizy_CTRL_1.oCAN_CTRL.input" color="0"/>
+    <ConnectionShape InstanceName="twizy_CTRL_1.iCAN_CTRL" color="0"/>
+    <ConnectionShape InstanceName="twizy_CTRL_1.requested_Indicator_State" color="0"/>
+    <ConnectionShape InstanceName="twizy_CTRL_1.requested_PRND_gear_position" color="0"/>
+    <ConnectionShape InstanceName="twizy_CTRL_1.target_speed_km_h" color="0"/>
+    <ConnectionShape InstanceName="twizy_CTRL_1.target_steering_angle_rad" color="0"/>
+    <ConnectionSplitter InstanceName="Splitter_1" color="0" x="1180" y="92" z="-1"/>
+  </RTBoardView>
+</RTMapsDiagram>

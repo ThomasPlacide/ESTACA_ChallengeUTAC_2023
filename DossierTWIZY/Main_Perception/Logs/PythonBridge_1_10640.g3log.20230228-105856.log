@@ -1,0 +1,25 @@
+		g3log created log at: Tue Feb 28 10:58:56 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/02/28 10:58:56 135586	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/02/28 10:58:56 154087	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/02/28 10:58:56 154096	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/02/28 10:58:56 268227	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/02/28 10:59:46 486023	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:00:02 009834	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:14:42 326207	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:15:15 488830	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:15:24 411691	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:18:40 313471	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:34:34 417303	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:34:55 149562	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:35:18 754490	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:35:40 763932	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:36:12 904149	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:36:32 685878	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:36:58 402081	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:37:23 429322	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 11:46:38 047543	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 12:01:32 225280	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/02/28 12:01:55 616358	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

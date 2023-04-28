@@ -1,0 +1,29 @@
+		g3log created log at: Wed Apr 26 12:06:13 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/26 12:06:13 424414	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/26 12:06:13 444104	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/26 12:06:13 444112	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/26 12:06:13 563133	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/26 12:07:38 219144	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocFusionDonnees.py", line 423, in Core
+    self.outputs["Objets"].write([a],ts)
+', "KeyError: 'Objets'
+"]
+2023/04/26 12:07:38 219504	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/26 12:13:03 276756	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/26 12:13:17 913872	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/26 12:13:49 903707	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocFusionDonnees.py", line 423, in Core
+    self.outputs["Objets"].write([a],ts)
+', "KeyError: 'Objets'
+"]
+2023/04/26 12:13:49 919551	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/26 12:15:21 820414	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocFusionDonnees.py", line 423, in Core
+    self.outputs["Objets"].write([a],ts)
+', "KeyError: 'Objets'
+"]
+2023/04/26 12:15:21 836280	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/26 14:23:35 023539	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

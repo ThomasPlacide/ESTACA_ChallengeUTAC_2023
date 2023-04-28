@@ -1,0 +1,223 @@
+		g3log created log at: Mon Mar 06 14:18:43 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/06 14:18:43 720078	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/06 14:18:43 739331	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/06 14:18:43 739339	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/06 14:18:43 847597	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/06 14:19:11 266574	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:20:27 800931	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:20:56 342940	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:21:58 246133	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:22:17 754429	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:26:16 694657	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:26:51 703355	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:37:54 035183	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:38:48 212903	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:42:32 215159	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 14:42:32 215734	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:44:39 266529	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:48:18 870760	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:48:51 225935	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:50:09 024584	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:50:48 857178	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 14:50:48 857471	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:53:03 091140	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 14:53:03 091800	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:55:11 347303	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 14:55:11 347696	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:56:43 485625	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:57:04 579574	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 14:58:22 494889	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 14:58:22 522345	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:00:37 153564	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:00:37 181555	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:02:25 003191	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:02:25 004523	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:03:49 840736	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:03:49 841763	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:05:03 260869	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:05:25 868504	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:05:25 869046	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:06:19 515574	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:06:19 516792	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:07:02 949724	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:07:02 959808	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:08:01 124221	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:13:10 661231	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:13:10 684788	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:14:35 176167	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:15:23 293888	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:15:23 317974	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:34:00 164479	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/06 15:48:36 448710	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/06 15:48:36 488899	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

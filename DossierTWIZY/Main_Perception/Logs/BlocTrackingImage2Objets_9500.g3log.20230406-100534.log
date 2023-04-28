@@ -1,0 +1,62 @@
+		g3log created log at: Thu Apr 06 10:05:34 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 10:05:34 421217	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 10:05:34 439630	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 10:05:34 439638	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 10:05:34 550608	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 10:05:56 796919	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:07:21 378933	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:09:28 087853	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:27 319758	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:37 569041	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:13:32 450248	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:16:53 757695	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:17:19 599350	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:17:46 070756	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:18:39 554349	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:09 111002	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:31 413364	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:20:42 577357	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:22:42 867129	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:23:56 434140	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:09 049446	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:31 413971	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:29:20 942748	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:05 059917	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:12 583098	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:07 454539	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:58 046570	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:32:19 566136	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:33:36 814298	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:05 988939	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:57 884960	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:16 686271	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:43 341565	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:09 076831	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:23 683975	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:42 814217	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:49 437020	WARNING [serialize_helper.cpp->SerializeHelper::Serialize:682]	Unknown type
+2023/04/06 10:43:49 466490	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['ValueError: object of too small depth for desired array
+', '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 222, in Core
+    self.outputs["Objects"].write(a)
+', '  File "C:\\Program Files\\Intempora\\RTMaps 4\\packages\\rtmaps_python_bridge\\python_process\\python38\\rtmaps\\types.py", line 63, in write
+    rt.write(self.name, data, ts, toi)
+', '  File "C:\\Program Files\\Intempora\\RTMaps 4\\packages\\rtmaps_python_bridge\\python_process\\python38\\rtmaps\\core.py", line 52, in write
+    rtmaps_core.write(output_number, data, ts, toi)
+', 'SystemError: <built-in function write> returned a result with an error set
+']
+2023/04/06 10:43:49 498290	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:22 213471	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:35 592143	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:45:34 830208	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:47:37 486472	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:04 194848	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:46 336260	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:24 830118	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:38 253369	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

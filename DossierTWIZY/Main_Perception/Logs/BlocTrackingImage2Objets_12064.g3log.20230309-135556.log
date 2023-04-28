@@ -1,0 +1,15 @@
+		g3log created log at: Thu Mar 09 13:55:56 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/09 13:55:56 784264	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/09 13:55:56 802253	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/09 13:55:56 802261	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/09 13:55:56 912972	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/09 13:56:17 412392	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:57:14 323510	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:57:53 590564	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:58:59 312708	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:01:13 598405	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:01:38 977387	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:03:44 416232	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

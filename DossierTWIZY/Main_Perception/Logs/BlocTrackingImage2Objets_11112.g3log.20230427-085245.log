@@ -1,0 +1,22 @@
+		g3log created log at: Thu Apr 27 08:52:45 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/27 08:52:45 537787	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/27 08:52:45 566498	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/27 08:52:45 566506	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/27 08:52:45 736337	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/27 08:56:13 527298	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:18:44 767195	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:22:29 020908	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:26:45 790822	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:34:48 767477	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:34:58 567700	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:16 435235	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:32 445181	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:40:59 503124	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:42:51 555514	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:45:08 031628	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:59:06 004899	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:59:52 325766	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 10:00:01 920920	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

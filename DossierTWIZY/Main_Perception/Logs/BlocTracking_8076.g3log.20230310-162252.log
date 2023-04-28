@@ -1,0 +1,24 @@
+		g3log created log at: Fri Mar 10 16:22:52 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/10 16:22:52 249636	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/10 16:22:52 268033	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/10 16:22:52 268041	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/10 16:22:52 379215	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/10 16:23:34 348567	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:24:42 333539	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:28:09 574034	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:30:05 360168	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:33:38 844075	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:34:19 279105	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:35:04 554151	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:35:26 031581	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:35:55 906403	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:36:33 162578	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:37:06 309216	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:38:35 086947	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:39:07 609391	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:41:40 357915	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:42:03 729636	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/10 16:42:40 139319	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

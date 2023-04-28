@@ -1,0 +1,80 @@
+		g3log created log at: Thu Apr 27 09:32:48 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/27 09:32:48 638005	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/27 09:32:48 666603	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/27 09:32:48 666610	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/27 09:32:48 848670	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/27 09:34:46 025932	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\Yolo_RTMaps4.py", line 112, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7-tiny_384x640.onnx failed:Load model models/yolov7-tiny_384x640.onnx failed. File doesn't exist
+"]
+2023/04/27 09:34:46 041902	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:34:56 910518	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\Yolo_RTMaps4.py", line 112, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7-tiny_384x640.onnx failed:Load model models/yolov7-tiny_384x640.onnx failed. File doesn't exist
+"]
+2023/04/27 09:34:56 910885	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:11 428135	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\Yolo_RTMaps4.py", line 112, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7-tiny_384x640.onnx failed:Load model models/yolov7-tiny_384x640.onnx failed. File doesn't exist
+"]
+2023/04/27 09:39:11 444220	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:28 189000	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\Yolo_RTMaps4.py", line 112, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7-tiny_384x640.onnx failed:Load model models/yolov7-tiny_384x640.onnx failed. File doesn't exist
+"]
+2023/04/27 09:39:28 189336	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:40:53 038478	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\Yolo_RTMaps4.py", line 112, in Birth
+    self.yolov7_detector = YOLOv7(model_path, conf_thres=0.5, iou_thres=0.5)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 17, in __init__
+    self.initialize_model(path)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\yolov7\\YOLOv7.py", line 23, in initialize_model
+    self.session = onnxruntime.InferenceSession(path,
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 347, in __init__
+    self._create_inference_session(providers, provider_options, disabled_optimizers)
+', '  File "C:\\Users\\ESTACA_TWIZY\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\\onnxruntime\\capi\\onnxruntime_inference_collection.py", line 384, in _create_inference_session
+    sess = C.InferenceSession(session_options, self._model_path, True, self._read_config_from_model)
+', "onnxruntime.capi.onnxruntime_pybind11_state.NoSuchFile: [ONNXRuntimeError] : 3 : NO_SUCHFILE : Load model from models/yolov7_384x640.onnx failed:Load model models/yolov7_384x640.onnx failed. File doesn't exist
+"]
+2023/04/27 09:40:53 039217	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:41:37 075281	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.
+g3log g3FileSink shutdown at: 09:41:37 934859

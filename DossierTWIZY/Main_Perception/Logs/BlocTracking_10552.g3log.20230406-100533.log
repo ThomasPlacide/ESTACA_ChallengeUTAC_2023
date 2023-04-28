@@ -1,0 +1,68 @@
+		g3log created log at: Thu Apr 06 10:05:33 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 10:05:33 844334	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 10:05:33 862689	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 10:05:33 862697	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 10:05:33 970944	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 10:05:56 799730	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:07:21 380775	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:09:28 085230	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:27 321240	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:37 569105	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:13:32 523366	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:16:53 760122	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:17:19 613838	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:17:46 070682	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:18:39 592037	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:09 113925	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:31 461212	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:20:42 639375	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:22:42 896744	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:23:56 434016	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:09 050111	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:31 420917	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:29:20 942111	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:05 059611	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:12 607895	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:07 482844	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:58 063598	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:32:19 567659	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:33:36 815645	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:05 990857	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:57 884776	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:16 687324	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:43 324931	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:09 090998	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:23 695063	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:42 810995	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:50 912457	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:22 182738	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:35 606655	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:45:34 848467	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:47:37 486373	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:04 194769	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:46 336316	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:24 853803	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:38 220695	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:51:40 758255
+
+***** FATAL EXCEPTION RECEIVED ******* 
+
+***** Vectored Exception Handler: Received fatal exception EXCEPTION_ACCESS_VIOLATION	PID: 10552
+
+*******	STACKDUMP *******
+stack dump [0]	 
+stack dump [1]	 
+stack dump [2]	
+stack dump [3]	
+stack dump [4]	 
+stack dump [5]	 
+stack dump [6]	 
+
+Exiting after fatal event  (FATAL_EXCEPTION). Fatal type:  EXCEPTION_ACCESS_VIOLATION
+Log content flushed sucessfully to sink
+
+
+g3log g3FileSink shutdown at: 10:51:40 758655

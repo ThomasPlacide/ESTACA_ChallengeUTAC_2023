@@ -1,0 +1,67 @@
+		g3log created log at: Thu Mar 02 12:03:37 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/02 12:03:37 542575	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/02 12:03:37 562155	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/02 12:03:37 562163	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/02 12:03:37 683819	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/02 12:03:54 967942	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:05:12 772537	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:07:28 012065	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/02 12:07:28 013024	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:07:49 071440	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:08:16 503573	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/02 12:08:16 515337	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:08:38 837107	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/02 12:08:38 837966	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:15:41 972007	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.5.4-dev) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 1 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/03/02 12:15:41 972676	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

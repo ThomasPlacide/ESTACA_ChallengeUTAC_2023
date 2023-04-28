@@ -1,0 +1,72 @@
+		g3log created log at: Thu Apr 06 12:14:10 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 12:14:10 132793	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 12:14:10 150774	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 12:14:10 150783	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 12:14:10 259172	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 12:14:43 928365	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 154, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:14:43 928743	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:15:22 024794	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 154, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:15:22 025048	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:16:56 887133	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:19:39 005378	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 189, in Core
+    coord = pixel2World(pixel,0,self.h_cam,self.incli_cam,self.camMat,self.distortion) #Transformation pixel2World
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 114, in pixel2World
+    print("| {:.2f} | {:.2f} |".format(row[0], row[1]))
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\matrixlib\\defmatrix.py", line 193, in __getitem__
+    out = N.ndarray.__getitem__(self, index)
+', 'IndexError: index 1 is out of bounds for axis 0 with size 1
+']
+2023/04/06 12:19:39 035027	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:20:00 637466	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 189, in Core
+    coord = pixel2World(pixel,0,self.h_cam,self.incli_cam,self.camMat,self.distortion) #Transformation pixel2World
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 114, in pixel2World
+    print("| {:.2f} | {:.2f} |".format(row[0], row[1]))
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\lib\\site-packages\
+umpy\\matrixlib\\defmatrix.py", line 193, in __getitem__
+    out = N.ndarray.__getitem__(self, index)
+', 'IndexError: index 1 is out of bounds for axis 0 with size 1
+']
+2023/04/06 12:20:00 669456	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:22:48 443430	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:25:11 769535	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 187, in Core
+    coord = pixel2World(pixel,0,self.h_cam,self.incli_cam,self.camMat,self.distortion) #Transformation pixel2World
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 113, in pixel2World
+    print("distance du pieton en M : {:.2f} ".format(point))
+', 'TypeError: unsupported format string passed to matrix.__format__
+']
+2023/04/06 12:25:11 813286	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:25:58 827807	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 187, in Core
+    coord = pixel2World(pixel,0,self.h_cam,self.incli_cam,self.camMat,self.distortion) #Transformation pixel2World
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 113, in pixel2World
+    print("distance du pieton en M : {:.2f} ".format(point[0]))
+', 'TypeError: unsupported format string passed to matrix.__format__
+']
+2023/04/06 12:25:58 869547	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:27:24 833100	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:27:38 922254	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:35:12 694194	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:44:22 384188	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:44:50 387050	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:46:37 514222	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 189, in Core
+    self.outputs["ControlePoint"].write(int(coord))
+', 'TypeError: only size-1 arrays can be converted to Python scalars
+']
+2023/04/06 13:46:37 560673	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 13:48:25 141498	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

@@ -1,0 +1,165 @@
+		g3log created log at: Thu Apr 06 10:08:47 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 10:08:47 886725	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 10:08:47 905714	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 10:08:47 905724	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 10:08:48 027957	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 10:09:24 273718	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:09:24 341044	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:24 787474	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:10:24 787978	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:10:33 124559	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:10:33 125073	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:13:30 950783	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:13:30 951428	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:18:34 602559	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:18:34 617510	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:09 111159	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:19:31 400533	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:20:42 577561	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:22:40 794342	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 91, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:22:40 796040	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:23:53 902352	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 94, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 52, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 38, in EstimationEnM
+    if coord_obj.x == -100:
+', "AttributeError: 'list' object has no attribute 'x'
+"]
+2023/04/06 10:23:53 919111	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:07 514345	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 94, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 52, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 38, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:28:07 530360	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:28:29 914099	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 94, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 52, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 38, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:28:29 915516	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:29:16 870977	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 95, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 53, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 39, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:29:16 872412	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:02 856533	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 95, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 53, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 39, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:30:02 857970	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:30:10 349814	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 95, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 53, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 32, in EstimationEnM
+    print(coord_obj.data[0].x)
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:30:10 350350	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:06 099923	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 93, in Core
+    print(Obj.data[0].x)
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:31:06 194413	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:31:56 644445	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 93, in Core
+    print(Obj[0].data[0].x)
+', "TypeError: 'Vehicle' object is not subscriptable
+"]
+2023/04/06 10:31:56 644949	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:32:18 236990	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 96, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 53, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 39, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:32:18 238415	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:33:34 078916	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 96, in Core
+    print(\'BlocDistanceArret\', DistanceArret().ComparaisonDistances(Obj, Speed))
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 53, in ComparaisonDistances
+    if self.DistanceAParcourir(speed) <= self.EstimationEnM(coord_obj):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 39, in EstimationEnM
+    if coord_obj.data[0].x == -100:
+', "AttributeError: 'list' object has no attribute 'data'
+"]
+2023/04/06 10:33:34 119568	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:05 989049	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:35:57 885017	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:14 950736	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:37:14 952303	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:37:43 304925	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:09 076766	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:38:23 684038	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:42 814292	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:43:50 912525	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:22 183006	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:44:35 606779	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:45:32 750170	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:45:32 781250	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:47:37 486528	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:04 194573	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:48:46 336141	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:24 830193	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:49:38 216384	INFO [python_manager.cpp->PythonManager::Death:637]	Death()

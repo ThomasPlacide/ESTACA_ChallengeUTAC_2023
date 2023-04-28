@@ -1,0 +1,36 @@
+		g3log created log at: Thu Apr 27 08:52:41 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/27 08:52:41 501345	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/27 08:52:41 643660	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/27 08:52:41 643667	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/27 08:52:42 603376	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/27 08:56:13 527381	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:18:44 767576	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:22:29 020806	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:26:45 790846	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:34:48 767474	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:34:58 567588	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:16 435256	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:39:32 445183	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:40:59 503124	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:42:51 555701	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:44:40 951139	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\BlocTracking (1).py", line 408, in Core
+    ImageOut.data.image_data = drawImage(ImageOut.data.image_data,self.classIds,self.trackingIds,self.trackingBoxes)
+', '  File "C:/Users/ESTACA_TWIZY/Desktop/SEN-4/Main_Perception/PythonBridges\\BlocTracking (1).py", line 164, in drawImage
+    Frame = cv2.rectangle(Frame,(x1,y1),(x2,y2),(244,80,60),2)
+', "cv2.error: OpenCV(4.7.0) :-1: error: (-5:Bad argument) in function 'rectangle'
+> Overload resolution failed:
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'pt1'. Sequence item with index 0 has a wrong type
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+>  - Can't parse 'rec'. Expected sequence length 4, got 2
+
+"]
+2023/04/27 09:44:40 967081	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:59:06 004567	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 09:59:52 325703	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 10:00:01 920920	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/27 10:07:12 566512	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

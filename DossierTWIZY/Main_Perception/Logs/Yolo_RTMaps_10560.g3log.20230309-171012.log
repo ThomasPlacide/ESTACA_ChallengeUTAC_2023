@@ -1,0 +1,20 @@
+		g3log created log at: Thu Mar 09 17:10:12 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/09 17:10:12 334107	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/09 17:10:12 352426	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/09 17:10:12 352435	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/09 17:10:12 459145	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/09 17:10:41 343609	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 17:11:30 050665	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 17:11:57 580838	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 17:13:15 999599	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 138, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 41, in filteredIds
+    ind=np.where(input.class_ids[:] > 3)[0]
+', "TypeError: '>' not supported between instances of 'list' and 'int'
+"]
+2023/03/09 17:13:16 000302	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 17:17:08 295918	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

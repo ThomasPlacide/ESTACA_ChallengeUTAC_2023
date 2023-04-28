@@ -1,0 +1,79 @@
+		g3log created log at: Thu Apr 06 11:24:31 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 11:24:31 141758	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 11:24:31 160325	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 11:24:31 160333	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 11:24:31 281150	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 11:35:05 275100	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:35:18 799569	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:35:33 989504	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:35:59 084501	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:37:13 404413	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:37:29 614758	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:37:52 842649	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:38:11 063188	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:38:21 079159	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:38:32 567346	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:38:44 936748	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:41:45 693558	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:43:00 820556	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:43:21 742759	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:45:25 454229	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:50:37 549216	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:51:08 331401	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 11:51:08 377154	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:52:58 291480	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 11:52:58 291826	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:53:37 473194	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 11:53:37 474134	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:54:38 757224	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 11:54:38 757519	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:58:39 585035	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 11:58:39 586018	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:01:52 772261	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:01:52 836486	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:03:08 502873	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:03:08 503288	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:03:57 133039	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 152, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:03:57 133350	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:12:29 701953	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocTrackingImage2Objets.py", line 154, in Birth
+    self.camMat, self.distortion = switcher[3]
+', 'TypeError: cannot unpack non-iterable function object
+']
+2023/04/06 12:12:29 769708	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 12:13:00 499229	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

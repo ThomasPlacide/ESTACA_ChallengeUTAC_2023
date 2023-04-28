@@ -1,0 +1,197 @@
+		g3log created log at: Thu Mar 09 15:24:28 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/09 15:24:28 104021	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/09 15:24:28 123901	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/09 15:24:28 123909	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/09 15:24:28 242719	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/09 15:27:15 421475	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 139, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 43, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:27:15 431029	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:30:24 340787	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 140, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:30:24 341312	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:30:34 173709	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 140, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:30:34 174695	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:30:49 281499	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 140, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:30:49 282643	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:31:04 728835	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 140, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:31:04 750613	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:31:53 036742	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ["TypeError: float() argument must be a string or a number, not 'list'
+", '
+The above exception was the direct cause of the following exception:
+
+', 'Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 140, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 44, in filteredIds
+    input.scores[i] = []
+', 'ValueError: setting an array element with a sequence.
+']
+2023/03/09 15:31:53 048624	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:36:34 850628	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 143, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 45, in filteredIds
+    input.scores=input.scores.pop[i]
+', "AttributeError: 'numpy.ndarray' object has no attribute 'pop'
+"]
+2023/03/09 15:36:34 850911	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:39:32 186330	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 143, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 45, in filteredIds
+    input.scores=input.scores.remove[i]
+', "AttributeError: 'numpy.ndarray' object has no attribute 'remove'
+"]
+2023/03/09 15:39:32 186610	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:42:22 600441	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 148, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 49, in filteredIds
+    del input.scores.remove[i]
+', "AttributeError: 'numpy.ndarray' object has no attribute 'remove'
+"]
+2023/03/09 15:42:22 616402	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:42:53 626666	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 148, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 49, in filteredIds
+    del input.scores[i]
+', 'ValueError: cannot delete array elements
+']
+2023/03/09 15:42:53 632730	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:45:26 043331	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 171, in Core
+    classIdsOut.data = prepareIds(self.CmrObject.class_ids,Ids)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 82, in prepareIds
+    nArray = np.append(nArray,array[i])
+', 'IndexError: index 3 is out of bounds for axis 0 with size 3
+']
+2023/03/09 15:45:26 043695	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:47:05 361402	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 150, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 42, in filteredIds
+    if (input.class_ids[i] > 3):
+', 'IndexError: index 3 is out of bounds for axis 0 with size 3
+']
+2023/03/09 15:47:05 361758	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 15:57:14 347950	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\Lib\\imp.py", line 314, in reload
+    return importlib.reload(module)
+', '  File "C:\\Users\\user\\AppData\\Local\\Programs\\Python\\Python38\\Lib\\importlib\\__init__.py", line 169, in reload
+    _bootstrap._exec(spec, module)
+', '  File "<frozen importlib._bootstrap>", line 604, in _exec
+', '  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+', '  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+', '  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+', '  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 43
+', '    print("score_before",input.scores)
+', '    ^
+', 'IndentationError: unexpected indent
+']
+2023/03/09 15:57:20 837495
+
+***** FATAL EXCEPTION RECEIVED ******* 
+
+***** Vectored Exception Handler: Received fatal exception EXCEPTION_ACCESS_VIOLATION	PID: 12464
+
+*******	STACKDUMP *******
+stack dump [0]	 
+stack dump [1]	 
+stack dump [2]	 
+stack dump [3]	 
+stack dump [4]	 
+stack dump [5]	 
+stack dump [6]	 
+stack dump [7]	 
+stack dump [8]	 
+stack dump [9]	 
+stack dump [10]	 
+stack dump [11]	 
+stack dump [12]	 
+stack dump [13]	 
+stack dump [14]	 
+stack dump [15]	 
+stack dump [16]	 
+stack dump [17]	 
+stack dump [18]	 
+stack dump [19]	 
+stack dump [20]	 
+stack dump [21]	 
+stack dump [22]	 
+stack dump [23]	 
+stack dump [24]	 
+stack dump [25]	 
+stack dump [26]	 
+stack dump [27]	 
+stack dump [28]	 
+stack dump [29]	 
+stack dump [30]	 
+stack dump [31]	
+stack dump [32]	
+stack dump [33]	
+stack dump [34]	 
+stack dump [35]	 
+stack dump [36]	 
+stack dump [37]	 
+stack dump [38]	 
+stack dump [39]	 
+stack dump [40]	 
+
+Exiting after fatal event  (FATAL_EXCEPTION). Fatal type:  EXCEPTION_ACCESS_VIOLATION
+Log content flushed sucessfully to sink
+
+
+g3log g3FileSink shutdown at: 15:57:20 838157

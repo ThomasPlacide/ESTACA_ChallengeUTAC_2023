@@ -1,0 +1,63 @@
+		g3log created log at: Thu Mar 09 13:55:57 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/09 13:55:57 846758	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/09 13:55:57 865022	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/09 13:55:57 865030	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/09 13:55:57 976066	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/09 13:56:14 053373	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    CmrObject = filteredIds(CmrObject)
+', "UnboundLocalError: local variable 'CmrObject' referenced before assignment
+"]
+2023/03/09 13:56:14 054269	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:57:11 163430	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 45, in filteredIds
+    input.scores[i], input.boxes[i], input.class_ids[i] = []
+', 'ValueError: not enough values to unpack (expected 3, got 0)
+']
+2023/03/09 13:57:11 164402	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:57:47 870711	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 42, in filteredIds
+    if (input.class_ids == any([0,1,2])):
+', 'ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+']
+2023/03/09 13:57:47 887649	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 13:58:56 340650	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 45, in filteredIds
+    input.scores[i], input.boxes[i], input.class_ids[i] = []
+', 'ValueError: not enough values to unpack (expected 3, got 0)
+']
+2023/03/09 13:58:56 341237	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:01:09 955408	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 45, in filteredIds
+    input.scores[i], input.boxes[i], input.class_ids[i] = []
+', 'ValueError: not enough values to unpack (expected 3, got 0)
+']
+2023/03/09 14:01:09 958308	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:01:31 572654	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 42, in filteredIds
+    if (input.class_ids == any([0,1,2])):
+', 'ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+']
+2023/03/09 14:01:31 573445	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:03:33 734905	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 137, in Core
+    self.CmrObject = filteredIds(self.CmrObject)
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\Yolo_RTMaps2.py", line 42, in filteredIds
+    if (input.class_ids == any([0,1,2])):
+', 'ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+']
+2023/03/09 14:03:33 735396	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/09 14:12:46 603862	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

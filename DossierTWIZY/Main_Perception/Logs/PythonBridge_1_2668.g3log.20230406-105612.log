@@ -1,0 +1,68 @@
+		g3log created log at: Thu Apr 06 10:56:12 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/04/06 10:56:12 048112	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/04/06 10:56:12 068210	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/04/06 10:56:12 068219	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/04/06 10:56:12 186249	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/04/06 10:57:20 239430	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:58:05 357276	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:58:05 373279	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:58:11 750492	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:58:11 750744	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 10:58:31 712416	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 10:58:31 712744	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:01:23 256486	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:03:31 000233	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:04:41 769097	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:05:11 866680	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:06:08 740063	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:06:51 137926	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:08:10 706099	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 11:08:10 706592	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:09:20 376840	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 11:09:20 377197	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:09:43 970617	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:10:12 059745	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:10:20 067160	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 11:10:20 100878	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:10:31 054306	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 11:10:31 055400	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:10:56 573530	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:12:00 499638	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:13:03 529420	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges\\BlocDistanceArret2.py", line 92, in Core
+    Obj = self.inputs["Objects"].ioelt.data
+', "KeyError: 'Objects'
+"]
+2023/04/06 11:13:03 529916	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/04/06 11:24:14 025991	INFO [python_manager.cpp->PythonManager::ProcessRTMapsAction:210]	Exiting now! All went well.

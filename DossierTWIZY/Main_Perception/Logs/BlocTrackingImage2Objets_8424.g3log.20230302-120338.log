@@ -1,0 +1,25 @@
+		g3log created log at: Thu Mar 02 12:03:38 2023
+		LOG format: [YYYY/MM/DD hh:mm:ss uuu* LEVEL FILE->FUNCTION:LINE] messagen
+		(uuu*: microseconds fractions of the seconds value)
+
+2023/03/02 12:03:38 300546	INFO [python_manager.cpp->PythonManager::InitializePython:127]	Initializing Python ... 
+2023/03/02 12:03:38 319595	INFO [python_manager.cpp->PythonManager::InitializePython:129]	Initializing Python DONE... 
+2023/03/02 12:03:38 319605	INFO [python_manager.cpp->PythonManager::InitNumpy:172]	Init numpy... 
+2023/03/02 12:03:38 433045	INFO [python_manager.cpp->PythonManager::InitNumpy:174]	Init numpy DONE... 
+2023/03/02 12:03:50 522197	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTrackingImage2Objets.py", line 190, in Core
+    newObjet[0].kind = 0
+', "TypeError: 'Ioelt' object is not subscriptable
+"]
+2023/03/02 12:03:50 522814	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:05:10 648667	WARNING [python_manager.cpp->PythonManager::CheckForErrors:745]	Error, traceback : ['Traceback (most recent call last):
+', '  File "C:/Users/user/OneDrive - ESTACA/Desktop/ESTAPARK2023/RTMapsYOLOv7\\BlocTrackingImage2Objets.py", line 177, in Core
+    newObjet.data.append(rtmaps.types.RealObject())
+', "NameError: name 'newObjet' is not defined
+"]
+2023/03/02 12:05:10 649251	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:07:31 340651	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:07:49 101245	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:08:18 272096	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:08:39 253765	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
+2023/03/02 12:16:18 312041	INFO [python_manager.cpp->PythonManager::Death:637]	Death()
