@@ -317,4 +317,5 @@ class rtmaps_python(BaseComponent):
     # Death() will be called once at diagram execution shutdown
     def Death(self):
         pass
+    
 
