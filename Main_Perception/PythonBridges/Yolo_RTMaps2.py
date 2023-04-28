@@ -140,7 +140,7 @@ class rtmaps_python(BaseComponent):
                 Ids.append(i)
 
         
-        combined_img=cp.copy(frame)
+        combined_img = cp.copy(frame)
         combined_img.image_data = self.yolov7_detector.draw_detections(frame.image_data)
         combined_img.ts=timestamp
         self.outputs["image_out"].write(combined_img) 
