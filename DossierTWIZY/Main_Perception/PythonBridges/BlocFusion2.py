@@ -48,3 +48,6 @@ class rtmaps_python(BaseComponent):
         Clustered_Objects.data.x, Clustered_Objects.data.y = ObjectsTreatment().CompareCoord(C_obj, R_obj)
 
         self.outputs["Clustered_Objects"].write(Clustered_Objects)
+
+    def Death(self): 
+        pass
