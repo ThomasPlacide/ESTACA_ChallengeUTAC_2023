@@ -45,13 +45,13 @@ class rtmaps_python(BaseComponent):
 
 # Birth() will be called once at diagram execution startup
     def Birth(self):
-        print("Python Birth")
+        pass
         
 
 # Core() is called every time you have a new input
     def Core(self):
         DistanceAParcourir = 35 # Longueur de la piste
-        Current_time = self.inputs["Objects"].ioelt.ts
+        Current_time = self.inputs["VehicleSpeed"].ioelt.ts
         Current_time = Current_time/1e6
         Current_Speed = self.inputs["VehicleSpeed"].ioelt.data
         DistanceCovered = SensorCalculation().CalculateDistance(Current_Speed, Current_time)

@@ -1,15 +1,9 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<RTMapsDiagram xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" EngineVersion="4.9" version="4.8.0" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
+<?xml version="1.0" encoding="UTF-8"?>
+<RTMapsDiagram version="4.8.0" EngineVersion="4.9" xmlns="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.intempora.com/RTMaps/2011/RTMapsFiles http://www.intempora.com/schemas/RTMaps/2011/RTMapsDiagram.xsd">
   <RequiredPackages>
-    <File Version="1.6.7"><![CDATA[C:\Program Files\Intempora\RTMaps 4\packages\rtmaps_continental_radars\rtmaps_continental_radars.pck]]>
-<Relative><![CDATA[%RTMAPS_INSTDIR%\packages\rtmaps_continental_radars\rtmaps_continental_radars.pck]]></Relative>
-</File>
-    <File Version="3.2.1"><![CDATA[C:\Program Files\Intempora\RTMaps 4\packages\rtmaps_python_bridge\rtmaps_python_bridge.pck]]>
-<Relative><![CDATA[%RTMAPS_INSTDIR%\packages\rtmaps_python_bridge\rtmaps_python_bridge.pck]]></Relative>
-</File>
-    <File Version="2.7.0"><![CDATA[C:\Program Files\Intempora\RTMaps 4\packages\rtmaps_webcam.pck]]>
-<Relative><![CDATA[%RTMAPS_INSTDIR%\packages\rtmaps_webcam.pck]]></Relative>
-</File>
+    <File Version="1.6.7"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_continental_radars/rtmaps_continental_radars.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_continental_radars/rtmaps_continental_radars.pck]]></Relative></File>
+    <File Version="3.2.1"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_python_bridge/rtmaps_python_bridge.pck]]></Relative></File>
+    <File Version="2.7.0"><![CDATA[C:/Program Files/Intempora/RTMaps 4/packages/rtmaps_webcam.pck]]><Relative><![CDATA[%RTMAPS_INSTDIR%/packages/rtmaps_webcam.pck]]></Relative></File>
   </RequiredPackages>
   <EngineProperties>
     <Property LongName="Engine.startTimespeed" Type="1">1000</Property>
@@ -61,7 +55,7 @@
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_filter_on_rcs_value" Type="0">true</Property>
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_filter_min_rcs" Type="2">-10</Property>
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_color_mode" Type="4"><![CDATA[2|0|Fixed|Color scale on RCS value]]></Property>
-    <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_color" SubType="4" Type="1">16776960</Property>
+    <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_color" Type="1" SubType="4">16776960</Property>
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_objects_length" Type="2">1</Property>
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_objects_width" Type="2">1</Property>
     <Property LongName="ars408_ObjectGeneralInformation_toRealObject_1.p_objects_height" Type="2">1</Property>
@@ -80,33 +74,29 @@
       <Property LongName="BlocCheckPieton.PietonInROI.fifosize" Type="1">16</Property>
       <Property LongName="BlocCheckPieton.PietonInROI.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="BlocCheckPieton.guard_begin" SubType="128" Type="0">true</Property>
-    <Property LongName="BlocCheckPieton.internalInputs" SubType="128" Type="3"><![CDATA[Objets;20==]]></Property>
-    <Property LongName="BlocCheckPieton.internalOutputs" SubType="128" Type="3"><![CDATA[PietonInROI;0==;0]]></Property>
-    <Property LongName="BlocCheckPieton.internalProperties" SubType="128" Type="3"/>
-    <ReadOnlyProperty LongName="BlocCheckPieton.advance_begin_configuration" SubType="256" Type="3"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocCheckPieton.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="BlocCheckPieton.internalInputs" Type="3" SubType="128"><![CDATA[Objets;20==]]></Property>
+    <Property LongName="BlocCheckPieton.internalOutputs" Type="3" SubType="128"><![CDATA[PietonInROI;0==;0]]></Property>
+    <Property LongName="BlocCheckPieton.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BlocCheckPieton.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="BlocCheckPieton.logDebug" Type="0">false</Property>
     <Property LongName="BlocCheckPieton.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">436</ReadOnlyProperty>
-    <Property LongName="BlocCheckPieton.additionalEnvironmentVariables" Type="3"/>
-    <ReadOnlyProperty LongName="BlocCheckPieton.advance_end_configuration" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocCheckPieton.basic_begin_configuration" SubType="256" Type="3"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="BlocCheckPieton.pythonInstallationFolder" SubType="32" Type="3"><![CDATA[C:\Users\user\AppData\Local\Programs\Python\Python38]]></Property>
-    <Property LongName="BlocCheckPieton.pythonLogDirectory" SubType="32" Type="3"><![CDATA[E:\Logs\Main_Perception\Logs]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\Logs]]></Relative>
-</Property>
+    <ReadOnlyProperty LongName="BlocCheckPieton.pythonPID" Type="1">9548</ReadOnlyProperty>
+    <Property LongName="BlocCheckPieton.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BlocCheckPieton.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocCheckPieton.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocCheckPieton.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="BlocCheckPieton.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocCheckPieton.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocCheckPieton.pythonFilename" SubType="80" Type="3"><![CDATA[E:\Logs\Main_Perception\PythonBridges\BlocCheckPieton.py]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\PythonBridges\BlocCheckPieton.py]]></Relative>
-</Property>
+    <Property LongName="BlocCheckPieton.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/PythonBridges/BlocCheckPieton.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocCheckPieton.py]]></Relative></Property>
     <Property LongName="BlocCheckPieton.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <Property LongName="BlocCheckPieton.synchroTolerance" SubType="1" Type="1">0</Property>
-    <ReadOnlyProperty LongName="BlocCheckPieton.prop_end_subsection_default_opened" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocCheckPieton.userSubsection" SubType="256" Type="3"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocCheckPieton.userSubsectionEnd" SubType="512" Type="0">true</ReadOnlyProperty>
+    <Property LongName="BlocCheckPieton.synchroTolerance" Type="1" SubType="1">0</Property>
+    <ReadOnlyProperty LongName="BlocCheckPieton.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocCheckPieton.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocCheckPieton.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="BlocCheckPieton.threaded" Type="0">true</Property>
     <Property LongName="BlocCheckPieton.priority" Type="1">128</Property>
     <Property LongName="BlocCheckPieton.autoStart" Type="0">true</Property>
@@ -125,111 +115,37 @@
       <Property LongName="BlocFusionDonnees.Objets1.fifosize" Type="1">16</Property>
       <Property LongName="BlocFusionDonnees.Objets1.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="BlocFusionDonnees.guard_begin" SubType="128" Type="0">true</Property>
-    <Property LongName="BlocFusionDonnees.internalInputs" SubType="128" Type="3"><![CDATA[ObjetsCamera;20==#ObjetsRadar;20==]]></Property>
-    <Property LongName="BlocFusionDonnees.internalOutputs" SubType="128" Type="3"><![CDATA[Objets1;20==;50]]></Property>
-    <Property LongName="BlocFusionDonnees.internalProperties" SubType="128" Type="3"><![CDATA[tMaxNoDetec||11||1#seuil_dist||11||1#seuil_age||8||1]]></Property>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.advance_begin_configuration" SubType="256" Type="3"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocFusionDonnees.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="BlocFusionDonnees.internalInputs" Type="3" SubType="128"><![CDATA[ObjetsCamera;20==#ObjetsRadar;20==]]></Property>
+    <Property LongName="BlocFusionDonnees.internalOutputs" Type="3" SubType="128"><![CDATA[Objets1;20==;50]]></Property>
+    <Property LongName="BlocFusionDonnees.internalProperties" Type="3" SubType="128"><![CDATA[tMaxNoDetec||11||1#seuil_dist||11||1#seuil_age||8||1]]></Property>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocFusionDonnees.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="BlocFusionDonnees.logDebug" Type="0">false</Property>
     <Property LongName="BlocFusionDonnees.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocFusionDonnees.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocFusionDonnees.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.pythonPID" Type="1">10164</ReadOnlyProperty>
-    <Property LongName="BlocFusionDonnees.additionalEnvironmentVariables" Type="3"/>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.advance_end_configuration" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.basic_begin_configuration" SubType="256" Type="3"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="BlocFusionDonnees.pythonInstallationFolder" SubType="32" Type="3"><![CDATA[C:\Users\user\AppData\Local\Programs\Python\Python38]]></Property>
-    <Property LongName="BlocFusionDonnees.pythonLogDirectory" SubType="32" Type="3"><![CDATA[E:\Logs\Main_Perception\Logs]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\Logs]]></Relative>
-</Property>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.pythonPID" Type="1">6564</ReadOnlyProperty>
+    <Property LongName="BlocFusionDonnees.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocFusionDonnees.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="BlocFusionDonnees.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocFusionDonnees.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocFusionDonnees.pythonFilename" SubType="80" Type="3"><![CDATA[E:\Logs\Main_Perception\PythonBridges\BlocFusionDonnees.py]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\PythonBridges\BlocFusionDonnees.py]]></Relative>
-</Property>
+    <Property LongName="BlocFusionDonnees.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/PythonBridges/BlocFusionDonnees.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocFusionDonnees.py]]></Relative></Property>
     <Property LongName="BlocFusionDonnees.readingPolicy" Type="4"><![CDATA[5|1|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <Property LongName="BlocFusionDonnees.timeout" SubType="1" Type="1">0</Property>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.prop_end_subsection_default_opened" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.userSubsection" SubType="256" Type="3"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="BlocFusionDonnees.timeout" Type="1" SubType="1">0</Property>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="BlocFusionDonnees.tMaxNoDetec" Type="2">1</Property>
     <Property LongName="BlocFusionDonnees.seuil_dist" Type="2">1</Property>
     <Property LongName="BlocFusionDonnees.seuil_age" Type="1">1</Property>
-    <ReadOnlyProperty LongName="BlocFusionDonnees.userSubsectionEnd" SubType="512" Type="0">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocFusionDonnees.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="BlocFusionDonnees.threaded" Type="0">true</Property>
     <Property LongName="BlocFusionDonnees.priority" Type="1">128</Property>
-    <Property LongName="BlocFusionDonnees.autoStart" Type="0">true</Property>
+    <Property LongName="BlocFusionDonnees.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="BlockTracking" Model="PythonBridge" Version="3.2.0" x="472" y="96" z="0">
-    <Input LongName="BlockTracking.Boxes" Name="Boxes">
-      <Property LongName="BlockTracking.Boxes.readerType" Type="1">0</Property>
-      <Property LongName="BlockTracking.Boxes.subsampling" Type="1">1</Property>
-    </Input>
-    <Input LongName="BlockTracking.Ids" Name="Ids">
-      <Property LongName="BlockTracking.Ids.readerType" Type="1">0</Property>
-      <Property LongName="BlockTracking.Ids.subsampling" Type="1">1</Property>
-    </Input>
-    <Input LongName="BlockTracking.Image" Name="Image">
-      <Property LongName="BlockTracking.Image.readerType" Type="1">0</Property>
-      <Property LongName="BlockTracking.Image.subsampling" Type="1">1</Property>
-    </Input>
-    <Input LongName="BlockTracking.Scores" Name="Scores">
-      <Property LongName="BlockTracking.Scores.readerType" Type="1">0</Property>
-      <Property LongName="BlockTracking.Scores.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="BlockTracking.outImage" Name="outImage">
-      <Property LongName="BlockTracking.outImage.subsampling" Type="1">1</Property>
-      <Property LongName="BlockTracking.outImage.fifosize" Type="1">16</Property>
-      <Property LongName="BlockTracking.outImage.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="BlockTracking.tIds" Name="tIds">
-      <Property LongName="BlockTracking.tIds.subsampling" Type="1">1</Property>
-      <Property LongName="BlockTracking.tIds.fifosize" Type="1">16</Property>
-      <Property LongName="BlockTracking.tIds.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="BlockTracking.tBoxes" Name="tBoxes">
-      <Property LongName="BlockTracking.tBoxes.subsampling" Type="1">1</Property>
-      <Property LongName="BlockTracking.tBoxes.fifosize" Type="1">16</Property>
-      <Property LongName="BlockTracking.tBoxes.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="BlockTracking.tClassIds" Name="tClassIds">
-      <Property LongName="BlockTracking.tClassIds.subsampling" Type="1">1</Property>
-      <Property LongName="BlockTracking.tClassIds.fifosize" Type="1">16</Property>
-      <Property LongName="BlockTracking.tClassIds.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="BlockTracking.guard_begin" SubType="128" Type="0">true</Property>
-    <Property LongName="BlockTracking.internalInputs" SubType="128" Type="3"><![CDATA[Boxes;9==#Ids;9==#Image;18==#Scores;1==]]></Property>
-    <Property LongName="BlockTracking.internalOutputs" SubType="128" Type="3"><![CDATA[outImage;18==;0#tIds;9==;50#tBoxes;9==;200#tClassIds;9==;50]]></Property>
-    <Property LongName="BlockTracking.internalProperties" SubType="128" Type="3"><![CDATA[Temps_max_non_detec_sec||11||1.5#Seuil_IOU||11||0.4]]></Property>
-    <ReadOnlyProperty LongName="BlockTracking.advance_begin_configuration" SubType="256" Type="3"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
-    <Property LongName="BlockTracking.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
-    <Property LongName="BlockTracking.logDebug" Type="0">false</Property>
-    <Property LongName="BlockTracking.showTracebackInConsole" Type="0">true</Property>
-    <Property LongName="BlockTracking.autoReloadSubModules" Type="0">true</Property>
-    <Property LongName="BlockTracking.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlockTracking.pythonPID" Type="1">5524</ReadOnlyProperty>
-    <Property LongName="BlockTracking.additionalEnvironmentVariables" Type="3"/>
-    <ReadOnlyProperty LongName="BlockTracking.advance_end_configuration" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlockTracking.basic_begin_configuration" SubType="256" Type="3"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="BlockTracking.pythonInstallationFolder" SubType="32" Type="3"><![CDATA[C:\Users\user\AppData\Local\Programs\Python\Python38]]></Property>
-    <Property LongName="BlockTracking.pythonLogDirectory" SubType="32" Type="3"><![CDATA[E:\Logs\Main_Perception\Logs]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\Logs]]></Relative>
-</Property>
-    <Property LongName="BlockTracking.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlockTracking.pythonFilename" SubType="80" Type="3"><![CDATA[E:\Logs\Main_Perception\PythonBridges\BlocTracking (1).py]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\PythonBridges\BlocTracking (1).py]]></Relative>
-</Property>
-    <Property LongName="BlockTracking.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <Property LongName="BlockTracking.synchroTolerance" SubType="1" Type="1">0</Property>
-    <ReadOnlyProperty LongName="BlockTracking.prop_end_subsection_default_opened" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlockTracking.userSubsection" SubType="256" Type="3"><![CDATA[User Properties]]></ReadOnlyProperty>
-    <Property LongName="BlockTracking.Temps_max_non_detec_sec" Type="2">1.5</Property>
-    <Property LongName="BlockTracking.Seuil_IOU" Type="2">0.4</Property>
-    <ReadOnlyProperty LongName="BlockTracking.userSubsectionEnd" SubType="512" Type="0">true</ReadOnlyProperty>
-    <Property LongName="BlockTracking.threaded" Type="0">true</Property>
-    <Property LongName="BlockTracking.priority" Type="1">128</Property>
-    <Property LongName="BlockTracking.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="BlocTrackingImage2Objets" Model="PythonBridge" Version="3.2.0" x="656" y="80" z="0">
+  <Component InstanceName="BlocTrackingImage2Objets" Model="PythonBridge" Version="3.2.0" x="648" y="48" z="0">
     <Input LongName="BlocTrackingImage2Objets.tIds" Name="tIds">
       <Property LongName="BlocTrackingImage2Objets.tIds.readerType" Type="1">0</Property>
       <Property LongName="BlocTrackingImage2Objets.tIds.subsampling" Type="1">1</Property>
@@ -247,41 +163,92 @@
       <Property LongName="BlocTrackingImage2Objets.Objects.fifosize" Type="1">16</Property>
       <Property LongName="BlocTrackingImage2Objets.Objects.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="BlocTrackingImage2Objets.guard_begin" SubType="128" Type="0">true</Property>
-    <Property LongName="BlocTrackingImage2Objets.internalInputs" SubType="128" Type="3"><![CDATA[tIds;9==#tBoxes;9==#tClassIds;9==]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.internalOutputs" SubType="128" Type="3"><![CDATA[Objects;20==;50]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.internalProperties" SubType="128" Type="3"><![CDATA[Hauteur_camera_m||11||1.71#Inclinaison_deg||11||0#Choix_camera||13||4|3|Camera-USB|Camera-integree|Camera-4K|Camera-Twizzy||24]]></Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_begin_configuration" SubType="256" Type="3"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocTrackingImage2Objets.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="BlocTrackingImage2Objets.internalInputs" Type="3" SubType="128"><![CDATA[tIds;9==#tBoxes;9==#tClassIds;9==]]></Property>
+    <Property LongName="BlocTrackingImage2Objets.internalOutputs" Type="3" SubType="128"><![CDATA[Objects;20==;50]]></Property>
+    <Property LongName="BlocTrackingImage2Objets.internalProperties" Type="3" SubType="128"><![CDATA[Hauteur_camera_m||11||1.71#Inclinaison_deg||11||0#Choix_camera||13||4|3|Camera-USB|Camera-integree|Camera-4K|Camera-Twizzy||24]]></Property>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="BlocTrackingImage2Objets.logDebug" Type="0">false</Property>
     <Property LongName="BlocTrackingImage2Objets.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.memorySize" Type="1">10000000</Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">2328</ReadOnlyProperty>
-    <Property LongName="BlocTrackingImage2Objets.additionalEnvironmentVariables" Type="3"/>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_end_configuration" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.basic_begin_configuration" SubType="256" Type="3"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="BlocTrackingImage2Objets.pythonInstallationFolder" SubType="32" Type="3"><![CDATA[C:\Users\user\AppData\Local\Programs\Python\Python38]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.pythonLogDirectory" SubType="32" Type="3"><![CDATA[E:\Logs\Main_Perception\Logs]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\Logs]]></Relative>
-</Property>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.pythonPID" Type="1">8488</ReadOnlyProperty>
+    <Property LongName="BlocTrackingImage2Objets.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="BlocTrackingImage2Objets.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="BlocTrackingImage2Objets.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="BlocTrackingImage2Objets.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.pythonFilename" SubType="80" Type="3"><![CDATA[E:\Logs\Main_Perception\PythonBridges\BlocTrackingImage2Objets.py]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\PythonBridges\BlocTrackingImage2Objets.py]]></Relative>
-</Property>
+    <Property LongName="BlocTrackingImage2Objets.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/PythonBridges/BlocTrackingImage2Objets.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocTrackingImage2Objets.py]]></Relative></Property>
     <Property LongName="BlocTrackingImage2Objets.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <Property LongName="BlocTrackingImage2Objets.synchroTolerance" SubType="1" Type="1">0</Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.prop_end_subsection_default_opened" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.userSubsection" SubType="256" Type="3"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="BlocTrackingImage2Objets.synchroTolerance" Type="1" SubType="1">0</Property>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.Hauteur_camera_m" Type="2">1.71</Property>
     <Property LongName="BlocTrackingImage2Objets.Inclinaison_deg" Type="2">0</Property>
     <Property LongName="BlocTrackingImage2Objets.Choix_camera" Type="4"><![CDATA[4|3|Camera-USB|Camera-integree|Camera-4K|Camera-Twizzy]]></Property>
-    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.userSubsectionEnd" SubType="512" Type="0">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BlocTrackingImage2Objets.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="BlocTrackingImage2Objets.threaded" Type="0">true</Property>
     <Property LongName="BlocTrackingImage2Objets.priority" Type="1">128</Property>
     <Property LongName="BlocTrackingImage2Objets.autoStart" Type="0">true</Property>
   </Component>
-  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="1376" y="120" z="0">
+  <Component InstanceName="BrakingAction" Model="PythonBridge" Version="3.2.0" x="1040" y="48" z="0">
+    <Input LongName="BrakingAction.VehicleSpeed" Name="VehicleSpeed">
+      <Property LongName="BrakingAction.VehicleSpeed.readerType" Type="1">0</Property>
+      <Property LongName="BrakingAction.VehicleSpeed.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="BrakingAction.Objects" Name="Objects">
+      <Property LongName="BrakingAction.Objects.readerType" Type="1">4</Property>
+      <Property LongName="BrakingAction.Objects.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="BrakingAction.PietonInROI" Name="PietonInROI">
+      <Property LongName="BrakingAction.PietonInROI.subsampling" Type="1">1</Property>
+      <Property LongName="BrakingAction.PietonInROI.fifosize" Type="1">16</Property>
+      <Property LongName="BrakingAction.PietonInROI.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BrakingAction.target_speed_km_h" Name="target_speed_km_h">
+      <Property LongName="BrakingAction.target_speed_km_h.subsampling" Type="1">1</Property>
+      <Property LongName="BrakingAction.target_speed_km_h.fifosize" Type="1">16</Property>
+      <Property LongName="BrakingAction.target_speed_km_h.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BrakingAction.target_gear" Name="target_gear">
+      <Property LongName="BrakingAction.target_gear.subsampling" Type="1">1</Property>
+      <Property LongName="BrakingAction.target_gear.fifosize" Type="1">16</Property>
+      <Property LongName="BrakingAction.target_gear.periodic" Type="0">false</Property>
+    </Output>
+    <Output LongName="BrakingAction.alert" Name="alert">
+      <Property LongName="BrakingAction.alert.subsampling" Type="1">1</Property>
+      <Property LongName="BrakingAction.alert.fifosize" Type="1">16</Property>
+      <Property LongName="BrakingAction.alert.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="BrakingAction.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="BrakingAction.internalInputs" Type="3" SubType="128"><![CDATA[VehicleSpeed;11==#Objects;20==]]></Property>
+    <Property LongName="BrakingAction.internalOutputs" Type="3" SubType="128"><![CDATA[PietonInROI;0==;0#target_speed_km_h;11==;0#target_gear;6==;0#alert;6==;0]]></Property>
+    <Property LongName="BrakingAction.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BrakingAction.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="BrakingAction.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="BrakingAction.logDebug" Type="0">false</Property>
+    <Property LongName="BrakingAction.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="BrakingAction.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="BrakingAction.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="BrakingAction.pythonPID" Type="1">2624</ReadOnlyProperty>
+    <Property LongName="BrakingAction.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="BrakingAction.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BrakingAction.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="BrakingAction.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="BrakingAction.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="BrakingAction.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="BrakingAction.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/PythonBridges/BrakingPedestrian_Phase1_Tempo.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BrakingPedestrian_Phase1_Tempo.py]]></Relative></Property>
+    <Property LongName="BrakingAction.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="BrakingAction.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BrakingAction.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="BrakingAction.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="BrakingAction.threaded" Type="0">true</Property>
+    <Property LongName="BrakingAction.priority" Type="1">128</Property>
+    <Property LongName="BrakingAction.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="DataViewer_1" Model="DataViewer" Version="2.0.10" x="1248" y="504" z="0">
     <Input LongName="DataViewer_1.input_0" Name="input_0">
       <Property LongName="DataViewer_1.input_0.readerType" Type="1">4</Property>
       <Property LongName="DataViewer_1.input_0.subsampling" Type="1">1</Property>
@@ -294,21 +261,21 @@
       <Property LongName="DataViewer_1.input_2.readerType" Type="1">4</Property>
       <Property LongName="DataViewer_1.input_2.subsampling" Type="1">1</Property>
     </Input>
-    <Property LongName="DataViewer_1.begin_guard" SubType="128" Type="0">true</Property>
-    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" SubType="256" Type="3"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
     <Property LongName="DataViewer_1.autoDirty" Type="0">true</Property>
     <Property LongName="DataViewer_1.run" Type="0">true</Property>
     <Property LongName="DataViewer_1.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
     <Property LongName="DataViewer_1.moveable" Type="0">true</Property>
     <Property LongName="DataViewer_1.hidden" Type="0">false</Property>
-    <Property LongName="DataViewer_1.title" Type="3"/>
+    <Property LongName="DataViewer_1.title" Type="3"><![CDATA[]]></Property>
     <Property LongName="DataViewer_1.x" Type="1">472</Property>
     <Property LongName="DataViewer_1.y" Type="1">402</Property>
     <Property LongName="DataViewer_1.width" Type="1">530</Property>
     <Property LongName="DataViewer_1.height" Type="1">420</Property>
-    <Property LongName="DataViewer_1.end_guard" SubType="128" Type="0">true</Property>
-    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" SubType="256" Type="3"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_1.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_1.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
     <Property LongName="DataViewer_1.nbInputs" Type="1">3</Property>
     <Property LongName="DataViewer_1.compactMode" Type="0">false</Property>
     <Property LongName="DataViewer_1.showInfo" Type="0">true</Property>
@@ -325,12 +292,95 @@
     <Property LongName="DataViewer_1.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
     <Property LongName="DataViewer_1.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
     <Property LongName="DataViewer_1.hexDisplay" Type="0">false</Property>
-    <Property LongName="DataViewer_1.internalState" SubType="128" Type="3"><![CDATA[238;282]]></Property>
-    <Property LongName="DataViewer_1.expandedState" SubType="128" Type="3"><![CDATA[0|;0|;0|]]></Property>
-    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" SubType="512" Type="0">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_1.internalState" Type="3" SubType="128"><![CDATA[238;282]]></Property>
+    <Property LongName="DataViewer_1.expandedState" Type="3" SubType="128"><![CDATA[0|;0|;0|]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_1.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="DataViewer_1.threaded" Type="0">true</Property>
     <Property LongName="DataViewer_1.priority" Type="1">128</Property>
-    <Property LongName="DataViewer_1.autoStart" Type="0">true</Property>
+    <Property LongName="DataViewer_1.autoStart" Type="0">false</Property>
+  </Component>
+  <Component InstanceName="DataViewer_2" Model="DataViewer" Version="2.0.10" x="808" y="432" z="0">
+    <Input LongName="DataViewer_2.input_0" Name="input_0">
+      <Property LongName="DataViewer_2.input_0.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_0.subsampling" Type="1">1</Property>
+    </Input>
+    <Input LongName="DataViewer_2.input_1" Name="input_1">
+      <Property LongName="DataViewer_2.input_1.readerType" Type="1">4</Property>
+      <Property LongName="DataViewer_2.input_1.subsampling" Type="1">1</Property>
+    </Input>
+    <Property LongName="DataViewer_2.begin_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_begin_config" Type="3" SubType="256"><![CDATA[General Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.autoDirty" Type="0">true</Property>
+    <Property LongName="DataViewer_2.run" Type="0">true</Property>
+    <Property LongName="DataViewer_2.alwaysOnTop" Type="4"><![CDATA[4|0|Only at run time|Only at design time|No|Both at run time and design time]]></Property>
+    <Property LongName="DataViewer_2.moveable" Type="0">true</Property>
+    <Property LongName="DataViewer_2.hidden" Type="0">false</Property>
+    <Property LongName="DataViewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="DataViewer_2.x" Type="1">0</Property>
+    <Property LongName="DataViewer_2.y" Type="1">0</Property>
+    <Property LongName="DataViewer_2.width" Type="1">530</Property>
+    <Property LongName="DataViewer_2.height" Type="1">420</Property>
+    <Property LongName="DataViewer_2.end_guard" Type="0" SubType="128">true</Property>
+    <ReadOnlyProperty LongName="DataViewer_2.widget_end_config" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_begin_config" Type="3" SubType="256"><![CDATA[Specific Configuration]]></ReadOnlyProperty>
+    <Property LongName="DataViewer_2.nbInputs" Type="1">2</Property>
+    <Property LongName="DataViewer_2.compactMode" Type="0">false</Property>
+    <Property LongName="DataViewer_2.showInfo" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showData" Type="0">true</Property>
+    <Property LongName="DataViewer_2.showPrettyTimestamp" Type="0">true</Property>
+    <Property LongName="DataViewer_2.float32Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.float64Format" Type="3"><![CDATA[%9g]]></Property>
+    <Property LongName="DataViewer_2.integer8Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer16Format" Type="3"><![CDATA[%d]]></Property>
+    <Property LongName="DataViewer_2.integer32Format" Type="3"><![CDATA[%I32d]]></Property>
+    <Property LongName="DataViewer_2.integer64Format" Type="3"><![CDATA[%I64d]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger8Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger16Format" Type="3"><![CDATA[%u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger32Format" Type="3"><![CDATA[%I32u]]></Property>
+    <Property LongName="DataViewer_2.unsignedInteger64Format" Type="3"><![CDATA[%I64u]]></Property>
+    <Property LongName="DataViewer_2.hexDisplay" Type="0">false</Property>
+    <Property LongName="DataViewer_2.internalState" Type="3" SubType="128"><![CDATA[238;265]]></Property>
+    <Property LongName="DataViewer_2.expandedState" Type="3" SubType="128"><![CDATA[1|ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|Info:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[0]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[1]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[2]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[3]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[4]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[5]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[6]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[7]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[8]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[9]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[10]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|[11]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[12]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[13]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[14]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[15]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[16]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[17]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[18]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[19]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[20]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[21]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[22]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[23]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[24]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[25]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[26]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[27]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[28]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[29]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[30]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[31]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[32]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[33]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[34]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[35]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[36]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[37]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[38]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[39]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[40]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[41]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[42]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[43]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[44]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[45]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[46]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[47]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[48]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[49]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[50]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[51]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[52]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[53]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[54]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[55]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[56]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[57]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[58]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[59]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[60]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[61]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[62]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[63]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[64]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[65]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[66]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[67]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[68]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[69]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[70]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[71]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[72]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[73]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[74]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[75]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[76]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[77]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[78]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[79]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[80]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[81]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[82]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[83]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[84]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[85]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[86]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[87]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[88]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[89]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[90]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[91]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;0|[92]:Data:ars408_ObjectGeneralInformation_toRealObject_1.o_real_object;1|FiltreRadar.FilteredRadarObjects;0|Info:FiltreRadar.FilteredRadarObjects;1|Data:FiltreRadar.FilteredRadarObjects;1|[0]:Data:FiltreRadar.FilteredRadarObjects;1|[1]:Data:FiltreRadar.FilteredRadarObjects;0|[2]:Data:FiltreRadar.FilteredRadarObjects;0|[3]:Data:FiltreRadar.FilteredRadarObjects;0|[4]:Data:FiltreRadar.FilteredRadarObjects;0|[5]:Data:FiltreRadar.FilteredRadarObjects;0|[6]:Data:FiltreRadar.FilteredRadarObjects;0|[7]:Data:FiltreRadar.FilteredRadarObjects;0|[8]:Data:FiltreRadar.FilteredRadarObjects;0|[9]:Data:FiltreRadar.FilteredRadarObjects;0|[10]:Data:FiltreRadar.FilteredRadarObjects;0|[11]:Data:FiltreRadar.FilteredRadarObjects;0|[12]:Data:FiltreRadar.FilteredRadarObjects;0|[13]:Data:FiltreRadar.FilteredRadarObjects;0|[14]:Data:FiltreRadar.FilteredRadarObjects;0|[15]:Data:FiltreRadar.FilteredRadarObjects;0|[16]:Data:FiltreRadar.FilteredRadarObjects;0|[17]:Data:FiltreRadar.FilteredRadarObjects;0|[18]:Data:FiltreRadar.FilteredRadarObjects;0|[19]:Data:FiltreRadar.FilteredRadarObjects;0|[20]:Data:FiltreRadar.FilteredRadarObjects;0|[21]:Data:FiltreRadar.FilteredRadarObjects;0|[22]:Data:FiltreRadar.FilteredRadarObjects;0|[23]:Data:FiltreRadar.FilteredRadarObjects;0|[24]:Data:FiltreRadar.FilteredRadarObjects;0|[25]:Data:FiltreRadar.FilteredRadarObjects;0|[26]:Data:FiltreRadar.FilteredRadarObjects;0|[27]:Data:FiltreRadar.FilteredRadarObjects;0|[28]:Data:FiltreRadar.FilteredRadarObjects;0|[29]:Data:FiltreRadar.FilteredRadarObjects;0|[30]:Data:FiltreRadar.FilteredRadarObjects;0|[31]:Data:FiltreRadar.FilteredRadarObjects;0|[32]:Data:FiltreRadar.FilteredRadarObjects;0|[33]:Data:FiltreRadar.FilteredRadarObjects;0|[34]:Data:FiltreRadar.FilteredRadarObjects;0|[35]:Data:FiltreRadar.FilteredRadarObjects;0|[36]:Data:FiltreRadar.FilteredRadarObjects;0|[37]:Data:FiltreRadar.FilteredRadarObjects;0|[38]:Data:FiltreRadar.FilteredRadarObjects;0|[39]:Data:FiltreRadar.FilteredRadarObjects;0|[40]:Data:FiltreRadar.FilteredRadarObjects;0|[41]:Data:FiltreRadar.FilteredRadarObjects;0|[42]:Data:FiltreRadar.FilteredRadarObjects;0|[43]:Data:FiltreRadar.FilteredRadarObjects;0|[44]:Data:FiltreRadar.FilteredRadarObjects;0|[45]:Data:FiltreRadar.FilteredRadarObjects;0|[46]:Data:FiltreRadar.FilteredRadarObjects;0|[47]:Data:FiltreRadar.FilteredRadarObjects;0|[48]:Data:FiltreRadar.FilteredRadarObjects;0|[49]:Data:FiltreRadar.FilteredRadarObjects;0|[50]:Data:FiltreRadar.FilteredRadarObjects;0|[51]:Data:FiltreRadar.FilteredRadarObjects;0|[52]:Data:FiltreRadar.FilteredRadarObjects;0|[53]:Data:FiltreRadar.FilteredRadarObjects;0|[54]:Data:FiltreRadar.FilteredRadarObjects;0|[55]:Data:FiltreRadar.FilteredRadarObjects;0|[56]:Data:FiltreRadar.FilteredRadarObjects;0|[57]:Data:FiltreRadar.FilteredRadarObjects;0|[58]:Data:FiltreRadar.FilteredRadarObjects;0|[59]:Data:FiltreRadar.FilteredRadarObjects;0|[60]:Data:FiltreRadar.FilteredRadarObjects;0|[61]:Data:FiltreRadar.FilteredRadarObjects;0|[62]:Data:FiltreRadar.FilteredRadarObjects;0|[63]:Data:FiltreRadar.FilteredRadarObjects;0|[64]:Data:FiltreRadar.FilteredRadarObjects;0|[65]:Data:FiltreRadar.FilteredRadarObjects;0|[66]:Data:FiltreRadar.FilteredRadarObjects;0|[67]:Data:FiltreRadar.FilteredRadarObjects;0|[68]:Data:FiltreRadar.FilteredRadarObjects;0|[69]:Data:FiltreRadar.FilteredRadarObjects;0|[70]:Data:FiltreRadar.FilteredRadarObjects;0|[71]:Data:FiltreRadar.FilteredRadarObjects;0|[72]:Data:FiltreRadar.FilteredRadarObjects;0|[73]:Data:FiltreRadar.FilteredRadarObjects;0|[74]:Data:FiltreRadar.FilteredRadarObjects;0|[75]:Data:FiltreRadar.FilteredRadarObjects;0|[76]:Data:FiltreRadar.FilteredRadarObjects;0|[77]:Data:FiltreRadar.FilteredRadarObjects;0|[78]:Data:FiltreRadar.FilteredRadarObjects;0|[79]:Data:FiltreRadar.FilteredRadarObjects;0|[80]:Data:FiltreRadar.FilteredRadarObjects;0|[81]:Data:FiltreRadar.FilteredRadarObjects;0|[82]:Data:FiltreRadar.FilteredRadarObjects;0|[83]:Data:FiltreRadar.FilteredRadarObjects;0|[84]:Data:FiltreRadar.FilteredRadarObjects;0|[85]:Data:FiltreRadar.FilteredRadarObjects;0|[86]:Data:FiltreRadar.FilteredRadarObjects;0|[87]:Data:FiltreRadar.FilteredRadarObjects;0|[88]:Data:FiltreRadar.FilteredRadarObjects;0|[89]:Data:FiltreRadar.FilteredRadarObjects]]></Property>
+    <ReadOnlyProperty LongName="DataViewer_2.specific_end_config" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="DataViewer_2.threaded" Type="0">true</Property>
+    <Property LongName="DataViewer_2.priority" Type="1">128</Property>
+    <Property LongName="DataViewer_2.autoStart" Type="0">true</Property>
+  </Component>
+  <Component InstanceName="FiltreRadar" Model="PythonBridge" Version="3.2.0" x="496" y="136" z="0">
+    <Input LongName="FiltreRadar.Radar_Objects" Name="Radar_Objects">
+      <Property LongName="FiltreRadar.Radar_Objects.readerType" Type="1">0</Property>
+      <Property LongName="FiltreRadar.Radar_Objects.subsampling" Type="1">1</Property>
+    </Input>
+    <Output LongName="FiltreRadar.FilteredRadarObjects" Name="FilteredRadarObjects">
+      <Property LongName="FiltreRadar.FilteredRadarObjects.subsampling" Type="1">1</Property>
+      <Property LongName="FiltreRadar.FilteredRadarObjects.fifosize" Type="1">16</Property>
+      <Property LongName="FiltreRadar.FilteredRadarObjects.periodic" Type="0">false</Property>
+    </Output>
+    <Property LongName="FiltreRadar.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="FiltreRadar.internalInputs" Type="3" SubType="128"><![CDATA[Radar_Objects;20==]]></Property>
+    <Property LongName="FiltreRadar.internalOutputs" Type="3" SubType="128"><![CDATA[FilteredRadarObjects;20==;0]]></Property>
+    <Property LongName="FiltreRadar.internalProperties" Type="3" SubType="128"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="FiltreRadar.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="FiltreRadar.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
+    <Property LongName="FiltreRadar.logDebug" Type="0">false</Property>
+    <Property LongName="FiltreRadar.showTracebackInConsole" Type="0">true</Property>
+    <Property LongName="FiltreRadar.autoReloadSubModules" Type="0">true</Property>
+    <Property LongName="FiltreRadar.memorySize" Type="1">10000000</Property>
+    <ReadOnlyProperty LongName="FiltreRadar.pythonPID" Type="1">9828</ReadOnlyProperty>
+    <Property LongName="FiltreRadar.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="FiltreRadar.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="FiltreRadar.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="FiltreRadar.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="FiltreRadar.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
+    <Property LongName="FiltreRadar.className" Type="3"><![CDATA[rtmaps_python]]></Property>
+    <Property LongName="FiltreRadar.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/PythonBridges/BlocFiltreRadar.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/PythonBridges/BlocFiltreRadar.py]]></Relative></Property>
+    <Property LongName="FiltreRadar.readingPolicy" Type="4"><![CDATA[5|3|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
+    <ReadOnlyProperty LongName="FiltreRadar.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="FiltreRadar.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="FiltreRadar.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
+    <Property LongName="FiltreRadar.threaded" Type="0">true</Property>
+    <Property LongName="FiltreRadar.priority" Type="1">128</Property>
+    <Property LongName="FiltreRadar.autoStart" Type="0">true</Property>
   </Component>
   <Component InstanceName="GL2_3D_Viewer_1" Model="GL2_3D_Viewer" Version="1.56.1" x="944" y="312" z="0">
     <Input LongName="GL2_3D_Viewer_1.real_objects_2" Name="real_objects_2">
@@ -349,9 +399,9 @@
       <Property LongName="GL2_3D_Viewer_1.triggerRefresh.readerType" Type="1">0</Property>
       <Property LongName="GL2_3D_Viewer_1.triggerRefresh.subsampling" Type="1">1</Property>
     </Input>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.objects_subsection_begin" SubType="256" Type="3"><![CDATA[Objects]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.objects_subsection_begin" Type="3" SubType="256"><![CDATA[Objects]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.nbObjects" Type="1">3</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_0_subsection_begin" SubType="256" Type="3"><![CDATA[Object 0]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_0_subsection_begin" Type="3" SubType="256"><![CDATA[Object 0]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.object_0_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_type" Type="4"><![CDATA[25|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -363,9 +413,9 @@
     <Property LongName="GL2_3D_Viewer_1.object_0_width" Type="2">100</Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_height" Type="2">100</Property>
     <Property LongName="GL2_3D_Viewer_1.object_0_padding" Type="2">1</Property>
-    <Property LongName="GL2_3D_Viewer_1.object_0_color" SubType="4" Type="1">16777215</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_0_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_1_subsection_begin" SubType="256" Type="3"><![CDATA[Object 1]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1.object_0_color" Type="1" SubType="4">16777215</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_0_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_1_subsection_begin" Type="3" SubType="256"><![CDATA[Object 1]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.object_1_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_1.object_1_type" Type="4"><![CDATA[25|11|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_1_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -375,8 +425,8 @@
 0.0 0.0 0.0 1.0
 ]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_1_axis_length" Type="2">1</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_1_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_2_subsection_begin" SubType="256" Type="3"><![CDATA[Object 2]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_1_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_2_subsection_begin" Type="3" SubType="256"><![CDATA[Object 2]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.object_2_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_1.object_2_type" Type="4"><![CDATA[25|14|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_2_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -386,27 +436,27 @@
 0.0 0.0 0.0 1.0
 ]]></Property>
     <Property LongName="GL2_3D_Viewer_1.object_2_shape" Type="4"><![CDATA[4|2|Cube|Pyramid|Sphere|Wireframe Cube]]></Property>
-    <Property LongName="GL2_3D_Viewer_1.object_2_cfg_file" SubType="80" Type="3"/>
-    <Property LongName="GL2_3D_Viewer_1.object_2_persistence" SubType="1" Type="1">-1</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_2_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.objects_subsection_end" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.classes_subsection_begin" SubType="256" Type="3"><![CDATA[Classes]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1.object_2_cfg_file" Type="3" SubType="80"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_1.object_2_persistence" Type="1" SubType="1">-1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.classes_subsection_begin" Type="3" SubType="256"><![CDATA[Classes]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.classEnabledSource" Type="4"><![CDATA[2|0|Properties|Input]]></Property>
     <Property LongName="GL2_3D_Viewer_1.nbClasses" Type="1">1</Property>
     <Property LongName="GL2_3D_Viewer_1.class_0_enabled" Type="0">true</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.classes_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.lighting_subsection_begin" SubType="256" Type="3"><![CDATA[Lighting]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.classes_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.lighting_subsection_begin" Type="3" SubType="256"><![CDATA[Lighting]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.lighting_model" Type="4"><![CDATA[5|0|Ambient|Diffuse|Phong|BlinnPhong|Gaussian]]></Property>
     <Property LongName="GL2_3D_Viewer_1.lighting_attenuation" Type="2">9.999999747e-005</Property>
     <Property LongName="GL2_3D_Viewer_1.lighting_sqr_attenuation" Type="0">false</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.lighting_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.scene_subsection_begin" SubType="256" Type="3"><![CDATA[Scene]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_1.background_color" SubType="4" Type="1">8388608</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.lighting_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.scene_subsection_begin" Type="3" SubType="256"><![CDATA[Scene]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1.background_color" Type="1" SubType="4">8388608</Property>
     <Property LongName="GL2_3D_Viewer_1.wireframe_rendering" Type="0">false</Property>
     <Property LongName="GL2_3D_Viewer_1.display_axis" Type="0">true</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.scene_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_begin" SubType="256" Type="3"><![CDATA[Viewport]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_1.viewportPlugin" SubType="80" Type="3"/>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.scene_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_begin" Type="3" SubType="256"><![CDATA[Viewport]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1.viewportPlugin" Type="3" SubType="80"><![CDATA[]]></Property>
     <Property LongName="GL2_3D_Viewer_1.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
     <Property LongName="GL2_3D_Viewer_1.zFocus" Type="2">1</Property>
     <Property LongName="GL2_3D_Viewer_1.eyeDistance" Type="2">0.009999999776</Property>
@@ -419,9 +469,9 @@
     <Property LongName="GL2_3D_Viewer_1.zNear" Type="2">1</Property>
     <Property LongName="GL2_3D_Viewer_1.zFar" Type="2">1000000</Property>
     <Property LongName="GL2_3D_Viewer_1.fovy" Type="2">45</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_begin" SubType="256" Type="3"><![CDATA[Window]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_1.title" Type="3"/>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_1.title" Type="3"><![CDATA[]]></Property>
     <Property LongName="GL2_3D_Viewer_1.left" Type="1">25</Property>
     <Property LongName="GL2_3D_Viewer_1.top" Type="1">94</Property>
     <Property LongName="GL2_3D_Viewer_1.width" Type="1">1089</Property>
@@ -441,7 +491,7 @@
     <Property LongName="GL2_3D_Viewer_1.refresh_mode" Type="4"><![CDATA[3|0|Fixed|On Demand|Input based]]></Property>
     <Property LongName="GL2_3D_Viewer_1.refresh_period" Type="1">50000</Property>
     <Property LongName="GL2_3D_Viewer_1.verbose" Type="0">false</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_1.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_1.threaded" Type="0">true</Property>
     <Property LongName="GL2_3D_Viewer_1.priority" Type="1">128</Property>
     <Property LongName="GL2_3D_Viewer_1.autoStart" Type="0">false</Property>
@@ -463,9 +513,9 @@
       <Property LongName="GL2_3D_Viewer_2.triggerRefresh.readerType" Type="1">0</Property>
       <Property LongName="GL2_3D_Viewer_2.triggerRefresh.subsampling" Type="1">1</Property>
     </Input>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.objects_subsection_begin" SubType="256" Type="3"><![CDATA[Objects]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.objects_subsection_begin" Type="3" SubType="256"><![CDATA[Objects]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.nbObjects" Type="1">3</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_0_subsection_begin" SubType="256" Type="3"><![CDATA[Object 0]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_0_subsection_begin" Type="3" SubType="256"><![CDATA[Object 0]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.object_0_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_2.object_0_type" Type="4"><![CDATA[25|13|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_2.object_0_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -477,9 +527,9 @@
     <Property LongName="GL2_3D_Viewer_2.object_0_width" Type="2">100</Property>
     <Property LongName="GL2_3D_Viewer_2.object_0_height" Type="2">100</Property>
     <Property LongName="GL2_3D_Viewer_2.object_0_padding" Type="2">1</Property>
-    <Property LongName="GL2_3D_Viewer_2.object_0_color" SubType="4" Type="1">0</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_0_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_1_subsection_begin" SubType="256" Type="3"><![CDATA[Object 1]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_2.object_0_color" Type="1" SubType="4">0</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_0_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_1_subsection_begin" Type="3" SubType="256"><![CDATA[Object 1]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.object_1_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_2.object_1_type" Type="4"><![CDATA[25|11|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_2.object_1_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -489,8 +539,8 @@
 0.0 0.0 0.0 1.0
 ]]></Property>
     <Property LongName="GL2_3D_Viewer_2.object_1_axis_length" Type="2">1</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_1_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_2_subsection_begin" SubType="256" Type="3"><![CDATA[Object 2]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_1_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_2_subsection_begin" Type="3" SubType="256"><![CDATA[Object 2]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.object_2_class" Type="1">0</Property>
     <Property LongName="GL2_3D_Viewer_2.object_2_type" Type="4"><![CDATA[25|14|PointCloud|ColoredPointCloud|PointCloud (to be colorized)|Lines|ColoredLines|Triangles|ColoredTriangles|TexturedTriangles|Quads|ColoredQuads|TexturedQuads|Axis|Cube|Grid|RealObjects|Sphere|TexturedWall|Trajectory|File|Plugin|PolarGrid|Wireframe Cube|PlanarPointCloud|PlanarColoredPointCloud|PlanarPointCloud (to be colorized)]]></Property>
     <Property LongName="GL2_3D_Viewer_2.object_2_transform" Type="4"><![CDATA[3|0|Matrix|Position Attitude Scale|Input Matrix]]></Property>
@@ -500,27 +550,27 @@
 0.0 0.0 0.0 1.0
 ]]></Property>
     <Property LongName="GL2_3D_Viewer_2.object_2_shape" Type="4"><![CDATA[4|0|Cube|Pyramid|Sphere|Wireframe Cube]]></Property>
-    <Property LongName="GL2_3D_Viewer_2.object_2_cfg_file" SubType="80" Type="3"/>
-    <Property LongName="GL2_3D_Viewer_2.object_2_persistence" SubType="1" Type="1">-1</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_2_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.objects_subsection_end" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.classes_subsection_begin" SubType="256" Type="3"><![CDATA[Classes]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_2.object_2_cfg_file" Type="3" SubType="80"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_2.object_2_persistence" Type="1" SubType="1">-1</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.object_2_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.objects_subsection_end" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.classes_subsection_begin" Type="3" SubType="256"><![CDATA[Classes]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.classEnabledSource" Type="4"><![CDATA[2|0|Properties|Input]]></Property>
     <Property LongName="GL2_3D_Viewer_2.nbClasses" Type="1">1</Property>
     <Property LongName="GL2_3D_Viewer_2.class_0_enabled" Type="0">true</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.classes_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.lighting_subsection_begin" SubType="256" Type="3"><![CDATA[Lighting]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.classes_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.lighting_subsection_begin" Type="3" SubType="256"><![CDATA[Lighting]]></ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.lighting_model" Type="4"><![CDATA[5|0|Ambient|Diffuse|Phong|BlinnPhong|Gaussian]]></Property>
     <Property LongName="GL2_3D_Viewer_2.lighting_attenuation" Type="2">9.999999747e-005</Property>
     <Property LongName="GL2_3D_Viewer_2.lighting_sqr_attenuation" Type="0">false</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.lighting_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.scene_subsection_begin" SubType="256" Type="3"><![CDATA[Scene]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_2.background_color" SubType="4" Type="1">8388608</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.lighting_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.scene_subsection_begin" Type="3" SubType="256"><![CDATA[Scene]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_2.background_color" Type="1" SubType="4">8388608</Property>
     <Property LongName="GL2_3D_Viewer_2.wireframe_rendering" Type="0">false</Property>
     <Property LongName="GL2_3D_Viewer_2.display_axis" Type="0">true</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.scene_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.viewport_subsection_begin" SubType="256" Type="3"><![CDATA[Viewport]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_2.viewportPlugin" SubType="80" Type="3"/>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.scene_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.viewport_subsection_begin" Type="3" SubType="256"><![CDATA[Viewport]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_2.viewportPlugin" Type="3" SubType="80"><![CDATA[]]></Property>
     <Property LongName="GL2_3D_Viewer_2.cameraType" Type="4"><![CDATA[7|0|Standard|Anaglyph (red-blue)|Anaglyph (red-cyan)|Anaglyph (red-green)|Anaglyph (blue-red)|Anaglyph (cyan-red)|Anaglyph (green-red)]]></Property>
     <Property LongName="GL2_3D_Viewer_2.zFocus" Type="2">1</Property>
     <Property LongName="GL2_3D_Viewer_2.eyeDistance" Type="2">0.009999999776</Property>
@@ -533,11 +583,11 @@
     <Property LongName="GL2_3D_Viewer_2.zNear" Type="2">1</Property>
     <Property LongName="GL2_3D_Viewer_2.zFar" Type="2">10000</Property>
     <Property LongName="GL2_3D_Viewer_2.fovy" Type="2">45</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.viewport_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.window_subsection_begin" SubType="256" Type="3"><![CDATA[Window]]></ReadOnlyProperty>
-    <Property LongName="GL2_3D_Viewer_2.title" Type="3"/>
-    <Property LongName="GL2_3D_Viewer_2.left" Type="1">1018</Property>
-    <Property LongName="GL2_3D_Viewer_2.top" Type="1">226</Property>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.viewport_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.window_subsection_begin" Type="3" SubType="256"><![CDATA[Window]]></ReadOnlyProperty>
+    <Property LongName="GL2_3D_Viewer_2.title" Type="3"><![CDATA[]]></Property>
+    <Property LongName="GL2_3D_Viewer_2.left" Type="1">616</Property>
+    <Property LongName="GL2_3D_Viewer_2.top" Type="1">117</Property>
     <Property LongName="GL2_3D_Viewer_2.width" Type="1">640</Property>
     <Property LongName="GL2_3D_Viewer_2.height" Type="1">480</Property>
     <Property LongName="GL2_3D_Viewer_2.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
@@ -555,12 +605,12 @@
     <Property LongName="GL2_3D_Viewer_2.refresh_mode" Type="4"><![CDATA[3|0|Fixed|On Demand|Input based]]></Property>
     <Property LongName="GL2_3D_Viewer_2.refresh_period" Type="1">50000</Property>
     <Property LongName="GL2_3D_Viewer_2.verbose" Type="0">false</Property>
-    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.window_subsection_end" SubType="512" Type="0">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="GL2_3D_Viewer_2.window_subsection_end" Type="0" SubType="512">false</ReadOnlyProperty>
     <Property LongName="GL2_3D_Viewer_2.threaded" Type="0">true</Property>
     <Property LongName="GL2_3D_Viewer_2.priority" Type="1">128</Property>
-    <Property LongName="GL2_3D_Viewer_2.autoStart" Type="0">true</Property>
+    <Property LongName="GL2_3D_Viewer_2.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="872" y="536" z="0">
+  <Component InstanceName="ImageViewer_1" Model="ImageViewer" Version="1.23.2" x="1008" y="224" z="0">
     <Input LongName="ImageViewer_1.input" Name="input">
       <Property LongName="ImageViewer_1.input.readerType" Type="1">2</Property>
       <Property LongName="ImageViewer_1.input.subsampling" Type="1">1</Property>
@@ -580,10 +630,10 @@
       <Property LongName="ImageViewer_1.oWindowEvent.fifosize" Type="1">16</Property>
       <Property LongName="ImageViewer_1.oWindowEvent.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="ImageViewer_1.left" Type="1">-1643</Property>
-    <Property LongName="ImageViewer_1.top" Type="1">211</Property>
-    <Property LongName="ImageViewer_1.width" Type="1">1280</Property>
-    <Property LongName="ImageViewer_1.height" Type="1">1056</Property>
+    <Property LongName="ImageViewer_1.left" Type="1">0</Property>
+    <Property LongName="ImageViewer_1.top" Type="1">0</Property>
+    <Property LongName="ImageViewer_1.width" Type="1">0</Property>
+    <Property LongName="ImageViewer_1.height" Type="1">0</Property>
     <Property LongName="ImageViewer_1.autoResize" Type="0">true</Property>
     <Property LongName="ImageViewer_1.alwaysOnTop" Type="0">true</Property>
     <Property LongName="ImageViewer_1.fullscreen" Type="0">false</Property>
@@ -598,47 +648,7 @@
     <Property LongName="ImageViewer_1.verbose" Type="0">false</Property>
     <Property LongName="ImageViewer_1.threaded" Type="0">true</Property>
     <Property LongName="ImageViewer_1.priority" Type="1">128</Property>
-    <Property LongName="ImageViewer_1.autoStart" Type="0">true</Property>
-  </Component>
-  <Component InstanceName="ImageViewer_2" Model="ImageViewer" Version="1.23.2" x="488" y="472" z="0">
-    <Input LongName="ImageViewer_2.input" Name="input">
-      <Property LongName="ImageViewer_2.input.readerType" Type="1">2</Property>
-      <Property LongName="ImageViewer_2.input.subsampling" Type="1">1</Property>
-    </Input>
-    <Output LongName="ImageViewer_2.oMouseClick" Name="oMouseClick">
-      <Property LongName="ImageViewer_2.oMouseClick.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_2.oMouseClick.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_2.oMouseClick.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="ImageViewer_2.oROI" Name="oROI">
-      <Property LongName="ImageViewer_2.oROI.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_2.oROI.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_2.oROI.periodic" Type="0">false</Property>
-    </Output>
-    <Output LongName="ImageViewer_2.oWindowEvent" Name="oWindowEvent">
-      <Property LongName="ImageViewer_2.oWindowEvent.subsampling" Type="1">1</Property>
-      <Property LongName="ImageViewer_2.oWindowEvent.fifosize" Type="1">16</Property>
-      <Property LongName="ImageViewer_2.oWindowEvent.periodic" Type="0">false</Property>
-    </Output>
-    <Property LongName="ImageViewer_2.left" Type="1">0</Property>
-    <Property LongName="ImageViewer_2.top" Type="1">0</Property>
-    <Property LongName="ImageViewer_2.width" Type="1">0</Property>
-    <Property LongName="ImageViewer_2.height" Type="1">0</Property>
-    <Property LongName="ImageViewer_2.autoResize" Type="0">true</Property>
-    <Property LongName="ImageViewer_2.alwaysOnTop" Type="0">true</Property>
-    <Property LongName="ImageViewer_2.fullscreen" Type="0">false</Property>
-    <Property LongName="ImageViewer_2.monitorForFullscreen" Type="1">1</Property>
-    <Property LongName="ImageViewer_2.displayTitleBar" Type="0">true</Property>
-    <Property LongName="ImageViewer_2.displayBorder" Type="0">true</Property>
-    <Property LongName="ImageViewer_2.engine" Type="4"><![CDATA[4|2|Direct Show|GDI|OpenGL|Direct Show (VMR 7)]]></Property>
-    <Property LongName="ImageViewer_2.keepAspectRatio" Type="0">false</Property>
-    <Property LongName="ImageViewer_2.imageAspect" Type="4"><![CDATA[3|0|Anamorphic|Letterbox|Pan And Scan]]></Property>
-    <Property LongName="ImageViewer_2.windowBackend" Type="4"><![CDATA[1|0|Win32]]></Property>
-    <Property LongName="ImageViewer_2.sequentialRender" Type="0">false</Property>
-    <Property LongName="ImageViewer_2.verbose" Type="0">false</Property>
-    <Property LongName="ImageViewer_2.threaded" Type="0">true</Property>
-    <Property LongName="ImageViewer_2.priority" Type="1">128</Property>
-    <Property LongName="ImageViewer_2.autoStart" Type="0">false</Property>
+    <Property LongName="ImageViewer_1.autoStart" Type="0">false</Property>
   </Component>
   <Component InstanceName="Player_1" Model="Player" Version="2.15.0" x="-128" y="320" z="0">
     <Output LongName="Player_1.can_CTRL.out" Name="can_CTRL.out">
@@ -655,8 +665,8 @@
       <Property LongName="Player_1.can_kvaser_0_front.out.subsampling" Type="1">1</Property>
       <Property LongName="Player_1.can_kvaser_0_front.out.fifosize" Type="1">256</Property>
       <Property LongName="Player_1.can_kvaser_0_front.out.periodic" Type="0">false</Property>
-      <Property LongName="Player_1.can_kvaser_0_front.out.replayPath" SubType="96" Type="3"/>
-      <Property LongName="Player_1.can_kvaser_0_front.out.fastReplayPath" SubType="96" Type="3"/>
+      <Property LongName="Player_1.can_kvaser_0_front.out.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.can_kvaser_0_front.out.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
       <Property LongName="Player_1.can_kvaser_0_front.out.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
       <Property LongName="Player_1.can_kvaser_0_front.out.autopause" Type="0">false</Property>
       <Property LongName="Player_1.can_kvaser_0_front.out.threaded" Type="0">false</Property>
@@ -682,6 +692,13 @@
       <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.subsampling" Type="1">1</Property>
       <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.fifosize" Type="1">16</Property>
       <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.periodic" Type="0">false</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.autopause" Type="0">false</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.threaded" Type="0">false</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.priority" Type="1">128</Property>
+      <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed.replayThreadPriority" Type="1">128</Property>
     </Output>
     <Output LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle" Name="CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle">
       <Property LongName="Player_1.CANDecoder_1.FAAR_CANV_1_SteeringWheelAngle.subsampling" Type="1">1</Property>
@@ -842,8 +859,8 @@
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.subsampling" Type="1">1</Property>
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.fifosize" Type="1">16</Property>
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.periodic" Type="0">false</Property>
-      <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.replayPath" SubType="96" Type="3"/>
-      <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.fastReplayPath" SubType="96" Type="3"/>
+      <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.replayPath" Type="3" SubType="96"><![CDATA[]]></Property>
+      <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.fastReplayPath" Type="3" SubType="96"><![CDATA[]]></Property>
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.replayMode" Type="4"><![CDATA[3|0|Normal|Immediate|Timestamp]]></Property>
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.autopause" Type="0">false</Property>
       <Property LongName="Player_1.OpenCV_RotateAndFlip_1.imageOut.threaded" Type="0">true</Property>
@@ -941,17 +958,15 @@
       <Property LongName="Player_1.CANDecoder_1.FAAR_FeedBack_PRND_State.fifosize" Type="1">16</Property>
       <Property LongName="Player_1.CANDecoder_1.FAAR_FeedBack_PRND_State.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="Player_1.file" SubType="80" Type="3"><![CDATA[E:\Logs\20230330_143956_RecFile_1_pietonMasque\RecFile_1_20230330_143956.rec]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\..\20230330_143956_RecFile_1_pietonMasque\RecFile_1_20230330_143956.rec]]></Relative>
-</Property>
+    <Property LongName="Player_1.file" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/RecFile/20230330_143956_RecFile_1_pietonMasque/RecFile_1_20230330_143956.rec]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../RecFile/20230330_143956_RecFile_1_pietonMasque/RecFile_1_20230330_143956.rec]]></Relative></Property>
     <Property LongName="Player_1.offset" Type="1">0</Property>
     <Property LongName="Player_1.beginning" Type="1">0</Property>
     <Property LongName="Player_1.end" Type="1">0</Property>
     <Property LongName="Player_1.timelag" Type="1">100000</Property>
     <Property LongName="Player_1.update" Type="0">true</Property>
     <ReadOnlyProperty LongName="Player_1.replayPath" Type="3"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/RecFile/20230330_143956_RecFile_1_pietonMasque/]]></ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Player_1.comments" Type="3"/>
-    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">0</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.comments" Type="3"><![CDATA[]]></ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Player_1.ahead" Type="1">15280</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.percentage" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.time" Type="1">0</ReadOnlyProperty>
     <ReadOnlyProperty LongName="Player_1.first" Type="1">885864</ReadOnlyProperty>
@@ -969,19 +984,19 @@
       <Property LongName="Webcam_1.outputIplImage.periodic" Type="0">false</Property>
     </Output>
     <Property LongName="Webcam_1.freezeConfiguration" Type="0">false</Property>
-    <Property LongName="Webcam_1.device" Type="4"><![CDATA[2|0|HD Pro Webcam C920_0|OBS Virtual Camera_1]]></Property>
-    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[35|32|YUY2 640x480 - 30 fps|YUY2 160x90 - 30 fps|YUY2 160x120 - 30 fps|YUY2 176x144 - 30 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 432x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 800x448 - 30 fps|YUY2 800x600 - 24 fps|YUY2 864x480 - 24 fps|YUY2 960x720 - 15 fps|YUY2 1024x576 - 15 fps|YUY2 1280x720 - 10 fps|YUY2 1600x896 - 7 fps|YUY2 1920x1080 - 5 fps|YUY2 2560x1472 - 2 fps|MJPG 640x480 - 30 fps|MJPG 160x90 - 30 fps|MJPG 160x120 - 30 fps|MJPG 176x144 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 432x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 800x448 - 30 fps|MJPG 800x600 - 30 fps|MJPG 864x480 - 30 fps|MJPG 960x720 - 30 fps|MJPG 1024x576 - 30 fps|MJPG 1280x720 - 30 fps|MJPG 1600x896 - 30 fps|MJPG 1920x1080 - 30 fps]]></Property>
+    <Property LongName="Webcam_1.device" Type="4"><![CDATA[1|0|OBS Virtual Camera_0]]></Property>
+    <Property LongName="Webcam_1.videoFormat" Type="4"><![CDATA[3|0|NV12 1920x1080 - 30 fps|I420 1920x1080 - 30 fps|YUY2 1920x1080 - 30 fps]]></Property>
     <Property LongName="Webcam_1.framerate" Type="1">-1</Property>
     <Property LongName="Webcam_1.force_output_IPL_BGR24" Type="0">true</Property>
     <Property LongName="Webcam_1.acquisition_mode" Type="4"><![CDATA[2|0|Continuous|Capture]]></Property>
     <Property LongName="Webcam_1.out_pin" Type="4"><![CDATA[2|0|Default|Capture]]></Property>
     <Property LongName="Webcam_1.list_devices_by" Type="4"><![CDATA[4|0|Friendly name + index suffix|Friendly name only|CLSID|DevicePath]]></Property>
-    <Property LongName="Webcam_1.reserved" SubType="128" Type="3"><![CDATA[device:2|0|Integrated Camera_0|OBS Virtual Camera_1$videoFormat:27|0|MJPG 1280x720 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 424x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 640x480 - 30 fps|MJPG 848x480 - 30 fps|MJPG 960x540 - 30 fps|YUY2 1280x720 - 10 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 424x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 640x480 - 30 fps|YUY2 848x480 - 20 fps|YUY2 960x540 - 14 fps|RGB24 1280x720 - 10 fps|RGB24 320x180 - 30 fps|RGB24 320x240 - 30 fps|RGB24 352x288 - 30 fps|RGB24 424x240 - 30 fps|RGB24 640x360 - 30 fps|RGB24 640x480 - 30 fps|RGB24 848x480 - 20 fps|RGB24 960x540 - 14 fps$force_output_IPL_BGR24:true$out_pin:2|0|Default|Capturer$list_devices_by:0$output:IPLImage]]></Property>
+    <Property LongName="Webcam_1.reserved" Type="3" SubType="128"><![CDATA[device:2|0|Integrated Camera_0|OBS Virtual Camera_1$videoFormat:27|0|MJPG 1280x720 - 30 fps|MJPG 320x180 - 30 fps|MJPG 320x240 - 30 fps|MJPG 352x288 - 30 fps|MJPG 424x240 - 30 fps|MJPG 640x360 - 30 fps|MJPG 640x480 - 30 fps|MJPG 848x480 - 30 fps|MJPG 960x540 - 30 fps|YUY2 1280x720 - 10 fps|YUY2 320x180 - 30 fps|YUY2 320x240 - 30 fps|YUY2 352x288 - 30 fps|YUY2 424x240 - 30 fps|YUY2 640x360 - 30 fps|YUY2 640x480 - 30 fps|YUY2 848x480 - 20 fps|YUY2 960x540 - 14 fps|RGB24 1280x720 - 10 fps|RGB24 320x180 - 30 fps|RGB24 320x240 - 30 fps|RGB24 352x288 - 30 fps|RGB24 424x240 - 30 fps|RGB24 640x360 - 30 fps|RGB24 640x480 - 30 fps|RGB24 848x480 - 20 fps|RGB24 960x540 - 14 fps$force_output_IPL_BGR24:true$out_pin:2|0|Default|Capturer$list_devices_by:0$output:IPLImage]]></Property>
     <Property LongName="Webcam_1.threaded" Type="0">true</Property>
     <Property LongName="Webcam_1.priority" Type="1">128</Property>
     <Property LongName="Webcam_1.autoStart" Type="0">false</Property>
   </Component>
-  <Component InstanceName="Yolo_RTMaps" Model="PythonBridge" Version="3.2.0" x="320" y="40" z="0">
+  <Component InstanceName="Yolo_RTMaps" Model="PythonBridge" Version="3.2.0" x="272" y="16" z="0">
     <Input LongName="Yolo_RTMaps.image_in" Name="image_in">
       <Property LongName="Yolo_RTMaps.image_in.readerType" Type="1">0</Property>
       <Property LongName="Yolo_RTMaps.image_in.subsampling" Type="1">1</Property>
@@ -1011,56 +1026,55 @@
       <Property LongName="Yolo_RTMaps.label.fifosize" Type="1">16</Property>
       <Property LongName="Yolo_RTMaps.label.periodic" Type="0">false</Property>
     </Output>
-    <Property LongName="Yolo_RTMaps.guard_begin" SubType="128" Type="0">true</Property>
-    <Property LongName="Yolo_RTMaps.internalInputs" SubType="128" Type="3"><![CDATA[image_in;18==]]></Property>
-    <Property LongName="Yolo_RTMaps.internalOutputs" SubType="128" Type="3"><![CDATA[image_out;18==;0#boxes;9==;100#scores;11==;100#class_ids;9==;100#label;1==;100]]></Property>
-    <Property LongName="Yolo_RTMaps.internalProperties" SubType="128" Type="3"><![CDATA[Yolo_version||13||3|2|yolov7_384x640.onnx|yolov7_480x640.onnx|yolov7-tiny_384x640.onnx||24]]></Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.advance_begin_configuration" SubType="256" Type="3"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
+    <Property LongName="Yolo_RTMaps.guard_begin" Type="0" SubType="128">true</Property>
+    <Property LongName="Yolo_RTMaps.internalInputs" Type="3" SubType="128"><![CDATA[image_in;18==]]></Property>
+    <Property LongName="Yolo_RTMaps.internalOutputs" Type="3" SubType="128"><![CDATA[image_out;18==;0#boxes;9==;100#scores;11==;100#class_ids;9==;100#label;1==;100]]></Property>
+    <Property LongName="Yolo_RTMaps.internalProperties" Type="3" SubType="128"><![CDATA[Yolo_version||13||3|2|yolov7_384x640.onnx|yolov7_480x640.onnx|yolov7-tiny_384x640.onnx||24]]></Property>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.advance_begin_configuration" Type="3" SubType="256"><![CDATA[Advanced Configuration]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.deathBehavior" Type="4"><![CDATA[3|1|WAIT FOR PROCESS INDEFINITELY|KILL PROCESS AFTER TIMEOUT (5sec)|START ANOTHER PROCESS]]></Property>
     <Property LongName="Yolo_RTMaps.logDebug" Type="0">false</Property>
     <Property LongName="Yolo_RTMaps.showTracebackInConsole" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.autoReloadSubModules" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.memorySize" Type="1">30000000</Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">5732</ReadOnlyProperty>
-    <Property LongName="Yolo_RTMaps.additionalEnvironmentVariables" Type="3"/>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.advance_end_configuration" SubType="512" Type="0">false</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.basic_begin_configuration" SubType="256" Type="3"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
-    <Property LongName="Yolo_RTMaps.pythonInstallationFolder" SubType="32" Type="3"><![CDATA[C:\Users\user\AppData\Local\Programs\Python\Python38]]></Property>
-    <Property LongName="Yolo_RTMaps.pythonLogDirectory" SubType="32" Type="3"><![CDATA[E:\Logs\Main_Perception\Logs]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\Logs]]></Relative>
-</Property>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.pythonPID" Type="1">3348</ReadOnlyProperty>
+    <Property LongName="Yolo_RTMaps.additionalEnvironmentVariables" Type="3"><![CDATA[]]></Property>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.advance_end_configuration" Type="0" SubType="512">false</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.basic_begin_configuration" Type="3" SubType="256"><![CDATA[Basic Configuration]]></ReadOnlyProperty>
+    <Property LongName="Yolo_RTMaps.pythonInstallationFolder" Type="3" SubType="32"><![CDATA[C:/Users/user/AppData/Local/Programs/Python/Python38/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../../../../../AppData/Local/Programs/Python/Python38]]></Relative></Property>
+    <Property LongName="Yolo_RTMaps.pythonLogDirectory" Type="3" SubType="32"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/DossierTWIZY/Main_Perception/Logs/]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/Logs]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.className" Type="3"><![CDATA[rtmaps_python]]></Property>
-    <Property LongName="Yolo_RTMaps.pythonFilename" SubType="80" Type="3"><![CDATA[E:\Logs\Main_Perception\PythonBridges\Yolo_RTMaps2.py]]>
-<Relative><![CDATA[%RTMAPS_DIAGRAMDIR%\PythonBridges\Yolo_RTMaps2.py]]></Relative>
-</Property>
+    <Property LongName="Yolo_RTMaps.pythonFilename" Type="3" SubType="80"><![CDATA[C:/Users/user/OneDrive - ESTACA/Documents/GitHub/ESTADRIVE_23/Main_Perception/PythonBridges/Yolo_RTMaps2.py]]><Relative><![CDATA[%RTMAPS_DIAGRAMDIR%/../../Main_Perception/PythonBridges/Yolo_RTMaps2.py]]></Relative></Property>
     <Property LongName="Yolo_RTMaps.readingPolicy" Type="4"><![CDATA[5|0|Synchro|Reactive|Sampling|Triggered by First Input|Periodic Resampling While Post-Processing]]></Property>
-    <Property LongName="Yolo_RTMaps.synchroTolerance" SubType="1" Type="1">0</Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.prop_end_subsection_default_opened" SubType="512" Type="0">true</ReadOnlyProperty>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsection" SubType="256" Type="3"><![CDATA[User Properties]]></ReadOnlyProperty>
+    <Property LongName="Yolo_RTMaps.synchroTolerance" Type="1" SubType="1">0</Property>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.prop_end_subsection_default_opened" Type="0" SubType="512">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsection" Type="3" SubType="256"><![CDATA[User Properties]]></ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.Yolo_version" Type="4"><![CDATA[3|2|yolov7_384x640.onnx|yolov7_480x640.onnx|yolov7-tiny_384x640.onnx]]></Property>
-    <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsectionEnd" SubType="512" Type="0">true</ReadOnlyProperty>
+    <ReadOnlyProperty LongName="Yolo_RTMaps.userSubsectionEnd" Type="0" SubType="512">true</ReadOnlyProperty>
     <Property LongName="Yolo_RTMaps.threaded" Type="0">true</Property>
     <Property LongName="Yolo_RTMaps.priority" Type="1">128</Property>
     <Property LongName="Yolo_RTMaps.autoStart" Type="0">true</Property>
   </Component>
-  <Connection Input="ars408_ObjectGeneralInformation_decoder_1.i_can_frame" Output="Player_1.can_kvaser_0_front.out">
+  <Connection Output="Player_1.can_kvaser_0_front.out" Input="ars408_ObjectGeneralInformation_decoder_1.i_can_frame">
     <Replay Method="CANFile"/>
   </Connection>
-  <Connection Input="ars408_ObjectGeneralInformation_toRealObject_1.i_object_general_information" Output="ars408_ObjectGeneralInformation_decoder_1.o_ars408_ObjectGeneralInformation"/>
-  <Connection Input="BlocCheckPieton.Objets" Output="BlocFusionDonnees.Objets1"/>
-  <Connection Input="BlocFusionDonnees.ObjetsCamera" Output="BlocTrackingImage2Objets.Objects"/>
-  <Connection Input="BlocFusionDonnees.ObjetsRadar" Output="ars408_ObjectGeneralInformation_toRealObject_1.o_real_object"/>
-  <Connection Input="BlockTracking.Boxes" Output="Yolo_RTMaps.boxes"/>
-  <Connection Input="BlockTracking.Ids" Output="Yolo_RTMaps.class_ids"/>
-  <Connection Input="BlockTracking.Image" Output="Yolo_RTMaps.image_out"/>
-  <Connection Input="BlockTracking.Scores" Output="Yolo_RTMaps.scores"/>
-  <Connection Input="BlocTrackingImage2Objets.tIds" Output="BlockTracking.tIds"/>
-  <Connection Input="BlocTrackingImage2Objets.tBoxes" Output="BlockTracking.tBoxes"/>
-  <Connection Input="BlocTrackingImage2Objets.tClassIds" Output="BlockTracking.tClassIds"/>
-  <Connection Input="DataViewer_1.input_0" Output="BlocCheckPieton.PietonInROI"/>
-  <Connection Input="ImageViewer_1.input" Output="Yolo_RTMaps.image_out"/>
-  <Connection Input="ImageViewer_2.input" Output="BlockTracking.outImage"/>
-  <Connection Input="Yolo_RTMaps.image_in" Output="Player_1.OpenCV_RotateAndFlip_1.imageOut">
+  <Connection Output="ars408_ObjectGeneralInformation_decoder_1.o_ars408_ObjectGeneralInformation" Input="ars408_ObjectGeneralInformation_toRealObject_1.i_object_general_information"/>
+  <Connection Output="BlocFusionDonnees.Objets1" Input="BlocCheckPieton.Objets"/>
+  <Connection Output="BlocTrackingImage2Objets.Objects" Input="BlocFusionDonnees.ObjetsCamera"/>
+  <Connection Output="ars408_ObjectGeneralInformation_toRealObject_1.o_real_object" Input="BlocFusionDonnees.ObjetsRadar"/>
+  <Connection Output="Yolo_RTMaps.class_ids" Input="BlocTrackingImage2Objets.tIds"/>
+  <Connection Output="Yolo_RTMaps.boxes" Input="BlocTrackingImage2Objets.tBoxes"/>
+  <Connection Output="Yolo_RTMaps.class_ids" Input="BlocTrackingImage2Objets.tClassIds"/>
+  <Connection Output="Player_1.CANDecoder_1.FAAR_CANV_1_VehicleSpeed" Input="BrakingAction.VehicleSpeed">
+    <Replay Method="tabbed_text"/>
+  </Connection>
+  <Connection Output="BlocTrackingImage2Objets.Objects" Input="BrakingAction.Objects"/>
+  <Connection Output="BlocCheckPieton.PietonInROI" Input="DataViewer_1.input_0"/>
+  <Connection Output="ars408_ObjectGeneralInformation_toRealObject_1.o_real_object" Input="DataViewer_2.input_0"/>
+  <Connection Output="FiltreRadar.FilteredRadarObjects" Input="DataViewer_2.input_1"/>
+  <Connection Output="ars408_ObjectGeneralInformation_toRealObject_1.o_real_object" Input="FiltreRadar.Radar_Objects"/>
+  <Connection Output="FiltreRadar.FilteredRadarObjects" Input="GL2_3D_Viewer_2.real_objects_2"/>
+  <Connection Output="Yolo_RTMaps.image_out" Input="ImageViewer_1.input"/>
+  <Connection Output="Player_1.OpenCV_RotateAndFlip_1.imageOut" Input="Yolo_RTMaps.image_in">
     <Replay Method="video_file"/>
   </Connection>
   <RTBoardView ID="JavaStudio1.0">
@@ -1070,33 +1084,37 @@
     <ComponentBox InstanceName="PythonBridge_3_1" reversed="false">
       <Description/>
     </ComponentBox>
-    <CommentBox align="5" bgcolor="80ff" fgcolor="0" h="1079" w="392" x="-126" y="209" z="-1">Input selection</CommentBox>
-    <CommentBox align="5" bgcolor="80ff80" fgcolor="0" h="421" w="633" x="685" y="219" z="-1">Data viewing</CommentBox>
-    <CommentBox align="5" bgcolor="ff8080" fgcolor="0" h="424" w="673" x="673" y="643" z="-1">CAN Decoders</CommentBox>
-    <CommentBox align="5" bgcolor="ffff80" fgcolor="0" h="204" w="1118" x="234" y="12" z="-1">Python Bridges</CommentBox>
+    <CommentBox x="-126" y="209" z="-1" w="392" h="1079" align="5" bgcolor="80ff" fgcolor="0">Input selection</CommentBox>
+    <CommentBox x="685" y="219" z="-1" w="633" h="421" align="5" bgcolor="80ff80" fgcolor="0">Data viewing</CommentBox>
+    <CommentBox x="673" y="643" z="-1" w="673" h="424" align="5" bgcolor="ff8080" fgcolor="0">CAN Decoders</CommentBox>
+    <CommentBox x="234" y="12" z="-1" w="1118" h="204" align="5" bgcolor="ffff80" fgcolor="0">Python Bridges</CommentBox>
     <ConnectionShape InstanceName="ars408_ObjectGeneralInformation_decoder_1.i_can_frame" color="0"/>
     <ConnectionShape InstanceName="ars408_ObjectGeneralInformation_toRealObject_1.i_object_general_information" color="0"/>
     <ConnectionShape InstanceName="BlocCheckPieton.Objets" color="0"/>
     <ConnectionShape InstanceName="BlocFusionDonnees.ObjetsCamera" color="0"/>
     <ConnectionShape InstanceName="BlocFusionDonnees.ObjetsRadar" color="0"/>
-    <ConnectionShape InstanceName="BlockTracking.Boxes" color="0"/>
-    <ConnectionShape InstanceName="BlockTracking.Ids" color="0"/>
-    <ConnectionShape InstanceName="BlockTracking.Image" color="0"/>
-    <ConnectionShape InstanceName="BlockTracking.Scores" color="0"/>
     <ConnectionShape InstanceName="BlocTrackingImage2Objets.tBoxes" color="0"/>
     <ConnectionShape InstanceName="BlocTrackingImage2Objets.tClassIds" color="0"/>
     <ConnectionShape InstanceName="BlocTrackingImage2Objets.tIds" color="0"/>
+    <ConnectionShape InstanceName="BrakingAction.Objects" color="0"/>
+    <ConnectionShape InstanceName="BrakingAction.VehicleSpeed" color="0"/>
     <ConnectionShape InstanceName="DataViewer_1.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_0" color="0"/>
+    <ConnectionShape InstanceName="DataViewer_2.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_3_1_1.input_1" color="0"/>
     <ConnectionShape InstanceName="DataViewer_4.input_0" color="0"/>
+    <ConnectionShape InstanceName="FiltreRadar.Radar_Objects" color="0"/>
+    <ConnectionShape InstanceName="GL2_3D_Viewer_2.real_objects_2" color="0"/>
     <ConnectionShape InstanceName="ImageViewer_1.input" color="0"/>
     <ConnectionShape InstanceName="ImageViewer_1_1.input" color="0"/>
-    <ConnectionShape InstanceName="ImageViewer_2.input" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_1.in" color="0"/>
     <ConnectionShape InstanceName="PythonBridge_5.Ids" color="0"/>
     <ConnectionShape InstanceName="RecFile_1.Screenshot_1.output.input" color="0"/>
     <ConnectionShape InstanceName="Splitter_1.input" color="0"/>
     <ConnectionShape InstanceName="Splitter_2.input" color="0"/>
     <ConnectionShape InstanceName="Yolo_RTMaps.image_in" color="0"/>
+    <ConnectionSplitter InstanceName="Splitter_1" color="0" source="Yolo_RTMaps.image_out" x="772" y="44" z="-1">
+      <Target InstanceName="ImageViewer_1.input" color="0"/>
+    </ConnectionSplitter>
   </RTBoardView>
 </RTMapsDiagram>
