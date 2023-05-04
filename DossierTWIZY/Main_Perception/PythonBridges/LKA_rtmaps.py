@@ -60,9 +60,9 @@ import math
 
 def angle_droites_verticale(m):
     if 0 > m:
-        return math.atan(-1 / m)#+3.0740588427461506
+        return (math.atan(-1 / m)-0.07)
     if 0 < m:
-        return math.atan(1 / m)#+3.0740588427461506
+        return (math.atan(1 / m)-0.07)
 
 
 def angle_entre_droites_verticale_et_ax_b(a, b):
@@ -269,7 +269,7 @@ class rtmaps_python(BaseComponent):
         
         self.add_output("image2", rtmaps.types.IPL_IMAGE)
         self.add_output("lane_view", rtmaps.types.IPL_IMAGE)
-        self.add_output("angle", rtmaps.types.FLOAT64,1)
+        self.add_output("angle", rtmaps.types.FLOAT64,0)
         #self.add_output("angle_car", rtmaps.types.FLOAT64, 100)
 
     # Birth() will be called once at diagram execution startup
@@ -280,16 +280,16 @@ class rtmaps_python(BaseComponent):
     def Core(self):
         frame1 = self.inputs["image"].ioelt.data
         timestamp1 = self.inputs["image"].ioelt.ts
-        angle_car =  rtmaps.types.Ioelt()
-        angle_car.data=np.array([],dtype=np.float64)        
-        angle_car.ts = timestamp1
+        #angle_car =  rtmaps.types.Ioelt()
+        #angle_car.data=np.array([],dtype=np.float64)        
+        #angle_car.ts = timestamp1
         combined_img=cp.copy(frame1)
         combined_img.ts = timestamp1
         #numpy_matrix = rtmaps_converter.to_numpy(frame)
+        
         agl=0.0
         try:
             img,agl = process_image(frame1.image_data)
-            print(img.shape)
         except:
             img = frame1.image_data
             agl=0.0
@@ -297,11 +297,8 @@ class rtmaps_python(BaseComponent):
         #angle_car.data=np.array(agl,dtype=np.float64)
         combined_img.data = img
         self.outputs["image2"].write(combined_img)
-        print("Here")        
-        print(agl)
-        print("re")
-        print(angle_car.data)
-        self.outputs["angle"].write(agl)
+        self.outputs["angle"].write((np.float64(agl)))
+        
         
 
     # Death() will be called once at diagram execution shutdown

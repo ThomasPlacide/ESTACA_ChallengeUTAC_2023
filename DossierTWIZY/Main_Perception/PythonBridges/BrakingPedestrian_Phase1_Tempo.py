@@ -15,6 +15,7 @@ class rtmaps_python(BaseComponent):
     def Dynamic(self):
         
         self.add_input("Objects",rtmaps.types.AUTO)
+        self.add_input("LKAcoeff", rtmaps.types.FLOAT64)
         self.add_output("target_steering_angle_rad", rtmaps.types.FLOAT64,0)
         self.add_output("target_speed_km_h", rtmaps.types.FLOAT64,0)
         self.add_output("target_gear", rtmaps.types.INTEGER32)
@@ -35,6 +36,16 @@ class rtmaps_python(BaseComponent):
     def Core(self):
         ObjDATA = self.inputs["Objects"].ioelt.data 
         Current_time = self.inputs["Objects"].ioelt.ts
+        Coeff = self.inputs["LKAcoeff"].ioelt.data
+        
+        Current_time = self.inputs["LKAcoeff"].ioelt.ts
+        
+        seuil = 0.0050
+        if Coeff > seuil: 
+            Coeff = seuil
+        if Coeff < -seuil: 
+            Coeff = -seuil            
+        
         Current_time=Current_time/1e6
         Angle = 0.0
         Speed = 0
@@ -42,20 +53,29 @@ class rtmaps_python(BaseComponent):
        
 
 
-                        
+        # Phase de démarrage                
         if (Current_time < 5):
             Speed = 0
-            Angle = -0.027
+            Angle = -0.025
+        # Phase LKA
         elif (Current_time < 40):
             Speed = 3
-            Angle = -0.029
-       
-        else:
-            Speed = 0
-            Angle = -0.028
+            Angle = -0.032 + Coeff
+        # Phase YOLO
+        elif (Current_time < 45):
+      
             if ( (ObjDATA[0].id == 0) and (ObjDATA[0].x != 0)):
             #if (1):
                 Alert = 1
+                Speed = 0
+                Angle = -0.025
+            else:
+               Speed = 3
+               Angle = -0.026 
+        # Fin de scénario
+        elif (Current_time < 50):
+            Speed = 0
+            Angle = -0.028
                 
                 
         
@@ -83,7 +103,7 @@ class rtmaps_python(BaseComponent):
         #int cpt;
                
         Longi = 0    
-        self.outputs["target_steering_angle_rad"].write(Angle)         
+        self.outputs["target_steering_angle_rad"].write(np.float64(Angle))         
         self.outputs["target_speed_km_h"].write(np.float64(Speed))
         self.outputs["target_gear"].write(np.int32(1))
         self.outputs["alert"].write(np.int32(Alert))
