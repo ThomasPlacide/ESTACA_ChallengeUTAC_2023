@@ -23,6 +23,17 @@ class SensorCalculation():
                     return 0
         else :
             return 0
+        
+    def SaturateAngle(self, coeff: float, seuil = 0.005) -> float:
+
+        if coeff > seuil: 
+            coeff = seuil
+        
+        if coeff < -seuil: 
+            coeff = -seuil
+        
+        return coeff
+
 
 
 
@@ -36,6 +47,7 @@ class rtmaps_python(BaseComponent):
         
         self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
         self.add_input("Objects", rtmaps.types.REAL_OBJECT)
+        self.add_input()
 
         self.add_output("PietonInROI", rtmaps.types.AUTO)
         self.add_output("target_speed_km_h", rtmaps.types.FLOAT64,0)
