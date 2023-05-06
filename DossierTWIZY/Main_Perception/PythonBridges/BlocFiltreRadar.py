@@ -48,25 +48,15 @@ class rtmaps_python(BaseComponent):
         RawObj = self.inputs["Radar_Objects"].ioelt
         
         if RawObj.data:
-            # print(RawObj.data[0].data.speed)
 
-            #FilteredObj = rtmaps.types.Ioelt()
-            FilteredObj = rtmaps.real_objects.RealObject()
-             
-            FilteredObj.kind = 0
-            #print(RawObj)
-            FilteredObj.data = rtmaps.types.Vehicle()
+            FilteredObj = rtmaps.types.Ioelt()
+            FilteredObj.data = rtmaps.real_objects.RealObject()
 
             NewObj = ObjectsFilterer().CompareCoordWithROI(RawObj.data)
             
             FilteredObj.data = NewObj
-            print(FilteredObj)
-            #self.outputs["FilteredRadarObjects"].write(FilteredObj)
-
-            
-            # FilteredObj.x = [0]
-            # FilteredObj.y = [0]
-            # self.outputs["FilteredRadarObjects"].write(FilteredObj)
+           
+            self.outputs["FilteredRadarObjects"].write(FilteredObj)
 
     def Death(self): 
         pass
