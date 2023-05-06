@@ -1,5 +1,6 @@
 import rtmaps.types
 import numpy as np
+import pandas as pd
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent
@@ -7,7 +8,7 @@ from rtmaps.base_component import BaseComponent
 class ObjectsTreatment(): 
     def __init__(self) -> None:
 
-        self.SpaceROI = np.array[0, 50, -5, 5]
+        self.SpaceROI = np.array[0, 50, -10, 10]
         pass
 
     def FindNearest(self, array, value): 
@@ -16,15 +17,20 @@ class ObjectsTreatment():
 
         return idx
 
-    def CompareCoord(self, camera_object: rtmaps.types.REAL_OBJECT, radar_object: rtmaps.types.REAL_OBJECT):
+    def CompareCoord(self, ObjectsIn):
+        dCoords=[]
+        for i,Obj in enumerate(ObjectsIn):
+            coord = [Obj.x,Obj.y,Obj.z]
+            dCoords.append(coord)
 
+        R_DF = pd.DataFrame(data = dCoords, columns=["x", "y", "z"])
         
-        for cOBJ in camera_object:
-                xID_nearest = [self.FindNearest(radar_array.x, cOBJ.y) for radar_array in radar_object]
-                yID_nearest = [self.FindNearest(radar_array.y, cOBJ.y) for radar_array in radar_object]
+        a=R_DF[(R_DF["x"] < 50) & (R_DF["x"] > 0) & (R_DF["y"] > -10) & (R_DF["y"] < 10)]["x"]
 
+        b=R_DF[(R_DF["x"] < 50) & (R_DF["x"] > 0) & (R_DF["y"] > -10) & (R_DF["y"] < 10)]["y"]
 
-        return xID_nearest, yID_nearest
+        return a, b
+        
 
      
 class rtmaps_python(BaseComponent):
@@ -33,21 +39,31 @@ class rtmaps_python(BaseComponent):
 		
 		
     def Dynamic(self):
-        self.add_input("Camera_Objects", rtmaps.types.REAL_OBJECT)
+        # self.add_input("Camera_Objects", rtmaps.types.REAL_OBJECT)
         self.add_input("Radar_Objects", rtmaps.types.REAL_OBJECT)
 
         self.add_output("Clustered_Objects", rtmaps.types.REAL_OBJECT)
 
+    def Birth(self): 
+        print("Birth")
+        pass
+
     def Core(self):
+        print('Core')
 
         C_obj = self.inputs["Camera_Objects"].ioelt
         R_obj = self.inputs["Radar_Objects"].ioelt
 
         Clustered_Objects = rtmaps.types.Ioelt()
+        
+        ObjectsTreatment().CompareCoord(R_obj.data)
 
-        Clustered_Objects.data.x, Clustered_Objects.data.y = ObjectsTreatment().CompareCoord(C_obj, R_obj)
+        # Clustered_Objects.data.x, Clustered_Objects.data.y = ObjectsTreatment().CompareCoord(C_obj, R_obj)
 
-        self.outputs["Clustered_Objects"].write(Clustered_Objects)
+        self.outputs["Clustered_Objects"].write(R_obj)
+        R_obj = None
+
+    
 
     def Death(self): 
         pass

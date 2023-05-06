@@ -9,9 +9,15 @@ class SensorCalculation():
     def __init__(self): 
         pass
 
-    def CalculateDistance(self, VehicleSpeed: float, Timestamps: float) -> float: 
+    def CalculateDistance(self, VehicleSpeed: float, Current_time: float) -> float: 
 
-        return VehicleSpeed*(Timestamps*60**2)/1e3
+        global tabFreq
+        tabFreq.append(Current_time)
+
+        frequenceEch = np.mean(np.diff(tabFreq))
+        Distance = (VehicleSpeed*frequenceEch)/3.6
+
+        return Distance
     
     def CheckPieton(self, objects) -> bool: 
         
@@ -44,32 +50,53 @@ class rtmaps_python(BaseComponent):
 		
 		
     def Dynamic(self):
-        
-        self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
+        self.add_input("MemoryDistance", rtmaps.types.FLOAT64)
         self.add_input("Objects", rtmaps.types.REAL_OBJECT)
-        self.add_input()
+        self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
+
+        # self.add_input()
 
         self.add_output("PietonInROI", rtmaps.types.AUTO)
         self.add_output("target_speed_km_h", rtmaps.types.FLOAT64,0)
         self.add_output("target_gear", rtmaps.types.INTEGER32)
         self.add_output("alert", rtmaps.types.INTEGER32)
+
+        self.add_output("ControleDistance", rtmaps.types.FLOAT64)
+        self.add_output("ControleTemps", rtmaps.types.FLOAT64)
         
 
 # Birth() will be called once at diagram execution startup
     def Birth(self):
-        pass
+        # self.DistanceCovered = 0
+        # DistanceCovered = 0
+        
+        global tabFreq
+        tabFreq = []
         
 
 # Core() is called every time you have a new input
     def Core(self):
         DistanceAParcourir = 35 # Longueur de la piste
-        Current_time = self.inputs["VehicleSpeed"].ioelt.ts
+        Current_time = rt.current_time()
         Current_time = Current_time/1e6
         Current_Speed = self.inputs["VehicleSpeed"].ioelt.data
-        DistanceCovered = SensorCalculation().CalculateDistance(Current_Speed, Current_time)
+        
+
+        DistanceCovered = rtmaps.types.FLOAT64
+
+        # print(self.input_that_answered)
+        if self.input_that_answered != 0:
+            DistanceCovered = SensorCalculation().CalculateDistance(Current_Speed, Current_time)
+            print(self.input_that_answered)
+        else:
+            PreviousDistance = self.inputs["MemoryDistance"].ioelt.data 
+            print(PreviousDistance)
+            DistanceCovered = PreviousDistance + SensorCalculation().CalculateDistance(Current_Speed, Current_time)
+        
 
         Speed = 0
         Alert = 0
+        
 
         if Current_time > 5: 
             Speed = 3 
@@ -86,7 +113,14 @@ class rtmaps_python(BaseComponent):
         self.outputs["target_speed_km_h"].write(np.float64(Speed))
         self.outputs["target_gear"].write(np.int32(1))
         self.outputs["alert"].write(np.int32(Alert))
+        self.outputs["ControleDistance"].write(np.float64(DistanceCovered))
+        self.outputs["ControleTemps"].write(Current_time)
+        pass
        
 # Death() will be called once at diagram execution shutdown
     def Death(self):
+        self.DistanceCovered = 0
+        # print("Before death %{0:.2f}".format(DistanceCovered))
+        # DistanceCovered = 0
+        # print("After death %{0:.2f}".format(DistanceCovered))
         pass
