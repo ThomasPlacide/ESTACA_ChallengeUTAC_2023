@@ -7,33 +7,22 @@ from rtmaps.base_component import BaseComponent
 
 class ObjectsTreatment(): 
     def __init__(self) -> None:
-
-        self.SpaceROI = np.array[0, 50, -10, 10]
         pass
-
-    def FindNearest(self, array, value): 
-        array = np.asarray(array)
-        idx = (np.abs(array-value)).argmin()
-
-        return idx
     
     def CompareCoordRWCoordC(self, CameraObject, RadarObject): 
 
         
         pass
 
-    def CompareCoordWSpeed(self, CameraObject, RadarObject):
-        print("PREMIER_BIS")
-        for ind in CameraObject:
-            print("DEUXIEME") 
-            if CameraObject[ind].misc1 == 0:
-                print("TROISIEME") 
-                for ind_rad in RadarObject:
-                    print("QUATRIEME") 
-                    if ind_rad.dy != 0:
-                        print('CINQUIEME') 
+    def CompareCoordWSpeed(self, R_Obj, C_Obj):
 
-        return True
+        list_obj = []
+        for ind in C_Obj: 
+            if ind.misc1 == 0: 
+                for ind, rad in enumerate(R_Obj.data):
+                    if rad.data.speed != 0:
+                        list_obj.append(rad)
+        return list_obj
 
 
      
@@ -58,24 +47,14 @@ class rtmaps_python(BaseComponent):
         R_Obj = self.inputs["ObjetsRadar"].ioelt
     
         C_Obj = self.inputs["ObjetsCamera"].ioelt.data    
-        # ObjectsTreatment().CompareCoord(C_Obj.data, R_Obj.data)
-        list_obj = []
-        for ind in C_Obj: 
-            if ind.misc1 == 0: 
-                for ind, rad in enumerate(R_Obj.data):
-        
-                    
-                    if rad.data.speed != 0:
-                        list_obj.append(rad)
+
+        list_obj = ObjectsTreatment().CompareCoordWSpeed(R_Obj, C_Obj)
                     
         if list_obj: 
-            print(list_obj)
+            # print(list_obj)
             Clustered_Objects.data = list_obj
             self.outputs["ObjOutput"].write(Clustered_Objects)
-        
 
-        
-    
 
     def Death(self): 
         pass
