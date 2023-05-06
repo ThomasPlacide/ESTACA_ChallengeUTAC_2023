@@ -1,4 +1,4 @@
-import rtmaps.types
+import rtmaps.types, rtmaps.real_objects
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent
@@ -7,28 +7,27 @@ import pandas as pd
 
 class ObjectsFilterer(): 
     def __init__(self):        
-        self.SpaceROI = [0, 50, -10, 10]
+        self.SpaceROI = [0, 50, -5, 5]
         
 
     def CompareCoordWithROI(self, Objects): 
-        dCoords=[]
+        list_Obj=[]
         for i,Obj in enumerate(Objects):
             coord = [Obj.x,Obj.y,Obj.z]
-            dCoords.append(coord)
+            list_Obj.append(coord)
 
-        R_DF = pd.DataFrame(data = dCoords, columns=["x", "y", "z"])
+        R_DF = pd.DataFrame(data = list_Obj, columns=["x", "y", "z"])
         
-        X_filtre = R_DF[    (R_DF["x"] < self.SpaceROI[1]) &\
+        filtre = R_DF[    (R_DF["x"] < self.SpaceROI[1]) &\
                             (R_DF["x"] > self.SpaceROI[0]) &\
                             (R_DF["y"] > self.SpaceROI[2]) &\
                             (R_DF["y"] < self.SpaceROI[3])]["x"]
 
-        Y_filtre = R_DF[    (R_DF["x"] < self.SpaceROI[1]) &\
-                            (R_DF["x"] > self.SpaceROI[0]) &\
-                            (R_DF["y"] > self.SpaceROI[2]) &\
-                            (R_DF["y"] < self.SpaceROI[3])]["y"]
+        newObj = []
+        for i in filtre.index: 
+            newObj.append(Objects[i])
 
-        return X_filtre, Y_filtre
+        return newObj
         
 
 class rtmaps_python(BaseComponent):
@@ -47,20 +46,27 @@ class rtmaps_python(BaseComponent):
     def Core(self): 
         
         RawObj = self.inputs["Radar_Objects"].ioelt
-
-        FilteredObj = rtmaps.types.Ioelt()
-
-        Filtered_x, Filtered_y = ObjectsFilterer().CompareCoordWithROI(RawObj.data)
         
-        try:
-            FilteredObj.x = Filtered_x
-            FilteredObj.y = Filtered_y
-            self.outputs["FilteredRadarObjects"].write(FilteredObj)
+        if RawObj.data:
+            # print(RawObj.data[0].data.speed)
 
-        except: 
-            FilteredObj.x = [0]
-            FilteredObj.y = [0]
-            self.outputs["FilteredRadarObjects"].write(FilteredObj)
+            #FilteredObj = rtmaps.types.Ioelt()
+            FilteredObj = rtmaps.real_objects.RealObject()
+             
+            FilteredObj.kind = 0
+            #print(RawObj)
+            FilteredObj.data = rtmaps.types.Vehicle()
+
+            NewObj = ObjectsFilterer().CompareCoordWithROI(RawObj.data)
+            
+            FilteredObj.data = NewObj
+            print(FilteredObj)
+            #self.outputs["FilteredRadarObjects"].write(FilteredObj)
+
+            
+            # FilteredObj.x = [0]
+            # FilteredObj.y = [0]
+            # self.outputs["FilteredRadarObjects"].write(FilteredObj)
 
     def Death(self): 
         pass

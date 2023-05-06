@@ -1,4 +1,4 @@
-import rtmaps.types
+import rtmaps.types, rtmaps.real_objects
 import numpy as np
 import pandas as pd
 import rtmaps.core as rt 
@@ -16,21 +16,25 @@ class ObjectsTreatment():
         idx = (np.abs(array-value)).argmin()
 
         return idx
+    
+    def CompareCoordRWCoordC(self, CameraObject, RadarObject): 
 
-    def CompareCoord(self, ObjectsIn):
-        dCoords=[]
-        for i,Obj in enumerate(ObjectsIn):
-            coord = [Obj.x,Obj.y,Obj.z]
-            dCoords.append(coord)
-
-        R_DF = pd.DataFrame(data = dCoords, columns=["x", "y", "z"])
         
-        a=R_DF[(R_DF["x"] < 50) & (R_DF["x"] > 0) & (R_DF["y"] > -10) & (R_DF["y"] < 10)]["x"]
+        pass
 
-        b=R_DF[(R_DF["x"] < 50) & (R_DF["x"] > 0) & (R_DF["y"] > -10) & (R_DF["y"] < 10)]["y"]
+    def CompareCoordWSpeed(self, CameraObject, RadarObject):
+        print("PREMIER_BIS")
+        for ind in CameraObject:
+            print("DEUXIEME") 
+            if CameraObject[ind].misc1 == 0:
+                print("TROISIEME") 
+                for ind_rad in RadarObject:
+                    print("QUATRIEME") 
+                    if ind_rad.speed != 0:
+                        print('CINQUIEME') 
 
-        return a, b
-        
+        return True
+
 
      
 class rtmaps_python(BaseComponent):
@@ -39,9 +43,8 @@ class rtmaps_python(BaseComponent):
 		
 		
     def Dynamic(self):
-        # self.add_input("Camera_Objects", rtmaps.types.REAL_OBJECT)
-        self.add_input("Radar_Objects", rtmaps.types.REAL_OBJECT)
-
+        self.add_input("ObjetsCamera", rtmaps.types.REAL_OBJECT) #0
+        self.add_input("ObjetsRadar", rtmaps.types.REAL_OBJECT) #1
         self.add_output("Clustered_Objects", rtmaps.types.REAL_OBJECT)
 
     def Birth(self): 
@@ -49,20 +52,26 @@ class rtmaps_python(BaseComponent):
         pass
 
     def Core(self):
-        print('Core')
-
-        C_obj = self.inputs["Camera_Objects"].ioelt
-        R_obj = self.inputs["Radar_Objects"].ioelt
 
         Clustered_Objects = rtmaps.types.Ioelt()
+        Clustered_Objects.data = rtmaps.real_objects.RealObject()
+
+        R_Obj = self.inputs["ObjetsRadar"].ioelt.data
+        try:
+            
+            C_Obj = self.inputs["ObjetsCamera"].ioelt.data    
+            # ObjectsTreatment().CompareCoord(C_Obj.data, R_Obj.data)
+            for ind in C_Obj: 
+                if ind.misc1 == 0: 
+                    for ind_rad in R_Obj:
+                        if ind_rad.data.speed != 0:
+                            pass
+
+            self.outputs["Clustered_Objects"].write(Clustered_Objects)
+        except: 
+            pass
+
         
-        ObjectsTreatment().CompareCoord(R_obj.data)
-
-        # Clustered_Objects.data.x, Clustered_Objects.data.y = ObjectsTreatment().CompareCoord(C_obj, R_obj)
-
-        self.outputs["Clustered_Objects"].write(R_obj)
-        R_obj = None
-
     
 
     def Death(self): 
