@@ -7,10 +7,13 @@ from rtmaps.base_component import BaseComponent # base class
 
 class SensorCalculation(): 
     def __init__(self): 
-        pass
+        self.CriticalROI = {    0: [-10, 10],
+                                1: [-5, 5] }
 
     def CalculateDistance(self, VehicleSpeed: float, Current_time: float) -> float: 
-
+        """
+        Odometer function.
+        """
         global tabFreq
         tabFreq.append(Current_time)
 
@@ -19,7 +22,10 @@ class SensorCalculation():
 
         return Distance
     
-    def CheckPieton(self, objects) -> bool: 
+    def CheckPieton(self, objects) -> bool:
+        """
+        Check if pedestrian is in the critical zone, base on its y location.
+        """ 
         
         if objects!=[]:
             for obj in objects:
@@ -31,6 +37,9 @@ class SensorCalculation():
             return 0
         
     def SaturateAngle(self, coeff: float, seuil = 0.005) -> float:
+        """
+        Saturate angle given by LKA bloc. 
+        """
 
         if coeff > seuil: 
             coeff = seuil

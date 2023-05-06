@@ -7,13 +7,17 @@ import pandas as pd
 
 class ObjectsFilterer(): 
     def __init__(self):        
-        self.SpaceROI = [   [0, 100, -5, 5], \
-                            [0, 100, -20, 20], \
-                            [0, 40, -5, 5], \
-                            [0, 40, -20, 20] ]
+        self.ROIs = {   0: [0, 100, -10, 10], 
+                            1: [0, 100, -20, 20], 
+                            2: [0, 40, -10, 10], 
+                            3: [0, 40, -20, 20] }
         
 
     def CompareCoordWithROI(self, indROI, Objects): 
+        """
+        First cleaning on radar objects. 
+        """
+
         SpaceROI = self.ROIs[indROI]
         list_Obj=[]
         for i,Obj in enumerate(Objects):
@@ -22,7 +26,7 @@ class ObjectsFilterer():
 
         R_DF = pd.DataFrame(data = list_Obj, columns=["x", "y", "z"])
         
-        filtre = R_DF[    (R_DF["x"] < SpaceROI[1]) &\
+        filtre = R_DF[      (R_DF["x"] < SpaceROI[1]) &\
                             (R_DF["x"] > SpaceROI[0]) &\
                             (R_DF["y"] > SpaceROI[2]) &\
                             (R_DF["y"] < SpaceROI[3])]["x"]

@@ -9,12 +9,16 @@ class ObjectsTreatment():
     def __init__(self) -> None:
         pass
     
-    def CompareCoordRWCoordC(self, CameraObject, RadarObject): 
-
-        
+    def CompareCoordRWCoordC(self, CameraObject, RadarObject):
+        """
+        Clustering objects based on their coordinates.
+        """ 
         pass
 
     def CompareCoordWSpeed(self, R_Obj, C_Obj):
+        """
+        Cluster any object as one intersting objects if its seen as a pedestrian by the camera and if its speed is greater than zero.
+        """
 
         list_obj = []
         for ind in C_Obj: 
@@ -34,15 +38,15 @@ class rtmaps_python(BaseComponent):
     def Dynamic(self):
         self.add_input("ObjetsCamera", rtmaps.types.REAL_OBJECT) #0
         self.add_input("ObjetsRadar", rtmaps.types.REAL_OBJECT) #1
-        self.add_output("ObjOutput", rtmaps.types.REAL_OBJECT, 100)
+        self.add_output("Clustered_Objects", rtmaps.types.REAL_OBJECT, 100)
 
     def Birth(self): 
         pass
 
     def Core(self):
 
-        Clustered_Objects = rtmaps.types.Ioelt()
-        Clustered_Objects.data = rtmaps.real_objects.RealObject()
+        ObjOutput = rtmaps.types.Ioelt()
+        ObjOutput.data = rtmaps.real_objects.RealObject()
 
         R_Obj = self.inputs["ObjetsRadar"].ioelt
     
@@ -52,8 +56,8 @@ class rtmaps_python(BaseComponent):
                     
         if list_obj: 
             # print(list_obj)
-            Clustered_Objects.data = list_obj
-            self.outputs["ObjOutput"].write(Clustered_Objects)
+            ObjOutput.data = list_obj
+            self.outputs["Clustered_Objects"].write(ObjOutput)
 
 
     def Death(self): 
