@@ -4,6 +4,7 @@ import rtmaps.core as rt
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent
 from typing import Union
+from crosswalks_detection import CrosswalkDetector as CSWd
 
 class SensorCalculation(): 
     def __init__(self): 
@@ -71,7 +72,7 @@ class SensorCalculation():
             coeff = -seuil
         
         return coeff
-
+    
 
 
 
@@ -84,6 +85,7 @@ class rtmaps_python(BaseComponent):
         self.add_input("Objects", rtmaps.types.REAL_OBJECT)
         self.add_input("VehicleSpeed", rtmaps.types.FLOAT64)
         self.add_input("LKAcorrection", rtmaps.types.FLOAT64)
+        self.add_input("ImageYolo", rtmaps.types.IPL_IMAGE)
 
         self.add_output("PietonInROI", rtmaps.types.AUTO)
         self.add_output("target_speed_km_h", rtmaps.types.FLOAT64,0)
@@ -95,7 +97,7 @@ class rtmaps_python(BaseComponent):
         self.add_output("ControleTemps", rtmaps.types.FLOAT64)
         
         self.add_property("Démarrage de la demo [s]",   5, rtmaps.types.INTEGER32)
-        self.add_property("Longueur de la piste [m]",   35, rtmaps.types.INTEGER32)
+        self.add_property("Longueur de la piste [m]",   40, rtmaps.types.INTEGER32)
         self.add_property("Distance de sécurité [m]",   5, rtmaps.types.INTEGER32)
         self.add_property("Vitesse de consigne [km/h]", 3, rtmaps.typers.INTEGER32)
         self.add_property("Angle saturant [rad]",       0.005, rtmaps.types.FLOAT64)
@@ -119,6 +121,7 @@ class rtmaps_python(BaseComponent):
         Current_Speed = self.inputs["VehicleSpeed"].ioelt.data
         LKAcoeff = self.inputs["LKAcorrection"].ioelt.data
         ClusteredObjects = self.inputs["Objects"].ioelt.data
+        ImageIn = self.inputs["ImageYolo"].ioelt.data
         
         self.DistanceCovered += SensorCalculation().CalculateDistance(Current_Speed, Current_time)
         self.outputs["ControleTemps"].write(Current_time)
@@ -142,7 +145,7 @@ class rtmaps_python(BaseComponent):
                 self.outputs["PietonInROI"].write(False)
                 self.outputs["CoordonneesPieton"].write(PedestrianCoordinates)
 
-        if self.DistanceCovered > self.DistanceAParcourir:
+        if CSWd().coef(ImageIn) or (self.DistanceCovered > self.DistanceAParcourir):
             Speed = 0
           
         self.outputs["target_speed_km_h"].write(np.float64(Speed))
