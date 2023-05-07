@@ -297,10 +297,10 @@ class rtmaps_python(BaseComponent):
         #angle_car.data=np.array(agl,dtype=np.float64)
         combined_img.data = img
         self.outputs["image2"].write(combined_img)
-        print("Here")        
-        print(agl)
-        print("re")
-        print(angle_car.data)
+        # print("Here")        
+        # print(agl)
+        # print("re")
+        # print(angle_car.data)
         self.outputs["angle"].write(agl)
         
 

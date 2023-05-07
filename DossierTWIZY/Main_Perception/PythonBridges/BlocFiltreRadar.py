@@ -7,13 +7,13 @@ import pandas as pd
 
 class ObjectsFilterer(): 
     def __init__(self):        
-        self.ROIs = {   0: [0, 100, -10, 10], 
-                            1: [0, 100, -20, 20], 
-                            2: [0, 40, -10, 10], 
-                            3: [0, 40, -20, 20] }
+        self.ROIs = {   0: [0, 100, -5, 5], 
+                        1: [0, 100, -20, 20], 
+                        2: [0, 40, -5, 5], 
+                        3: [0, 40, -20, 20] }
         
 
-    def CompareCoordWithROI(self, indROI, Objects): 
+    def CompareCoordWithROI(self, Objects: rtmaps.types.REAL_OBJECT, indROI=2) -> rtmaps.types.REAL_OBJECT: 
         """
         First cleaning on radar objects. 
         """
@@ -48,8 +48,8 @@ class rtmaps_python(BaseComponent):
 
         self.add_output("FilteredRadarObjects", rtmaps.types.REAL_OBJECT, 100)
 
-        self.add_property("Radar ROI", \
-                          "|0|Long & tight [0, 100, -5, 5]|Long and wide [0, 100, -20, 20]|Short and tight [0, 40, -5, 5]|Short and wide [0, 40, -20, 20]",\
+        self.add_property("RadarROI", \
+                          "4|0|Long & tight [0, 100, -5, 5]|Long and wide [0, 100, -20, 20]|Short and tight [0, 40, -5, 5]|Short and wide [0, 40, -20, 20]",\
                             rtmaps.types.ENUM)
     def Birth(self):
         self.ROIChoice = self.properties["Radar ROI"].data
@@ -64,7 +64,7 @@ class rtmaps_python(BaseComponent):
             FilteredObj = rtmaps.types.Ioelt()
             FilteredObj.data = rtmaps.real_objects.RealObject()
 
-            NewObj = ObjectsFilterer().CompareCoordWithROI(self.ROIChoice, RawObj.data)
+            NewObj = ObjectsFilterer().CompareCoordWithROI(RawObj.data, self.ROIChoice)
             
             FilteredObj.data = NewObj
            
