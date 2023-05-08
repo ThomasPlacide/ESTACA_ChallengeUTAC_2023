@@ -19,23 +19,34 @@ class ObjectsFilterer():
         """
 
         SpaceROI = self.ROIs[indROI]
-        list_Obj=[]
-        for i,Obj in enumerate(Objects):
-            coord = [Obj.x,Obj.y,Obj.z]
-            list_Obj.append(coord)
 
-        R_DF = pd.DataFrame(data = list_Obj, columns=["x", "y", "z"])
+        R_DF = self.RealObjects2DF(Objects)
         
         filtre = R_DF[      (R_DF["x"] < SpaceROI[1]) &\
                             (R_DF["x"] > SpaceROI[0]) &\
                             (R_DF["y"] > SpaceROI[2]) &\
                             (R_DF["y"] < SpaceROI[3])]["x"]
 
-        newObj = []
-        for i in filtre.index: 
-            newObj.append(Objects[i])
+        return self.ApplyFilterToRealObjects(Objects, filtre)
 
+    def ApplyFilterToRealObjects(self, Objects, filtre):
+        newObj = []
+        for j in filtre.index: 
+            newObj.append(Objects[j])
         return newObj
+
+    def RealObjects2DF(self, Objects: rtmaps.types.REAL_OBJECT):
+        """
+        Convert a rtmaps.types.REAL_OBJECT into a pandas.Dataframe composed of three columns 'x', 'y' & 'z'.
+        """
+        list_Obj=[]
+        for i,Obj in enumerate(Objects):
+            coord = [Obj.x,Obj.y,Obj.z]
+            list_Obj.append(coord)
+
+        DF = pd.DataFrame(data = list_Obj, columns=["x", "y", "z"])
+
+        return DF
         
 
 class rtmaps_python(BaseComponent):

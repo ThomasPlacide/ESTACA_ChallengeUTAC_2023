@@ -4,16 +4,31 @@ import pandas as pd
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent
+from BlocFiltreRadar import ObjectsFilterer as ObjF
 
 class ObjectsTreatment(): 
     def __init__(self) -> None:
         pass
     
-    def CompareCoordRWCoordC(self, CameraObject, RadarObject):
+    def CompareCoordRWCoordC(self, CameraObject: rtmaps.types.REAL_OBJECT, RadarObject: rtmaps.types.Ioelt(), tolerance=0.1):
         """
         Clustering objects based on their coordinates.
         """ 
-        pass
+        R_DF = ObjF().RealObjects2DF(RadarObject.data)
+        C_DF = ObjF().RealObjects2DF(CameraObject)
+
+        Similar = []
+        for nb in range(RadarObject.vector_size): 
+            sim = C_DF[     (R_DF["x"][nb] >= (1.0-tolerance)*C_DF["x"]) &\
+                            (R_DF["x"][nb] <= (1.0+tolerance)*C_DF["x"]) &\
+                            (R_DF["y"][nb] >= (1.0-tolerance)*C_DF["y"]) &\
+                            (R_DF["y"][nb] <= (1.0+tolerance)*C_DF["y"])]
+
+            Similar= sim.append(sim, ignore_index=True)
+
+        return ObjF().ApplyFilterToRealObjects(CameraObject, Similar)
+        
+        
 
     def CompareCoordWSpeed(self, R_Obj, C_Obj):
         """
