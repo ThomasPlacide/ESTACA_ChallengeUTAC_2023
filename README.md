@@ -3,7 +3,7 @@ Challenge UTAC 2023
 
 ### Flowchart du projet 
 
-<img src=DossierTWIZY/Main_Perception/Images/Fowchart_UTAC.jpg>
+<img src=DossierTWIZY/Main_Perception/Images/Fowchart_UTAC.png>
 
 ### Perception véhicule
 
