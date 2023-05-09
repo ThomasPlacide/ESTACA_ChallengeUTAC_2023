@@ -301,7 +301,7 @@ class rtmaps_python(BaseComponent):
         # print(agl)
         # print("re")
         # print(angle_car.data)
-        self.outputs["angle"].write(agl)
+        self.outputs["angle"].write(np.array(agl,dtype=np.float64))
         
 
     # Death() will be called once at diagram execution shutdown

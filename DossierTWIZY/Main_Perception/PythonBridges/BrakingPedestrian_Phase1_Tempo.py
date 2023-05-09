@@ -3,8 +3,13 @@ import numpy as np
 import rtmaps.core as rt 
 import rtmaps.reading_policy 
 from rtmaps.base_component import BaseComponent
-from typing import Union
 from crosswalks_detection import CrosswalkDetector as CSWd
+from ctypes import *
+
+class Pedestrian(Structure): 
+    _fields_ = [('x', c_float), 
+                ('y', c_float), 
+                ('z', c_float)]
 
 class SensorCalculation(): 
     def __init__(self): 
@@ -38,7 +43,7 @@ class SensorCalculation():
 
         return Distance
     
-    def CheckPieton(self,  objects: rtmaps.types.REAL_OBJECT, ROIind=1) -> Union[bool,rtmaps.types.CUSTOM_STRUCT]:
+    def CheckPieton(self,  objects: rtmaps.types.REAL_OBJECT, ROIind=1):
         """
         Check if pedestrian is in the critical zone, base on its y location.
         """ 
@@ -91,27 +96,27 @@ class rtmaps_python(BaseComponent):
         self.add_output("target_speed_km_h", rtmaps.types.FLOAT64,0)
         self.add_output("target_gear", rtmaps.types.INTEGER32)
         self.add_output("alert", rtmaps.types.INTEGER32)
-        self.add_output("CoordoneesPieton", rtmaps.types.CUSTOM_STRUCT, PEDESTRIAN) # Custom_Struct
+        self.add_output("CoordoneesPieton", rtmaps.types.CUSTOM_STRUCT, "Pedestrian") # Custom_Struct
 
         self.add_output("ControleDistance", rtmaps.types.FLOAT64)
         self.add_output("ControleTemps", rtmaps.types.FLOAT64)
         
-        self.add_property("Démarrage de la demo [s]",   5, rtmaps.types.INTEGER32)
-        self.add_property("Longueur de la piste [m]",   40, rtmaps.types.INTEGER32)
-        self.add_property("Distance de sécurité [m]",   5, rtmaps.types.INTEGER32)
-        self.add_property("Vitesse de consigne [km/h]", 3, rtmaps.typers.INTEGER32)
-        self.add_property("Angle saturant [rad]",       0.005, rtmaps.types.FLOAT64)
-        self.add_property("Angle offset [rad]",         -0.032, rtmaps.types.FLOAT64)
+        self.add_property("Demarrage_demo",   5, rtmaps.types.INTEGER32)
+        self.add_property("Longueur_piste",   40, rtmaps.types.INTEGER32)
+        self.add_property("Distance_safe",   5, rtmaps.types.INTEGER32)
+        self.add_property("Vitesse_consigne", 3, rtmaps.types.INTEGER32)
+        self.add_property("Angle_saturant",       0.005, rtmaps.types.FLOAT64)
+        self.add_property("Angle_offset",         -0.032, rtmaps.types.FLOAT64)
         
         
     def Birth(self):
         self.DistanceCovered = 0.0
-        self.Starter = self.properties["Démarrage de la demo [s]"].data
-        self.DistanceAParcourir = self.properties["Longueur de la piste"].data
-        self.DistanceDeSecurite = self.properties["Distance de sécurité"].data
-        self.Saturation = self.properties["Angle saturant"].data
-        self.AngleOffset = self.properties["Angle offset"].data
-        self.SpeedCommand = self.properties["Vitesse de consigne"].data
+        self.Starter = self.properties["Demarrage_demo"].data
+        self.DistanceAParcourir = self.properties["Longueur_piste"].data
+        self.DistanceDeSecurite = self.properties["Distance_safe"].data
+        self.Saturation = self.properties["Angle_saturant"].data
+        self.AngleOffset = self.properties["Angle_offset"].data
+        self.SpeedCommand = self.properties["Vitesse_consigne"].data
         
     def Core(self):
 
@@ -136,7 +141,10 @@ class rtmaps_python(BaseComponent):
                                                                                         objects=ClusteredObjects)
             if PedestrianPresence: 
                 self.outputs["PietonInROI"].write(True)
-                self.outputs["CoordoneesPieton"].write(PedestrianCoordinates)
+                coord_out = Pedestrian(PedestrianCoordinates["x"], PedestrianCoordinates["y"], PedestrianCoordinates["z"])
+                bcoord_out = bytes(coord_out)
+                self.outputs["CoordoneesPieton"].write(bcoord_out)
+            
 
                 if ClusteredObjects.x < self.DistanceDeSecurite:
                     Speed = 0
